@@ -34,6 +34,15 @@ AC_ARG_WITH(gstversion,
 	AS_HELP_STRING([--with-gstversion],[use gstreamer version (major.minor)]),
 	[GST_MAJORMINOR=$withval],[GST_MAJORMINOR=0.10])
 
+AC_ARG_ENABLE(libeplayer3,
+       [  --enable-libeplayer3          enable libeplayer3 as player engine supportt],
+       [AC_DEFINE(ENABLE_LIBEPLAYER3,1,[enable libeplayer3 as player engine support])])
+
+AM_CONDITIONAL(ENABLE_LIBEPLAYER3,test "$enable_libeplayer3" = "yes")
+if test "$enable_libeplayer3" = "yes"; then
+       AC_DEFINE(ENABLE_LIBEPLAYER3,1,[include libeplayer3 as player engine support])
+fi
+
 PKG_CHECK_MODULES(GSTREAMER, gstreamer-$GST_MAJORMINOR gstreamer-pbutils-$GST_MAJORMINOR)
 PKG_CHECK_MODULES(BASE, [freetype2 fribidi gstreamer-$GST_MAJORMINOR gstreamer-pbutils-$GST_MAJORMINOR libdvbsi++ libpng libxml-2.0 sigc++-1.2 libssl libcrypto])
 PKG_CHECK_MODULES(LIBDDVD, libdreamdvd, HAVE_LIBDDVD="yes", HAVE_LIBDDVD="no")

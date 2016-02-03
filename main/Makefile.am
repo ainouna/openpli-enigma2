@@ -49,6 +49,11 @@ enigma2_LDADD = \
 	@DVBCSA_LIBS@ \
 	-ltuxtxt -ltuxtxt32bpp -lcrypt -lrt
 
+if ENABLE_LIBEPLAYER3
+enigma2_LDADD += \
+       -leplayer3
+endif
+
 enigma2_LDFLAGS = -Wl,--export-dynamic
 
 if HAVE_GIT_DIR
