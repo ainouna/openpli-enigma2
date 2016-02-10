@@ -76,111 +76,55 @@ void DumpUnfreed()
 };
 #endif
 
-Signal2<void, int, const std::string&> logOutput;
-int logOutputConsole=1;
+Signal2<void, const char *, unsigned int> logOutput;
+int logOutputConsole = 1;
+int debugLvl = lvlDebug;
 
-static pthread_mutex_t DebugLock =
-	PTHREAD_ADAPTIVE_MUTEX_INITIALIZER_NP;
+static pthread_mutex_t DebugLock = PTHREAD_ADAPTIVE_MUTEX_INITIALIZER_NP;
 
 extern void bsodFatal(const char *component);
 
-void eFatal(const char* fmt, ...)
+void eDebugImpl(int flags, const char* fmt, ...)
 {
 	char buf[1024];
-	struct timespec tp;
-	clock_gettime(CLOCK_MONOTONIC, &tp);
-	snprintf(buf, 1024, "<%6lu.%06lu> FATAL: ", tp.tv_sec, tp.tv_nsec/1000);
+	int pos = 0;
+
+	if (! (flags & _DBGFLG_NOTIME)) {
+		struct timespec tp;
+		clock_gettime(CLOCK_MONOTONIC, &tp);
+		pos = snprintf(buf, sizeof(buf), "<%6lu.%06lu> ", tp.tv_sec, tp.tv_nsec/1000);
+	}
+
 	va_list ap;
 	va_start(ap, fmt);
-	vsnprintf(buf + strlen(buf), 1024-strlen(buf), fmt, ap);
+	pos += vsnprintf(buf + pos, sizeof(buf) - pos, fmt, ap);
 	va_end(ap);
+
+	if (!(flags & _DBGFLG_NONEWLINE)) {
+		/* buf will still be null-terminated here, so it is always safe
+		 * to do this. The remainder of this function does not rely
+		 * on buf being null terminated. */
+		buf[pos++] = '\n';
+	}
 
 	{
 		singleLock s(DebugLock);
-		logOutput(lvlFatal, std::string(buf) + "\n");
-		fprintf(stderr, "%s\n", buf);
+		logOutput(buf, pos);
 	}
-	bsodFatal("enigma2");
-}
 
-#ifdef DEBUG
-void eDebug(const char* fmt, ...)
-{
-	char buf[1024];
-	struct timespec tp;
-	clock_gettime(CLOCK_MONOTONIC, &tp);
-	snprintf(buf, 1024, "<%6lu.%06lu> ", tp.tv_sec, tp.tv_nsec/1000);
-	va_list ap;
-	va_start(ap, fmt);
-	vsnprintf(buf + strlen(buf), 1024-strlen(buf), fmt, ap);
-	va_end(ap);
-	singleLock s(DebugLock);
-	logOutput(lvlDebug, std::string(buf) + "\n");
 	if (logOutputConsole)
-		fprintf(stderr, "%s\n", buf);
-}
+		::write(2, buf, pos);
 
-void eDebugNoNewLineStart(const char* fmt, ...)
-{
-	char buf[1024];
-	struct timespec tp;
-	clock_gettime(CLOCK_MONOTONIC, &tp);
-	snprintf(buf, 1024, "<%6lu.%06lu> ", tp.tv_sec, tp.tv_nsec/1000);
-	va_list ap;
-	va_start(ap, fmt);
-	vsnprintf(buf + strlen(buf), 1024-strlen(buf), fmt, ap);
-	va_end(ap);
-	singleLock s(DebugLock);
-	logOutput(lvlDebug, std::string(buf));
-	if (logOutputConsole)
-		fprintf(stderr, "%s", buf);
+	if (flags & _DBGFLG_FATAL)
+		bsodFatal("enigma2");
 }
-
-void eDebugNoNewLine(const char* fmt, ...)
-{
-	char buf[1024];
-	va_list ap;
-	va_start(ap, fmt);
-	vsnprintf(buf, 1024, fmt, ap);
-	va_end(ap);
-	singleLock s(DebugLock);
-	logOutput(lvlDebug, std::string(buf));
-	if (logOutputConsole)
-		fprintf(stderr, "%s", buf);
-}
-
-void eWarning(const char* fmt, ...)
-{
-	char buf[1024];
-	struct timespec tp;
-	clock_gettime(CLOCK_MONOTONIC, &tp);
-	snprintf(buf, 1024, "<%6lu.%06lu> ", tp.tv_sec, tp.tv_nsec/1000);
-	va_list ap;
-	va_start(ap, fmt);
-	vsnprintf(buf + strlen(buf), 1024-strlen(buf), fmt, ap);
-	va_end(ap);
-	singleLock s(DebugLock);
-	logOutput(lvlWarning, std::string(buf) + "\n");
-	if (logOutputConsole)
-		fprintf(stderr, "%s\n", buf);
-}
-#endif // DEBUG
 
 void ePythonOutput(const char *string)
 {
 #ifdef DEBUG
-	char buf[20];
-	struct timespec tp;
-	clock_gettime(CLOCK_MONOTONIC, &tp);
-	snprintf(buf, 20, "<%6lu.%06lu> ", tp.tv_sec, tp.tv_nsec/1000);
-	singleLock s(DebugLock);
-	logOutput(lvlWarning, std::string(buf) + string);
-	if (logOutputConsole)
-		fprintf(stderr, "%s%s", buf, string);
+	int lvl = lvlWarning; // FIXME: get level info from python
+	// Only show message when the debug level is low enough
+	if (lvl <= debugLvl)
+		eDebugImpl(_DBGFLG_NONEWLINE, string);
 #endif
-}
-
-void eWriteCrashdump()
-{
-		/* implement me */
 }

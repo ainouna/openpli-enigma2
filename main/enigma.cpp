@@ -185,6 +185,12 @@ int main(int argc, char **argv)
 	printf("PYTHONPATH: %s\n", getenv("PYTHONPATH"));
 	printf("DVB_API_VERSION %d DVB_API_VERSION_MINOR %d\n", DVB_API_VERSION, DVB_API_VERSION_MINOR);
 
+	// get enigma2 debug level
+	debugLvl = getenv("ENIGMA_DEBUG_LVL") ? atoi(getenv("ENIGMA_DEBUG_LVL")) : 4;
+	if (debugLvl < 0)
+		debugLvl = 0;
+	printf("ENIGMA2_DEBUG settings: Level=%d\n", debugLvl);
+
 	bsodLogInit();
 
 	ePython python;
