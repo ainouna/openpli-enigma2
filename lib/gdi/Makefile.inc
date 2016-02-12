@@ -22,7 +22,7 @@ gdi_libenigma_gdi_a_SOURCES = \
 	gdi/picload.cpp \
 	gdi/region.cpp
 
-if ENABLE_SH
+if HAVE_STMFB
 gdi_libenigma_gdi_a_SOURCES += \
         gdi/stmfb.cpp
 endif

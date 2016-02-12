@@ -191,14 +191,10 @@ if test x"$with_amlogic" = xyes ; then
 	PKG_CHECK_MODULES(DVBCSA, libdvbcsa)
 fi
 
-AC_ARG_ENABLE([sh],
-        [AS_HELP_STRING(--enable-sh,    enable sh patches)],
-        [case "${enableval}" in
-                yes) enable_sh=true ;;
-                no) enable_sh=false ;;
-                *) AC_MSG_ERROR([bad value ${enableval} for --enable-sh]) ;;
-        esac])
-AM_CONDITIONAL([ENABLE_SH], [test x$enable_sh = xtrue])
+AC_ARG_WITH(stmfb,
+	AS_HELP_STRING([--with-stmfb],[use stmfb, yes or no]),
+	[with_stmfb=$withval],[with_stmfb=no])
+AM_CONDITIONAL(HAVE_STMFB, test "$with_stmfb" = "yes")
 
 ENIGMA2_CFLAGS="-fno-rtti -fno-exceptions"
 AC_SUBST(ENIGMA2_CFLAGS)
