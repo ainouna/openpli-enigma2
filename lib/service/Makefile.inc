@@ -18,7 +18,7 @@ service_libenigma_service_a_SOURCES = \
 	service/servicets.cpp \
 	service/servicewebts.cpp
 
-if ENABLE_LIBEPLAYER3
+if HAVE_LIBEPLAYER3
 service_libenigma_service_a_SOURCES += \
        service/serviceeplayer3.cpp
 endif
@@ -40,7 +40,7 @@ serviceinclude_HEADERS = \
 	service/servicets.h \
 	service/servicewebts.h
 
-if ENABLE_LIBEPLAYER3
+if HAVE_LIBEPLAYER3
 serviceinclude_HEADERS += \
        service/serviceeplayer3.h
 endif

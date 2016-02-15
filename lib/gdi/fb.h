@@ -67,7 +67,7 @@ public:
 	int PutCMAP();
 #endif
 	static fbClass *getInstance();
-#ifdef ENABLE_LIBEPLAYER3
+#ifdef HAVE_LIBEPLAYER3
 //     "hack" for libeplayer3 fb access
        int getFD() { return fbFd; }
        unsigned char * getLFB_Direct() { return lfb; }

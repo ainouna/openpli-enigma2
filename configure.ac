@@ -34,15 +34,6 @@ AC_ARG_WITH(gstversion,
 	AS_HELP_STRING([--with-gstversion],[use gstreamer version (major.minor)]),
 	[GST_MAJORMINOR=$withval],[GST_MAJORMINOR=0.10])
 
-AC_ARG_ENABLE(libeplayer3,
-       [  --enable-libeplayer3          enable libeplayer3 as player engine supportt],
-       [AC_DEFINE(ENABLE_LIBEPLAYER3,1,[enable libeplayer3 as player engine support])])
-
-AM_CONDITIONAL(ENABLE_LIBEPLAYER3,test "$enable_libeplayer3" = "yes")
-if test "$enable_libeplayer3" = "yes"; then
-       AC_DEFINE(ENABLE_LIBEPLAYER3,1,[include libeplayer3 as player engine support])
-fi
-
 PKG_CHECK_MODULES(GSTREAMER, gstreamer-$GST_MAJORMINOR gstreamer-pbutils-$GST_MAJORMINOR)
 PKG_CHECK_MODULES(BASE, [freetype2 fribidi gstreamer-$GST_MAJORMINOR gstreamer-pbutils-$GST_MAJORMINOR libdvbsi++ libpng libxml-2.0 sigc++-1.2 libssl libcrypto])
 PKG_CHECK_MODULES(LIBDDVD, libdreamdvd, HAVE_LIBDDVD="yes", HAVE_LIBDDVD="no")
@@ -195,6 +186,15 @@ AC_ARG_WITH(stmfb,
 	AS_HELP_STRING([--with-stmfb],[use stmfb, yes or no]),
 	[with_stmfb=$withval],[with_stmfb=no])
 AM_CONDITIONAL(HAVE_STMFB, test "$with_stmfb" = "yes")
+
+AC_ARG_WITH(libeplayer3,
+	AS_HELP_STRING([--with-libeplayer3],[use libeplayer3 as player engine support, yes or no]),
+	[with_libeplayer3=$withval],[with_libeplayer3=no])
+if test "$with_libeplayer3" = "yes"; then
+	PKG_CHECK_MODULES(LIBXINE, libeplayer3)
+	AC_DEFINE([HAVE_LIBEPLAYER3],[1],[Define to 1 if you have libeplayer3])
+fi
+AM_CONDITIONAL(HAVE_LIBEPLAYER3, test "$with_libeplayer3" = "yes")
 
 ENIGMA2_CFLAGS="-fno-rtti -fno-exceptions"
 AC_SUBST(ENIGMA2_CFLAGS)
