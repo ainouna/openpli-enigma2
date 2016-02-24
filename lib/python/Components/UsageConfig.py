@@ -57,6 +57,7 @@ def InitUsageConfig():
 	config.usage.show_infobar_on_skip = ConfigYesNo(default = True)
 	config.usage.show_infobar_on_event_change = ConfigYesNo(default = False)
 	config.usage.show_second_infobar = ConfigSelection(default = None, choices = [(None, _("None"))] + choicelist + [("EPG",_("EPG"))])
+	config.usage.show_simple_second_infobar = ConfigYesNo(default = True)
 	config.usage.infobar_frontend_source = ConfigSelection(default = "tuner", choices = [("settings", _("Settings")), ("tuner", _("Tuner"))])
 	config.usage.oldstyle_zap_controls = ConfigYesNo(default = False)
 	config.usage.oldstyle_channel_select_controls = ConfigYesNo(default = False)
@@ -197,6 +198,7 @@ def InitUsageConfig():
 		("127", _("No priority")) ])
 
 	config.usage.remote_fallback_enabled = ConfigYesNo(default = False)
+	config.usage.remote_fallback_recording_enabled = ConfigYesNo(default = False)
 	config.usage.remote_fallback = ConfigText(default = "", fixed_size = False)
 	config.usage.show_timer_conflict_warning = ConfigYesNo(default = True)
 
