@@ -3,6 +3,7 @@ import xml.etree.cElementTree
 from os import environ, unlink, symlink
 import time
 from Tools.Directories import SCOPE_SKIN, resolveFilename
+from Tools.StbHardware import setRTCoffset
 
 class Timezones:
 	def __init__(self):
@@ -38,6 +39,7 @@ class Timezones:
 		except:
 			from enigma import e_tzset
 			e_tzset()
+		setRTCoffset()
 
 	def getTimezoneList(self):
 		return [ str(x[0]) for x in self.timezones ]
