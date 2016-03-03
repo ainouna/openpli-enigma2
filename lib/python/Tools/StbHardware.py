@@ -31,12 +31,11 @@ def setRTCoffset():
 			forsleep = -time.timezone
 		else:
 			forsleep = 3600-time.timezone
+		print "[RTC] set RTC offset to %s sec." % (forsleep)
 		try:
 			open("/proc/stb/fp/rtc_offset", "w").write(str(forsleep))
 		except IOError:
 			print "set RTC Offset failed!"
-
-		print "[RTC] set RTC offset to %s sec." % (forsleep)
 
 def setRTCtime(wutime):
 	setRTCoffset()
