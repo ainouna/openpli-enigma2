@@ -26,19 +26,19 @@ def setFPWakeuptime(wutime):
 			print "setFPWakeupTime failed!"
 
 def setRTCoffset():
-	if path.exists("/proc/stb/fp/rtc_offset"):
-		if time.localtime().tm_isdst == 0:
-			forsleep = -time.timezone
-		else:
-			forsleep = 3600-time.timezone
-		print "[RTC] set RTC offset to %s sec." % (forsleep)
-		try:
-			open("/proc/stb/fp/rtc_offset", "w").write(str(forsleep))
-		except IOError:
-			print "set RTC Offset failed!"
+	if time.localtime().tm_isdst == 0:
+		forsleep = -time.timezone
+	else:
+		forsleep = 3600-time.timezone
+	print "[RTC] set RTC offset to %s sec." % (forsleep)
+	try:
+		open("/proc/stb/fp/rtc_offset", "w").write(str(forsleep))
+	except IOError:
+		print "setRTCoffset failed!"
 
 def setRTCtime(wutime):
-	setRTCoffset()
+        if path.exists("/proc/stb/fp/rtc_offset"):
+		setRTCoffset()
 	try:
 		open("/proc/stb/fp/rtc", "w").write(str(wutime))
 	except IOError:
