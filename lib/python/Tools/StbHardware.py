@@ -1,4 +1,4 @@
-import time
+from time import time, localtime, gmtime
 from os import path
 from fcntl import ioctl
 from struct import pack, unpack
@@ -26,10 +26,7 @@ def setFPWakeuptime(wutime):
 			print "setFPWakeupTime failed!"
 
 def setRTCoffset():
-	if time.localtime().tm_isdst == 0:
-		forsleep = -time.timezone
-	else:
-		forsleep = 3600-time.timezone
+	forsleep = (localtime(time()).tm_hour-gmtime(time()).tm_hour)*3600
 	print "[RTC] set RTC offset to %s sec." % (forsleep)
 	try:
 		open("/proc/stb/fp/rtc_offset", "w").write(str(forsleep))
