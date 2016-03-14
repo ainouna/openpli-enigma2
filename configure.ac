@@ -182,11 +182,6 @@ if test x"$with_amlogic" = xyes ; then
 	PKG_CHECK_MODULES(DVBCSA, libdvbcsa)
 fi
 
-AC_ARG_WITH(stmfb,
-	AS_HELP_STRING([--with-stmfb],[use stmfb, yes or no]),
-	[with_stmfb=$withval],[with_stmfb=no])
-AM_CONDITIONAL(HAVE_STMFB, test "$with_stmfb" = "yes")
-
 AC_ARG_WITH(libeplayer3,
 	AS_HELP_STRING([--with-libeplayer3],[use libeplayer3 as player engine support, yes or no]),
 	[with_libeplayer3=$withval],[with_libeplayer3=no])
