@@ -2714,11 +2714,17 @@ std::string eDVBFrontend::getCapabilities()
 		case SYS_ISDBS:		ss << " ISDBS"; break;
 		case SYS_ISDBT:		ss << " ISDBT"; break;
 		case SYS_UNDEFINED:	ss << " UNDEFINED"; break;
+#if DVB_API_VERSION > 5 || DVB_API_VERSION == 5 && DVB_API_VERSION_MINOR >= 6
 		case SYS_DVBC_ANNEX_A:	ss << " DVBC_ANNEX_A"; break;
 		case SYS_DVBC_ANNEX_C:	ss << " DVBC_ANNEX_C"; break;
+#else
+		case SYS_DVBC_ANNEX_AC:	ss << " DVBC_ANNEX_AC"; break;
+#endif
 		case SYS_DVBT2:		ss << " DVBT2"; break;
+#if DVB_API_VERSION > 5 || DVB_API_VERSION == 5 && DVB_API_VERSION_MINOR >= 6
 		case SYS_TURBO:		ss << " TURBO"; break;
 		case SYS_DTMB:		ss << " DTMB"; break;
+#endif
 		}
 	}
 
