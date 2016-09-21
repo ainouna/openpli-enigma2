@@ -225,6 +225,7 @@ class InfoBarShowHide(InfoBarScreenSaver):
 	STATE_HIDING = 1
 	STATE_SHOWING = 2
 	STATE_SHOWN = 3
+	FLAG_HIDE_VBI = 512
 
 	def __init__(self):
 		self["ShowHideActions"] = ActionMap( ["InfobarShowHideActions"] ,
@@ -356,6 +357,8 @@ class InfoBarShowHide(InfoBarScreenSaver):
 
 	def okButtonCheck(self):
 		if config.usage.ok_is_channelselection.value and hasattr(self, "openServiceList"):
+			if isinstance(self, InfoBarTimeshift) and self.timeshiftEnabled() and isinstance(self, InfoBarSeek) and self.seekstate == self.SEEK_STATE_PAUSE:
+				return
 			self.openServiceList()
 		else:
 			self.toggleShow()
@@ -404,8 +407,7 @@ class InfoBarShowHide(InfoBarScreenSaver):
 			if service.toString().startswith("1:"):
 				info = eServiceCenter.getInstance().info(service)
 				service = info and info.getInfoString(service, iServiceInformation.sServiceref)
-				FLAG_HIDE_VBI = 512
-				return service and eDVBDB.getInstance().getFlag(eServiceReference(service)) & FLAG_HIDE_VBI and True
+				return service and eDVBDB.getInstance().getFlag(eServiceReference(service)) & self.FLAG_HIDE_VBI and True
 			else:
 				return ".hidvbi." in servicepath.lower()
 		service = self.session.nav.getCurrentService()
@@ -417,6 +419,17 @@ class InfoBarShowHide(InfoBarScreenSaver):
 			self.hideVBILineScreen.show()
 		else:
 			self.hideVBILineScreen.hide()
+
+	def ToggleHideVBI(self):
+		service = self.session.nav.getCurrentlyPlayingServiceReference()
+		servicepath = service and service.getPath()
+		if not servicepath:
+			if eDVBDB.getInstance().getFlag(service) & self.FLAG_HIDE_VBI:
+				eDVBDB.getInstance().removeFlag(service, self.FLAG_HIDE_VBI)
+			else:
+				eDVBDB.getInstance().addFlag(service, self.FLAG_HIDE_VBI)
+			eDVBDB.getInstance().reloadBouquets()
+			self.showHideVBI()
 
 class BufferIndicator(Screen):
 	def __init__(self, session):
