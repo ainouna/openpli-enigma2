@@ -1,7 +1,7 @@
 from Screen import Screen
 from ServiceScan import ServiceScan
 from Components.config import config, ConfigSubsection, ConfigSelection, \
-	ConfigYesNo, ConfigInteger, getConfigListEntry, ConfigSlider, ConfigEnableDisable
+	ConfigYesNo, ConfigInteger, getConfigListEntry, ConfigSlider, ConfigEnableDisable, ConfigFloat
 from Components.ActionMap import NumberActionMap, ActionMap
 from Components.Sources.StaticText import StaticText
 from Components.SystemInfo import SystemInfo
@@ -986,7 +986,7 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport, Terrest
 			(eDVBFrontendParametersSatellite.Pilot_Unknown, _("Auto"))])
 
 		# cable
-		self.scan_cab.frequency = ConfigInteger(default = defaultCab["frequency"], limits = (50, 999))
+		self.scan_cab.frequency = ConfigFloat(default = [defaultCab["frequency"], 0], limits = [(50, 999), (0,999)])
 		self.scan_cab.inversion = ConfigSelection(default = defaultCab["inversion"], choices = [
 			(eDVBFrontendParametersCable.Inversion_Off, _("Off")),
 			(eDVBFrontendParametersCable.Inversion_On, _("On")),
@@ -1284,7 +1284,7 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport, Terrest
 
 		elif nim.isCompatible("DVB-C"):
 			if self.scan_typecable.value == "single_transponder":
-				self.addCabTransponder(tlist, self.scan_cab.frequency.value*1000,
+				self.addCabTransponder(tlist, self.scan_cab.frequency.value[0]*1000 + self.scan_cab.frequency.value[1],
 											  self.scan_cab.symbolrate.value*1000,
 											  self.scan_cab.modulation.value,
 											  self.scan_cab.fec.value,
@@ -1500,8 +1500,8 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport, Terrest
 		if tp[3] in range (6) and (tp[4] in range (10) or tp[4] == 15):
 			mod_list = ['Auto', '16-QAM','32-QAM','64-QAM','128-QAM', '256-QAM']
 			fec_list = {0:"Auto", 1:'1/2', 2:'2/3', 3:'3/4', 4:'5/6', 5:'7/8', 6:'8/9', 7:'3/5', 8:'4/5', 9:'9/10', 15:'None'}
-			print str(tp[1]/1000) + " MHz " + fec_list[tp[4]] + " " + str(tp[2]/1000) + " " + mod_list[tp[3]]
-			return str(tp[1]/1000) + " MHz " + fec_list[tp[4]] + " " + str(tp[2]/1000) + " " + mod_list[tp[3]]
+			print str(tp[1]/1000.) + " MHz " + fec_list[tp[4]] + " " + str(tp[2]/1000) + " " + mod_list[tp[3]]
+			return str(tp[1]/1000.) + " MHz " + fec_list[tp[4]] + " " + str(tp[2]/1000) + " " + mod_list[tp[3]]
 		return _("Invalid transponder data")
 
 	def compareCabTransponders(self, tp, compare):

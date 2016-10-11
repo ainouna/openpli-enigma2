@@ -2340,7 +2340,7 @@ msgid "Enable auto cable scan"
 msgstr "Включить кабельное автосканирование"
 
 msgid "Enable auto fast scan"
-msgstr "Включить быстрое автосканирование"
+msgstr "Включить автосканирование"
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Включить выбор букетов при запуске мульти-EPG"
@@ -4090,7 +4090,7 @@ msgstr "Настройки PiP"
 msgid "Picon"
 msgstr "Пикон"
 
-msgid "Picon and service name"
+msgid "Picon and servicename"
 msgstr "Пикон и название сервиса"
 
 msgid "Picture player"
@@ -9858,7 +9858,7 @@ msgid "Do you want to select a different skin?"
 msgstr "Вы действительно хотите выбрать другой скин?"
 
 msgid "Enable auto fast scan for %s"
-msgstr "Включить автоматическое быстрое сканирование для %s"
+msgstr "Вкл. автосканирование для %s"
 
 msgid ""
 "It seems you did not see all the eight arrow heads. This means your TV is has overscan enabled, and is not configured properly.\n"
@@ -9962,7 +9962,7 @@ msgid "show"
 msgstr "показать"
 
 msgid "multi"
-msgstr "multi"
+msgstr "мульти"
 
 msgid "Set blocktimes by weekday"
 msgstr "Установка время игнорирования по дням"
@@ -10050,4 +10050,29 @@ msgstr "Выбор каналов"
 
 msgid "PowerMenu"
 msgstr "Меню выключения"
+
+msgid "off or wpa2 on"
+msgstr "выкл. или wpa2 вкл."
+
+msgid "Symbolrate:"
+msgstr "Скорость потока:"
+
+msgid "Servicename"
+msgstr "Название сервиса"
+
+msgid "Channelnumber and servicename"
+msgstr "Номер канала и название сервиса"
+
+msgid "Channelnumber, picon and servicename"
+msgstr "Номер канала, пикон и название сервиса"
+
+msgid "Channelnumber and picon"
+msgstr "Номер канала и пикон"
+
+msgid "Configure whether multi channel PCM sound should be enabled."
+msgstr "Настройка, нужно ли включать мультиканальный PCM звук."
+
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "В текущее время идет запись. Пожалуйста, выберите другой тюнер такого же типа или остановите запись перед попыткой сканирования."
+
 
