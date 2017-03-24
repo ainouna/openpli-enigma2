@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-28 01:27+0200\n"
+"POT-Creation-Date: 2017-03-14 12:23+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliot_g <mcelliot_g@hotmail.com>\n"
 "Language-Team: MCelliot_g <mcelliot_g@hotmail.com>\n"
@@ -174,6 +174,22 @@ msgid " updates available."
 msgstr " διαθέσιμες ενημερώσεις."
 
 #, python-format
+msgid "%.0f GB"
+msgstr "%.0f GB"
+
+#, python-format
+msgid "%.0f MB"
+msgstr "%.0f MB"
+
+#, python-format
+msgid "%.0f kB"
+msgstr "%.0f kB"
+
+#, python-format
+msgid "%.2f GB"
+msgstr "%.2f GB"
+
+#, python-format
 msgid "%02d:%02d"
 msgstr "%02d:%02d"
 
@@ -212,6 +228,18 @@ msgstr "%a %e/%m"
 msgid "%a %e/%m  %-H:%M"
 msgstr "%a %e/%m %-H:%M"
 
+#, python-format
+msgid "%d B"
+msgstr "%d B"
+
+#, python-format
+msgid "%d GB"
+msgstr "%d GB"
+
+#, python-format
+msgid "%d MB"
+msgstr "%d MB"
+
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
 msgid "%d channel found"
@@ -244,6 +272,10 @@ msgstr[0] "%d εργασία στο παρασκήνιο!"
 msgstr[1] "%d εργασίες στο παρασκήνιο!"
 
 #, python-format
+msgid "%d kB"
+msgstr "%d kB"
+
+#, python-format
 msgid "%d min"
 msgstr "%d λεπτά"
 
@@ -256,6 +288,10 @@ msgstr[1] "%d λεπτά"
 #, python-format
 msgid "%d minutes"
 msgstr "%d λεπτά"
+
+#, python-format
+msgid "%d ms"
+msgstr "%d ms"
 
 #, python-format
 msgid "%d pixel wide"
@@ -295,9 +331,25 @@ msgstr "%d.%02d. %02d:%02d"
 msgid "%d.%B %Y"
 msgstr "%d.%B %Y"
 
+#, python-format
+msgid "%d.%d"
+msgstr "%d.%d"
+
+#, python-format
+msgid "%d.%d.%d"
+msgstr "%d.%d.%d"
+
+#, python-format
+msgid "%d:%02d"
+msgstr "%d:%02d"
+
 #. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
 msgid "%k:%M %e/%m"
 msgstr "%k:%M %e/%m"
+
+#, python-format
+msgid "%s %d.%d"
+msgstr "%s %d.%d"
 
 #, python-format
 msgid "%s %s free disk space"
@@ -887,6 +939,9 @@ msgstr "Φορμά φέρουσας ήχου (%s)"
 msgid "Audio track (%s) language"
 msgstr "Γλώσσα ήχου (%s)"
 
+msgid "Audio volume step size"
+msgstr "Μέγεθος βήματος έντασης ήχου"
+
 msgid "Author: "
 msgstr "Δημιουργός: "
 
@@ -1104,6 +1159,9 @@ msgstr "Διαδοχικό PiP"
 msgid "Center time-labels and remove date"
 msgstr "Κεντράρισμα ετικετών χρόνου και αφαίρεση ημερομηνίας"
 
+msgid "Change Language"
+msgstr "Αλλαγή Γλώσσας"
+
 msgid "Change PIN"
 msgstr "Αλλαγή PIN"
 
@@ -1312,6 +1370,9 @@ msgstr "Ρύθμιση γενικής καθυστέρησης των καναλ
 
 msgid "Configure the general audio delay of stereo sound tracks."
 msgstr "Ρύθμιση γενικής καθυστέρησης των στερεοφωνικών καναλιών ήχου."
+
+msgid "Configure the general audio volume step size (limit 1-10)."
+msgstr "Ρύθμιση του γενικού μεγέθους βήματος έντασης ήχου"
 
 msgid "Configure the refresh rate of the screen."
 msgstr "Ρύθμιση του ρυθμού ανανέωσης της οθόνης."
@@ -2675,6 +2736,9 @@ msgstr "Αρχικοποίηση συσκευής αποθήκευσης..."
 msgid "Input"
 msgstr "Μενού επιλογών"
 
+msgid "Input "
+msgstr "Εισαγωγή "
+
 msgid "Input device setup"
 msgstr "Ρύθμιση συσκευής εισόδου"
 
@@ -3040,7 +3104,7 @@ msgid "Memory Info"
 msgstr "Πληροφορίες Μνήμης"
 
 msgid "Memory index"
-msgstr "Θέση αποθήκευσης"
+msgstr "Θέση στη μνήμη"
 
 msgid "Menu"
 msgstr "Μενού"
@@ -3835,6 +3899,15 @@ msgstr "Παρακαλώ περιμένετε, έλεγχος δικτύου..."
 msgid "Please wait while your network is restarting..."
 msgstr "Παρακαλώ περιμένετε, επανεκκίνηση δικτύου..."
 
+msgid "Please wait, restarting cardserver."
+msgstr "Παρακαλώ περιμένετε, επανεκκίνηση cardserver."
+
+msgid "Please wait, restarting softcam and cardserver."
+msgstr "Παρακαλώ περιμένετε, επανεκκίνηση softcam και cardserver."
+
+msgid "Please wait, restarting softcam."
+msgstr "Παρακαλώ περιμένετε, επανεκκίνηση softcam."
+
 msgid "Please wait..."
 msgstr "Παρακαλώ περιμένετε..."
 
@@ -4051,10 +4124,10 @@ msgid "Providers"
 msgstr "Πάροχοι"
 
 msgid "Put TV in standby"
-msgstr "Θέστε την TV σε αναμονή"
+msgstr "Μετάβαση της TV σε αναμονή"
 
 msgid "Put receiver in standby"
-msgstr "Θέστε το δέκτη σε αναμονή"
+msgstr "Μετάβαση του δέκτη σε αναμονή"
 
 msgid "Python frontend for /tmp/mmi.socket"
 msgstr "Python του tuner για το /tmp/mmi.socket"
@@ -4305,11 +4378,20 @@ msgstr "Επανεκκίνηση"
 msgid "Restart GUI now?"
 msgstr "Επανεκκίνηση της επιφάνειας χρήστη τώρα;"
 
+msgid "Restart both"
+msgstr "Επανεκκίνηση και των δύο"
+
+msgid "Restart cardserver"
+msgstr "Επανεκκίνηση cardserver"
+
 msgid "Restart enigma"
 msgstr "Επανεκκίνηση enigma"
 
 msgid "Restart network"
 msgstr "Eπανεκκίνηση δικτύου"
+
+msgid "Restart softcam"
+msgstr "Επανεκκίνηση softcam"
 
 msgid "Restart test"
 msgstr "Eπανεκκίνηση ελέγχου"
@@ -4600,8 +4682,14 @@ msgstr "Επιλογή"
 msgid "Select CAId"
 msgstr "Επιλογή CAId"
 
+msgid "Select Card Server"
+msgstr "Επιλογή Card Server"
+
 msgid "Select Channel"
 msgstr "Επιλογή Καναλιού"
+
+msgid "Select Softcam"
+msgstr "Επιλογή Softcam"
 
 msgid "Select a network adapter"
 msgstr "Επιλογή προσαρμογέα δικτύου"
@@ -5088,6 +5176,12 @@ msgstr "PIN έξυπνης κάρτας"
 msgid "Social/Political/Economics"
 msgstr "Κοινωνία/Πολιτική/Οικονομία"
 
+msgid "Softcam Setup"
+msgstr "Ρυθμίσεις Softcam"
+
+msgid "Softcam setup"
+msgstr "Ρυθμίσεις softcam"
+
 msgid "Softcam type"
 msgstr "Τύπος softcam"
 
@@ -5309,6 +5403,9 @@ msgstr "Σταμάτημα"
 
 msgid "Stop PiP"
 msgstr "Τερματισμός PiP"
+
+msgid "Stop Streams"
+msgstr "Διακοπή Ροών"
 
 msgid "Stop all current recordings"
 msgstr "Διακοπή όλων των τρεχουσών εγγραφών"
@@ -5799,6 +5896,9 @@ msgstr ""
 "Αυτή η επιλογή επιτρέπει τη ρύθμιση του Χρωματικού Εύρους από το Αυτόματο σε "
 "RGB"
 
+msgid "This option can be useful for long HDMI cables."
+msgstr "Αυτή η επιλογή μπορεί να είναι χρήσιμη για μακριά καλώδια HDMI."
+
 msgid "This plugin is installed."
 msgstr "Αυτό το πρόσθετο είναι εγκατεστημένο."
 
@@ -5985,7 +6085,7 @@ msgid "Toggle TV/RADIO mode"
 msgstr "Εναλλαγή λειτουργίας TV/ΡΑΔΙΟΦΩΝΟ"
 
 msgid "Toggle a cut mark at the current position"
-msgstr "Εναλλαγή σημειωτή αποκοπής στην τρέχουσα θέση"
+msgstr "Δημιουργία σημειωτή αποκοπής στην τρέχουσα θέση"
 
 msgid "Toggle dashed flickering line for this service"
 msgstr "Εναλλαγή διακεκομμένης τρεμοσβηνόμενης γραμμής για αυτή την υπηρεσία"
@@ -6220,6 +6320,9 @@ msgstr "Χρήση"
 msgid "Use DHCP"
 msgstr "Χρήση DHCP"
 
+msgid "Use HDMI pre-emphasis"
+msgstr "Χρήση προέμφασης HDMI"
+
 msgid "Use TV remote control"
 msgstr "Χρήση τηλεχειριστηρίου TV"
 
@@ -6293,6 +6396,9 @@ msgstr "Χρήση σταθερής διεύθυνσης"
 #, python-format
 msgid "Using tuner %s"
 msgstr "Χρήση του tuner %s"
+
+msgid "VLAN connection"
+msgstr "Σύνδεση VLAN"
 
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (εντός τρέιλερ)"
@@ -7326,6 +7432,9 @@ msgstr "χειροτεχνία"
 
 msgid "height"
 msgstr "ύψος"
+
+msgid "help..."
+msgstr "βοήθεια..."
 
 msgid "hide"
 msgstr "απόκρυψη"
@@ -8961,6 +9070,9 @@ msgstr "Εμφάνιση της δεύτερης μπάρας πληροφορι
 msgid "Show service type icons"
 msgstr "Εμφάνιση εικονιδίων τύπου υπηρεσίας"
 
+msgid "Show softcam setup in extensions menu"
+msgstr "Εμφάνιση των ρυθμίσεων softcam στο μενού επεκτάσεων"
+
 msgid "Show status icons in movielist"
 msgstr "Εμφάνιση εικονιδίων κατάστασης στη λίστα ταινιών"
 
@@ -9029,6 +9141,11 @@ msgstr "Χρώμα υποτίτλων τηλεκειμένου"
 
 msgid "Test mode"
 msgstr "Κατάσταση ελέγχου"
+
+msgid "This option allows you to add the softcam setup in the extensions menu."
+msgstr ""
+"Αυτή η επιλογή σας επιτρέπει να προσθέσετε τις ρυθμίσεις softcam στο μενού "
+"επεκτάσεων."
 
 msgid ""
 "This option allows you to hide and sort menu entries. When selecting user "
@@ -9625,9 +9742,6 @@ msgstr "Καλώς ορίσατε..."
 msgid "config menu"
 msgstr "μενού ρύθμισης"
 
-msgid "help..."
-msgstr "βοήθεια..."
-
 msgid "Rec"
 msgstr "Εγγρ."
 
@@ -9981,14 +10095,14 @@ msgstr ""
 
 msgid ""
 "You need a PC connected to your receiver. If you need further instructions, "
-"please visit the website http://www.dm7025.de.\n"
+"please visit the website https://openpli.org\n"
 "Your receiver will now be halted. After you have performed the update "
 "instructions from the website, your new firmware will ask you to restore "
 "your settings."
 msgstr ""
 "Απαιτείται ένα PC συνδεδεμένο με το δέκτη. Αν χρειάζεστε περισσότερες "
-"οδηγίες, παρακαλούμε επισκεφτείτε τον ιστότοπο http://www.dm7025.de. Ο "
-"δέκτης σας τώρα θα σταματήσει. Αν έχετε ακολουθήσει τις οδηγίες από τον "
+"οδηγίες, παρακαλούμε επισκεφτείτε τον ιστότοπο https://openpli.org\n"
+"Ο δέκτης σας τώρα θα παγώσει. Αν έχετε ακολουθήσει τις οδηγίες από τον "
 "ιστότοπο, το νέο υλικολογισμικό θα ζητήσει να επαναφέρετε τις ρυθμίσεις σας."
 
 msgid ""
@@ -10031,20 +10145,23 @@ msgstr ""
 msgid "Video mode selection."
 msgstr "Επιλογή λειτουργίας εικόνας"
 
-msgid "Greek, Modern (1453-)"
-msgstr "Ελληνικά, Νέα (1453-)"
-
-msgid "Video:"
-msgstr "Βίντεο:"
-
 msgid "Audio:"
 msgstr "Ήχος:"
+
+msgid "Greek, Modern (1453-)"
+msgstr "Ελληνικά, Νέα (1453-)"
 
 msgid "Input Stream ID"
 msgstr "ID Ροής Εισόδου"
 
+msgid "PLS Code"
+msgstr "PLS Κωδικός"
+
 msgid "PLS Mode"
 msgstr "PLS Λειτουργία"
 
-msgid "PLS Code"
-msgstr "PLS Κωδικός"
+msgid "Video:"
+msgstr "Βίντεο:"
+
+msgid "Add Biss Caid to service"
+msgstr "Προσθήκη Biss Caid στην υπηρεσία"

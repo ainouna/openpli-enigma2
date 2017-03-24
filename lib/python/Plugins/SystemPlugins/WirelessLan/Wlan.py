@@ -5,11 +5,8 @@ from Components.Network import iNetwork
 import enigma
 
 import os
-import sys
-import types
 from string import maketrans, strip
-from re import compile as re_compile, search as re_search, escape as re_escape
-from pythonwifi.iwlibs import getNICnames, Wireless, Iwfreq, getWNICnames
+from pythonwifi.iwlibs import Wireless, getWNICnames
 from pythonwifi import flags as wififlags
 
 list = []
@@ -440,9 +437,8 @@ class Status:
 
 	def getAdapterAttribute(self, iface, attribute):
 		self.iface = iface
-		if self.wlaniface.has_key(self.iface):
-			if self.wlaniface[self.iface].has_key(attribute):
-				return self.wlaniface[self.iface][attribute]
+		if self.iface in self.wlaniface and attribute in self.wlaniface[self.iface]:
+			return self.wlaniface[self.iface][attribute]
 		return None
 
 iStatus = Status()

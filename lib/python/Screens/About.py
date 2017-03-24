@@ -178,15 +178,17 @@ class CommitInfo(Screen):
 
 		self.project = 0
 		self.projects = [
-			("enigma2", "Enigma2"),
-			("openpli-oe-core", "Openpli Oe Core"),
-			("enigma2-plugins", "Enigma2 Plugins"),
-			("aio-grab", "Aio Grab"),
-			("gst-plugin-dvbmediasink", "Gst Plugin Dvbmediasink"),
-			("HenksatSettings", "Henksat Settings"),
-			("enigma2-plugin-extensions-xmltvimport", "Plugin Xmltvimport"),
-			("enigma2-plugin-skins-magic", "Skin Magic SD"),
-			("tuxtxt", "Tuxtxt")
+			("https://api.github.com/repos/openpli/enigma2/commits", "Enigma2"),
+			("https://api.github.com/repos/openpli/openpli-oe-core/commits", "Openpli Oe Core"),
+			("https://api.github.com/repos/openpli/enigma2-plugins/commits", "Enigma2 Plugins"),
+			("https://api.github.com/repos/openpli/aio-grab/commits", "Aio Grab"),
+			("https://api.github.com/repos/openpli/gst-plugin-dvbmediasink/commits", "Gst Plugin Dvbmediasink"),
+			("https://api.github.com/repos/openpli/enigma2-plugin-extensions-xmltvimport/commits", "Plugin Xmltvimport"),
+			("https://api.github.com/repos/openpli/enigma2-plugin-skins-magic/commits", "Skin Magic SD"),
+			("https://api.github.com/repos/openpli/tuxtxt/commits", "Tuxtxt"),
+			("https://api.github.com/repos/littlesat/skin-PLiHD/commits", "Skin PLi HD"),
+			("https://api.github.com/repos/E2OpenPlugins/e2openplugin-OpenWebif/commits", "OpenWebif"),
+			("https://api.github.com/repos/haroo/HansSettings/commits", "OpenWebif")
 		]
 		self.cachedProjects = {}
 		self.Timer = eTimer()
@@ -194,7 +196,7 @@ class CommitInfo(Screen):
 		self.Timer.start(50, True)
 
 	def readGithubCommitLogs(self):
-		url = 'https://api.github.com/repos/openpli/%s/commits' % self.projects[self.project][0]
+		url = self.projects[self.project][0]
 		commitlog = ""
 		from datetime import datetime
 		from json import loads
@@ -221,7 +223,7 @@ class CommitInfo(Screen):
 		self["AboutScrollLabel"].setText(commitlog)
 
 	def updateCommitLogs(self):
-		if self.cachedProjects.has_key(self.projects[self.project][1]):
+		if self.projects[self.project][1] in self.cachedProjects:
 			self["AboutScrollLabel"].setText(self.cachedProjects[self.projects[self.project][1]])
 		else:
 			self["AboutScrollLabel"].setText(_("Please wait"))
@@ -417,11 +419,17 @@ class Troubleshoot(Screen):
 
 	def getLogFilesList(self):
 		import glob
-		return [x for x in sorted(glob.glob("/mnt/hdd/*.log"), key=lambda x: os.path.isfile(x) and os.path.getmtime(x))] + (os.path.isfile("/home/root/enigma2_crash.log") and ["/home/root/enigma2_crash.log"] or [])
+		home_root = "/home/root/enigma2_crash.log"
+		tmp = "/tmp/enigma2_crash.log"
+		return [x for x in sorted(glob.glob("/mnt/hdd/*.log"), key=lambda x: os.path.isfile(x) and os.path.getmtime(x))] + (os.path.isfile(home_root) and [home_root] or []) + (os.path.isfile(tmp) and [tmp] or [])
 
 	def updateOptions(self):
 		self.titles = ["dmesg", "ifconfig", "df", "top", "ps"]
 		self.commands = ["dmesg", "ifconfig", "df -h", "top -n 1", "ps"]
+		install_log = "/home/root/autoinstall.log"
+		if os.path.isfile(install_log):
+				self.titles.append("%s" % install_log)
+				self.commands.append("cat %s" % install_log)
 		self.numberOfCommands = len(self.commands)
 		fileNames = self.getLogFilesList()
 		if fileNames:

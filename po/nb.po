@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-25 12:05+0100\n"
-"PO-Revision-Date: 2017-01-25 13:29+0100\n"
+"POT-Creation-Date: 2017-03-12 13:16+0100\n"
+"PO-Revision-Date: 2017-03-12 13:23+0100\n"
 "Last-Translator: andy1 <dummy@dummy.com>\n"
 "Language-Team: G.Jensen\n"
 "Language: nb\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: iso-8859-15\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-Bookmarks: -1,-1,-1,-1,-1,31,1959,-1,-1,-1\n"
 
 msgid ""
@@ -184,6 +184,22 @@ msgid " updates available."
 msgstr "det finnes nye oppdateringer."
 
 #, python-format
+msgid "%.0f GB"
+msgstr "%.0f GB"
+
+#, python-format
+msgid "%.0f MB"
+msgstr "%.0f MB"
+
+#, python-format
+msgid "%.0f kB"
+msgstr "%.0f kB"
+
+#, python-format
+msgid "%.2f GB"
+msgstr "%.2f GB"
+
+#, python-format
 msgid "%02d:%02d"
 msgstr "%02d:%02d"
 
@@ -222,6 +238,18 @@ msgstr "%a %e/%m"
 msgid "%a %e/%m  %-H:%M"
 msgstr "%a %e/%m  %-H:%M"
 
+#, python-format
+msgid "%d B"
+msgstr "%d B"
+
+#, python-format
+msgid "%d GB"
+msgstr "%d GB"
+
+#, python-format
+msgid "%d MB"
+msgstr "%d MB"
+
 #
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -254,6 +282,10 @@ msgid_plural "%d jobs are running in the background!"
 msgstr[0] "%d prosess pågår i bakgrunnen!"
 msgstr[1] "%d prosesser pågår i bakgrunnen!"
 
+#, python-format
+msgid "%d kB"
+msgstr "%d kB"
+
 #
 #, python-format
 msgid "%d min"
@@ -268,6 +300,11 @@ msgstr[1] "%d minutter"
 #, python-format
 msgid "%d minutes"
 msgstr "%d minutter"
+
+#
+#, python-format
+msgid "%d ms"
+msgstr "%d ms"
 
 #, python-format
 msgid "%d pixel wide"
@@ -308,9 +345,25 @@ msgstr "%d.%02d. %02d:%02d"
 msgid "%d.%B %Y"
 msgstr "%d.%B %Y"
 
+#, python-format
+msgid "%d.%d"
+msgstr "%d.%d"
+
+#, python-format
+msgid "%d.%d.%d"
+msgstr "%d.%d.%d"
+
+#, python-format
+msgid "%d:%02d"
+msgstr "%d:%02d"
+
 #. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
 msgid "%k:%M %e/%m"
 msgstr "%k:%M %e/%m"
+
+#, python-format
+msgid "%s %d.%d"
+msgstr "%s %d.%d"
 
 #, python-format
 msgid "%s %s free disk space"
@@ -708,7 +761,7 @@ msgstr "Legg til kanal"
 
 #
 msgid "Add timer"
-msgstr "Legg til tidtaker"
+msgstr "Legg til opptak"
 
 #
 msgid "Add title"
@@ -964,6 +1017,9 @@ msgstr "Lydspor (%s) format"
 #, python-format
 msgid "Audio track (%s) language"
 msgstr "Lydspor (%s) språk"
+
+msgid "Audio volume step size"
+msgstr "Trinn justering av lydvolum"
 
 #
 msgid "Author: "
@@ -1225,6 +1281,10 @@ msgstr "Strekk ut PiP (bilde i bilde)"
 msgid "Center time-labels and remove date"
 msgstr "Sentrer tidsangivelse og fjern dato"
 
+#
+msgid "Change Language"
+msgstr "Endre språk"
+
 msgid "Change PIN"
 msgstr "Endre PIN"
 
@@ -1390,7 +1450,7 @@ msgid "Common Interface"
 msgstr "Common Interface"
 
 msgid "Common Interface assignment"
-msgstr "Tildeling av felles grensesnitt"
+msgstr "Tildeling av Cam modul"
 
 #
 msgid "Communication"
@@ -1466,6 +1526,9 @@ msgstr "Still inn ønsket lyd forsinkelse for Dolby digital lyd."
 
 msgid "Configure the general audio delay of stereo sound tracks."
 msgstr "Still inn ønsket lyd forsinkelse for stereo lyd."
+
+msgid "Configure the general audio volume step size (limit 1-10)."
+msgstr "Still inn ønsket trinn for lydvolum (verdi 1-10)."
 
 msgid "Configure the refresh rate of the screen."
 msgstr "Still inn oppfriskningsrate på TV skjermen."
@@ -2438,7 +2501,7 @@ msgstr "Utvidelsessenter"
 
 #
 msgid "Extensions menu"
-msgstr "Meny tillegg"
+msgstr "Blå knapp meny"
 
 msgid "External"
 msgstr "Ekstern"
@@ -3015,6 +3078,10 @@ msgstr "Oppstarter lagringsenhet ..."
 
 #
 msgid "Input"
+msgstr "Inngang"
+
+#
+msgid "Input "
 msgstr "Inngang"
 
 msgid "Input device setup"
@@ -3732,7 +3799,7 @@ msgid ""
 "(Timeout reading PAT)"
 msgstr ""
 "Ingen data på transponder!\n"
-"(Tidsavbrudd ved lesing av PAT)"
+"(Tidsavbrudd ved lesing fra PAT)"
 
 msgid "No delay"
 msgstr "Ingen forsinkelse"
@@ -3796,7 +3863,7 @@ msgstr ""
 
 #
 msgid "No service"
-msgstr "Ingen kanal"
+msgstr "Ingen tjeneste"
 
 msgid "No services/providers selected"
 msgstr "Ingen kanaler/distributører er valgt"
@@ -4356,6 +4423,18 @@ msgid "Please wait while your network is restarting..."
 msgstr "Vent litt mens nettverket starter på nytt ..."
 
 #
+msgid "Please wait, restarting cardserver."
+msgstr "Vent litt, restarter cardserver."
+
+#
+msgid "Please wait, restarting softcam and cardserver."
+msgstr "Vent litt, restarter softcam og cardserver."
+
+#
+msgid "Please wait, restarting softcam."
+msgstr "Vent litt, restarter softcam."
+
+#
 msgid "Please wait..."
 msgstr "Vent litt..."
 
@@ -4899,11 +4978,20 @@ msgstr "Start på nytt"
 msgid "Restart GUI now?"
 msgstr "Start GUI på nytt?"
 
+msgid "Restart both"
+msgstr "Restart begge"
+
+msgid "Restart cardserver"
+msgstr "Restart cardserver"
+
 msgid "Restart enigma"
 msgstr "Start enigma2 på nytt"
 
 msgid "Restart network"
 msgstr "Start nettverket på nytt"
+
+msgid "Restart softcam"
+msgstr "Restart softcam"
 
 msgid "Restart test"
 msgstr "Start på nytt- test"
@@ -5235,9 +5323,16 @@ msgstr "Velg"
 msgid "Select CAId"
 msgstr "Velg CAId"
 
+msgid "Select Card Server"
+msgstr "Velg cardserver"
+
 #
 msgid "Select Channel"
 msgstr "Velg kanal"
+
+#
+msgid "Select Softcam"
+msgstr "Velg softcam"
 
 #
 msgid "Select a network adapter"
@@ -5796,6 +5891,12 @@ msgstr "Smartkort PIN"
 msgid "Social/Political/Economics"
 msgstr "sosial/politisk/økonomisk"
 
+msgid "Softcam Setup"
+msgstr "Softcam innstilling"
+
+msgid "Softcam setup"
+msgstr "Softcam innstilling"
+
 msgid "Softcam type"
 msgstr "Softcam type"
 
@@ -6029,6 +6130,10 @@ msgstr "Stopp"
 #
 msgid "Stop PiP"
 msgstr "Stopp PiP"
+
+#
+msgid "Stop Streams"
+msgstr "Stopp strømming"
 
 msgid "Stop all current recordings"
 msgstr "Stopp alle pågående opptak"
@@ -6267,7 +6372,7 @@ msgstr "System - Modulasjon"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
-msgstr "Siste oppdatering til norsk bokmål: 25.01.2017"
+msgstr "Siste oppdatering til norsk bokmål: 12.03.2017"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -6561,6 +6666,9 @@ msgstr "Med dette valget kan du justere fargedybde for UHD"
 
 msgid "This option allows you can config the Colorspace from Auto to RGB"
 msgstr "Dette valget tillater deg å velge fargesammensetning fra Auto til RGB"
+
+msgid "This option can be useful for long HDMI cables."
+msgstr "Dette alternativet kan være nyttig for lange HDMI-kabler."
 
 #
 msgid "This plugin is installed."
@@ -7050,6 +7158,9 @@ msgstr "Bruk"
 msgid "Use DHCP"
 msgstr "Bruk DHCP"
 
+msgid "Use HDMI pre-emphasis"
+msgstr "Bruk HDMI forhåndsfokus"
+
 msgid "Use TV remote control"
 msgstr "Bruk fjernkontroll tilhørende TV"
 
@@ -7133,6 +7244,9 @@ msgstr "Bruker fast adresse"
 #, python-format
 msgid "Using tuner %s"
 msgstr "Bruker tuner %s"
+
+msgid "VLAN connection"
+msgstr "VLAN tilkobling"
 
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (intro trailer)"
@@ -8277,6 +8391,10 @@ msgstr "håndverk"
 
 msgid "height"
 msgstr "høyde"
+
+#
+msgid "help..."
+msgstr "hjelp..."
 
 msgid "hide"
 msgstr "skjul"
@@ -10022,6 +10140,10 @@ msgstr "Vis ekstra informasjon"
 msgid "Show service type icons"
 msgstr "Vis indikator for tunertype"
 
+#
+msgid "Show softcam setup in extensions menu"
+msgstr "Vis softcam innstilling i blå knapp meny"
+
 msgid "Show status icons in movielist"
 msgstr "Vis avspillings indikator i opptaksliste"
 
@@ -10093,6 +10215,10 @@ msgstr "Undertekst farge"
 #
 msgid "Test mode"
 msgstr "Testmodus"
+
+msgid "This option allows you to add the softcam setup in the extensions menu."
+msgstr ""
+"Med dette valget kan du legge til softcam innstilling i blå knapp meny."
 
 msgid ""
 "This option allows you to hide and sort menu entries. When selecting user "
@@ -10702,10 +10828,6 @@ msgstr "Velkommen..."
 msgid "config menu"
 msgstr "innstillingsmeny"
 
-#
-msgid "help..."
-msgstr "hjelp..."
-
 msgid "Rec"
 msgstr "Opptak"
 
@@ -11081,16 +11203,15 @@ msgstr ""
 
 msgid ""
 "You need a PC connected to your receiver. If you need further instructions, "
-"please visit the website http://www.dm7025.de.\n"
+"please visit the website https://openpli.org\n"
 "Your receiver will now be halted. After you have performed the update "
 "instructions from the website, your new firmware will ask you to restore "
 "your settings."
 msgstr ""
-"En PC må være tilkoblet mottakeren. Ytterligere opplysninger finnes på "
-"websiden http://www.dm7025.de.\n"
-"Mottakeren vil nå bli stoppet. Etter å ha gjennomført oppdaterings "
-"instruksene fra websiden, kan den nye programvare gjenopprette "
-"innstillingene."
+"Du trenger en PC tilkoblet din mottaker. Trenger du flere opplysninger, vær "
+"vennlig og besøk websiden https://openpli.org\n"
+"Mottakeren vil nå bli stoppet. Etter å ha fulgt oppdaterings instruksene fra "
+"websiden, vil den nye programvaren gjenopprette dine innstillinger."
 
 msgid ""
 "Your backup succeeded. We will now continue to explain the further upgrade "
@@ -11134,6 +11255,9 @@ msgstr ""
 #
 msgid "Video mode selection."
 msgstr "Innstilling for bilde."
+
+#~ msgid "Softcam setup..."
+#~ msgstr "Softcam innstilling..."
 
 #
 #~ msgid "Unicable"

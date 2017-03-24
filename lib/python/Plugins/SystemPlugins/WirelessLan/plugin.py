@@ -1,19 +1,17 @@
 from enigma import eTimer, eEnv
 from Screens.Screen import Screen
 from Components.ActionMap import ActionMap, NumberActionMap
-from Components.Pixmap import Pixmap,MultiPixmap
+from Components.Pixmap import Pixmap, MultiPixmap
 from Components.Label import Label
 from Components.Sources.StaticText import StaticText
 from Components.Sources.List import List
-from Components.MenuList import MenuList
-from Components.config import config, getConfigListEntry, ConfigYesNo, NoSave, ConfigSubsection, ConfigText, ConfigSelection, ConfigPassword
-from Components.ConfigList import ConfigListScreen
+from Components.config import config, ConfigYesNo, NoSave, ConfigSubsection, ConfigText, ConfigSelection, ConfigPassword
 from Components.Network import iNetwork
 from Components.Console import Console
 from Plugins.Plugin import PluginDescriptor
-from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE
+from Tools.Directories import resolveFilename, SCOPE_SKIN_IMAGE
 from Tools.LoadPixmap import LoadPixmap
-from Wlan import iWlan, wpaSupplicant, iStatus, getWlanConfigName, existBcmWifi
+from Wlan import iWlan, iStatus, getWlanConfigName, existBcmWifi
 from time import time
 import re
 
@@ -121,24 +119,24 @@ class WlanStatus(Screen):
 						essid = _("No Connection")
 					else:
 						accesspoint = status[self.iface]["accesspoint"]
-					if self.has_key("BSSID"):
+					if "BSSID" in self:
 						self["BSSID"].setText(accesspoint)
-					if self.has_key("ESSID"):
+					if "ESSID" in self:
 						self["ESSID"].setText(essid)
 
 					quality = status[self.iface]["quality"]
-					if self.has_key("quality"):
+					if "quality" in self:
 						self["quality"].setText(quality)
 
 					if status[self.iface]["bitrate"] == '0':
 						bitrate = _("Unsupported")
 					else:
 						bitrate = str(status[self.iface]["bitrate"]) + " Mb/s"
-					if self.has_key("bitrate"):
+					if "bitrate" in self:
 						self["bitrate"].setText(bitrate)
 
 					signal = status[self.iface]["signal"]
-					if self.has_key("signal"):
+					if "signal" in self:
 						self["signal"].setText(signal)
 
 					if status[self.iface]["encryption"] == "off":
@@ -148,7 +146,7 @@ class WlanStatus(Screen):
 							encryption = _("off or wpa2 on")
 					else:
 						encryption = _("Enabled")
-					if self.has_key("enc"):
+					if "enc" in self:
 						self["enc"].setText(encryption)
 					self.updateStatusLink(status)
 
@@ -334,7 +332,7 @@ class WlanScan(Screen):
 							compList.remove(compentry)
 			for entry in compList:
 				self.cleanList.append( ( entry[0], entry[1], entry[2], entry[3], entry[4], entry[5] ) )
-				if not self.oldlist.has_key(entry[0]):
+				if entry[0] not in self.oldlist:
 					self.oldlist[entry[0]] = { 'data': entry }
 				else:
 					self.oldlist[entry[0]]['data'] = entry
