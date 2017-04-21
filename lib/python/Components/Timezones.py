@@ -42,6 +42,9 @@ class Timezones:
 		if os.path.exists("/proc/stb/fp/rtc_offset"):
 			setRTCoffset()
 
+		if path.exists("/proc/stb/fp/rtc_offset"):
+			setRTCoffset()
+
 	def getTimezoneList(self):
 		return [ str(x[0]) for x in self.timezones ]
 

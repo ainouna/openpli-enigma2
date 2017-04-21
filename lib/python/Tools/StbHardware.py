@@ -1,3 +1,5 @@
+from time import time, localtime, gmtime
+from os import path
 from fcntl import ioctl
 from struct import pack, unpack
 from time import time, localtime, gmtime

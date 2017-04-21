@@ -107,13 +107,45 @@ eDVBResourceManager::eDVBResourceManager()
 		adapter->scanDevices();
 		addAdapter(adapter, true);
 	}
-
 	eDebug("[eDVBResourceManager] found %zd adapter, %zd frontends(%zd sim) and %zd demux",
 		m_adapter.size(), m_frontend.size(), m_simulate_frontend.size(), m_demux.size());
 
 	m_fbcmng = new eFBCTunerManager(instance);
 
+#if defined(__sh__)
+		/*
+		 * this is a strange hack: the drivers seem to only work correctly after
+		 * demux0 has been used once. After that, we can use demux1,2,...
+		 */
+	initDemux(0);
+		/* for pip demux1 also be used once */
+	initDemux(1);
+#endif
+
 	CONNECT(m_releaseCachedChannelTimer->timeout, eDVBResourceManager::releaseCachedChannel);
+}
+
+void eDVBResourceManager::initDemux(int num_demux)
+{
+	char filename[32];
+	sprintf(filename, "/dev/dvb/adapter0/demux%d", num_demux);
+	int dmx = open(filename, O_RDWR | O_CLOEXEC);
+	if (dmx < 0)
+	{
+		eDebug("can't open %s (%m)", filename);
+	}
+	else
+	{
+		struct dmx_pes_filter_params filter;
+		memset(&filter, 0, sizeof(filter));
+		filter.output = DMX_OUT_DECODER;
+		filter.input  = DMX_IN_FRONTEND;
+		filter.flags  = DMX_IMMEDIATE_START;
+		filter.pes_type = DMX_PES_VIDEO;
+		ioctl(dmx, DMX_SET_PES_FILTER, &filter);
+		ioctl(dmx, DMX_STOP);
+		close(dmx);
+	}
 }
 
 void eDVBResourceManager::feStateChanged()
@@ -317,6 +349,7 @@ eDVBUsbAdapter::eDVBUsbAdapter(int nr)
 		goto error;
 	}
 
+#if !defined(__sh__)
 	struct dtv_properties props;
 	struct dtv_property prop[1];
 
@@ -328,6 +361,7 @@ eDVBUsbAdapter::eDVBUsbAdapter(int nr)
 
 	if (ioctl(frontend, FE_GET_PROPERTY, &props) < 0)
 		eDebug("[eDVBUsbAdapter] FE_GET_PROPERTY DTV_ENUM_DELSYS failed %m");
+#endif
 
 	::close(frontend);
 	frontend = -1;
@@ -417,8 +451,10 @@ eDVBUsbAdapter::eDVBUsbAdapter(int nr)
 	ioctl(vtunerFd, VTUNER_SET_NAME, name);
 	ioctl(vtunerFd, VTUNER_SET_TYPE, type);
 	ioctl(vtunerFd, VTUNER_SET_FE_INFO, &fe_info);
+#if !defined(__sh__)
 	if (prop[0].u.buffer.len > 0)
 		ioctl(vtunerFd, VTUNER_SET_DELSYS, prop[0].u.buffer.data);
+#endif
 	ioctl(vtunerFd, VTUNER_SET_HAS_OUTPUTS, "no");
 	ioctl(vtunerFd, VTUNER_SET_ADAPTER, nr);
 
@@ -2158,6 +2194,12 @@ RESULT eDVBChannel::playSource(ePtr<iTsSource> &source, const char *streaminfo_f
 
 	if (m_pvr_fd_dst < 0)
 	{
+#if defined(__sh__) // our pvr device is called dvr
+		char dvrDev[128];
+		int dvrIndex = m_mgr->m_adapter.begin()->getNumDemux() - 1;
+		sprintf(dvrDev, "/dev/dvb/adapter0/dvr%d", dvrIndex);
+		m_pvr_fd_dst = open(dvrDev, O_WRONLY);
+#else
 		ePtr<eDVBAllocatedDemux> &demux = m_demux ? m_demux : m_decoder_demux;
 		if (demux)
 		{
@@ -2173,6 +2215,7 @@ RESULT eDVBChannel::playSource(ePtr<iTsSource> &source, const char *streaminfo_f
 			eDebug("[eDVBChannel] no demux allocated yet.. so its not possible to open the dvr device!!");
 			return -ENODEV;
 		}
+#endif
 	}
 
 	m_pvr_thread = new eDVBChannelFilePush(m_source->getPacketSize());
