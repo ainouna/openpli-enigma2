@@ -608,7 +608,7 @@ class NIM(object):
 		return self.isFBCTuner() and (self.slot % 8 < 2)
 
 	def isFBCLink(self):
-		return self.isFBCTuner() and not (self.slot % 8 < 2)
+		return self.isFBCTuner() and not (self.slot % 8 < (self.getType() == "DVB-C" and 1 or 2))
 
 	slot_id = property(getSlotID)
 
@@ -663,10 +663,10 @@ class NimManager:
 		return []
 
 	def getCableDescription(self, nim):
-		return self.cablesList[config.Nims[nim].scan_provider.index][0]
+		return self.cablesList[config.Nims[nim].cable.scan_provider.index][0]
 
 	def getCableFlags(self, nim):
-		return self.cablesList[config.Nims[nim].scan_provider.index][1]
+		return self.cablesList[config.Nims[nim].cable.scan_provider.index][1]
 
 	def getTerrestrialDescription(self, nim):
 		return self.terrestrialsList[config.Nims[nim].terrestrial.index][0]
