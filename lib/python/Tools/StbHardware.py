@@ -1,4 +1,3 @@
-from time import time, localtime, gmtime
 from os import path
 from fcntl import ioctl
 from struct import pack, unpack
@@ -39,7 +38,8 @@ def setRTCoffset(forsleep=None):
 		print "setRTCoffset failed!"
 
 def setRTCtime(wutime):
-	setRTCoffset()
+	if path.exists("/proc/stb/fp/rtc_offset"):
+		setRTCoffset()
 	try:
 		open("/proc/stb/fp/rtc", "w").write(str(wutime))
 	except IOError:
