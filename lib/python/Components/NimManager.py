@@ -540,13 +540,13 @@ class NIM(object):
 		return connectable[self.getType()]
 
 	def getSlotID(self, slot=None):
-		return chr(ord('A') + (slot or self.slot))
+		return chr(ord('A') + (slot if slot is not None else self.slot))
 
-	def getSlotName(self):
+	def getSlotName(self, slot=None):
 		# get a friendly description for a slot name.
 		# we name them "Tuner A/B/C/...", because that's what's usually written on the back
 		# of the device.
-		return "%s %s" % (_("Tuner"), self.slot_id)
+		return "%s %s" % (_("Tuner"), self.getSlotID(slot))
 
 	def getI2C(self):
 		return self.i2c
@@ -599,6 +599,9 @@ class NIM(object):
 	def isFBCLink(self):
 		return self.isFBCTuner() and not (self.slot % 8 < (self.getType() == "DVB-C" and 1 or 2))
 
+	def isNotFirstFBCTuner(self):
+		return self.isFBCTuner() and self.slot % 8 and True
+
 	def getFriendlyType(self):
 		return self.getType() or _("empty")
 
@@ -609,8 +612,8 @@ class NIM(object):
 		return "%s: %s" % (self.slot_name, self.getFullDescription())
 
 	def getFriendlyFullDescriptionCompressed(self):
-		if self.isFBCRoot():
-			return "%s-%s: %s" % (self.slot_name, self.getSlotID(self.slot + 7), self.getFullDescription())
+		if self.isFBCTuner():
+			return "%s-%s: %s" % (self.getSlotName(self.slot & ~7), self.getSlotID((self.slot & ~7) + 7), self.getFullDescription())
 		#compress by combining dual tuners by checking if the next tuner has a rf switch
 		elif os.access("/proc/stb/frontend/%d/rf_switch" % (self.frontend_id + 1), os.F_OK):
 			return "%s-%s: %s" % (self.slot_name, self.getSlotID(self.slot + 1), self.getFullDescription())
@@ -826,7 +829,7 @@ class NimManager:
 		return [slot.friendly_full_description for slot in self.nim_slots]
 
 	def nimListCompressed(self):
-		return [slot.friendly_full_description_compressed for slot in self.nim_slots if not (slot.isFBCLink() or slot.internally_connectable)]
+		return [slot.friendly_full_description_compressed for slot in self.nim_slots if not(slot.isNotFirstFBCTuner() or slot.internally_connectable >= 0)]
 
 	def getSlotCount(self):
 		return len(self.nim_slots)
