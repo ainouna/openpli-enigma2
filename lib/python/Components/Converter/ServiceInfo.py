@@ -32,14 +32,20 @@ class ServiceInfo(Converter, object):
 	IS_SD_AND_WIDESCREEN = 24
 	IS_SD_AND_NOT_WIDESCREEN = 25
 	IS_4K = 26
+	IS_STEREO = 27
+	IS_NOT_WIDESCREEN = 28
+	IS_1080 = 29
+	IS_720 = 30
 
 	def __init__(self, type):
 		Converter.__init__(self, type)
 		self.type, self.interesting_events = {
 				"HasTelext": (self.HAS_TELETEXT, (iPlayableService.evUpdatedInfo,)),
 				"IsMultichannel": (self.IS_MULTICHANNEL, (iPlayableService.evUpdatedInfo,)),
+				"IsStereo": (self.IS_STEREO, (iPlayableService.evUpdatedInfo,)),
 				"IsCrypted": (self.IS_CRYPTED, (iPlayableService.evUpdatedInfo,)),
 				"IsWidescreen": (self.IS_WIDESCREEN, (iPlayableService.evVideoSizeChanged,)),
+				"IsNotWidescreen": (self.IS_NOT_WIDESCREEN, (iPlayableService.evVideoSizeChanged,)),
 				"SubservicesAvailable": (self.SUBSERVICES_AVAILABLE, (iPlayableService.evUpdatedEventInfo,)),
 				"VideoWidth": (self.XRES, (iPlayableService.evVideoSizeChanged,)),
 				"VideoHeight": (self.YRES, (iPlayableService.evVideoSizeChanged,)),
@@ -63,6 +69,8 @@ class ServiceInfo(Converter, object):
 				"IsSDAndWidescreen": (self.IS_SD_AND_WIDESCREEN, (iPlayableService.evVideoSizeChanged,)),
 				"IsSDAndNotWidescreen": (self.IS_SD_AND_NOT_WIDESCREEN, (iPlayableService.evVideoSizeChanged,)),
 				"Is4K": (self.IS_4K, (iPlayableService.evVideoSizeChanged,)),
+				"Is1080": (self.IS_1080, (iPlayableService.evVideoSizeChanged,)),
+				"Is720": (self.IS_720, (iPlayableService.evVideoSizeChanged,)),
 			}[type]
 
 	def getServiceInfoString(self, info, what, convert = lambda x: "%d" % x):
@@ -83,7 +91,7 @@ class ServiceInfo(Converter, object):
 		if self.type == self.HAS_TELETEXT:
 			tpid = info.getInfo(iServiceInformation.sTXTPID)
 			return tpid != -1
-		elif self.type == self.IS_MULTICHANNEL:
+		elif self.type in (self.IS_MULTICHANNEL, self.IS_STEREO):
 			# FIXME. but currently iAudioTrackInfo doesn't provide more information.
 			audio = service.audioTracks()
 			if audio:
@@ -92,14 +100,23 @@ class ServiceInfo(Converter, object):
 				while idx < n:
 					i = audio.getTrackInfo(idx)
 					description = i.getDescription()
-					if "AC3" in description or "AC-3" in description or "DTS" in description:
-						return True
+					if description in ("AC3", "AC3+", "DTS", "DTS-HD", "AC-3"):
+						if self.type == self.IS_MULTICHANNEL:
+							return True
+						elif self.type == self.IS_STEREO:
+							return False
 					idx += 1
+				if self.type == self.IS_MULTICHANNEL:
+					return False
+				elif self.type == self.IS_STEREO:
+					return True
 			return False
 		elif self.type == self.IS_CRYPTED:
 			return info.getInfo(iServiceInformation.sIsCrypted) == 1
 		elif self.type == self.IS_WIDESCREEN:
 			return info.getInfo(iServiceInformation.sAspect) in WIDESCREEN
+		elif self.type == self.IS_NOT_WIDESCREEN:
+			return info.getInfo(iServiceInformation.sAspect) not in WIDESCREEN
 		elif self.type == self.SUBSERVICES_AVAILABLE:
 			subservices = service.subServices()
 			return bool(subservices) and subservices.getNumberOfSubservices() > 0
@@ -121,13 +138,17 @@ class ServiceInfo(Converter, object):
 		elif self.type == self.IS_SD:
 			return info.getInfo(iServiceInformation.sVideoHeight) < 720
 		elif self.type == self.IS_HD:
-			return info.getInfo(iServiceInformation.sVideoHeight) >= 720 and info.getInfo(iServiceInformation.sVideoHeight) < 2160
+			return info.getInfo(iServiceInformation.sVideoHeight) >= 720 and info.getInfo(iServiceInformation.sVideoHeight) < 2100
 		elif self.type == self.IS_SD_AND_WIDESCREEN:
 			return info.getInfo(iServiceInformation.sVideoHeight) < 720 and info.getInfo(iServiceInformation.sAspect) in WIDESCREEN
 		elif self.type == self.IS_SD_AND_NOT_WIDESCREEN:
 			return info.getInfo(iServiceInformation.sVideoHeight) < 720 and info.getInfo(iServiceInformation.sAspect) not in WIDESCREEN
 		elif self.type == self.IS_4K:
 			return info.getInfo(iServiceInformation.sVideoHeight) >= 2100
+		elif self.type == self.IS_1080:
+			return info.getInfo(iServiceInformation.sVideoHeight) > 1000 and info.getInfo(iServiceInformation.sVideoHeight) <= 1080
+		elif self.type == self.IS_720:
+			return info.getInfo(iServiceInformation.sVideoHeight) == 720
 		return False
 
 	boolean = property(getBoolean)
