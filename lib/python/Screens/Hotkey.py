@@ -17,7 +17,7 @@ def getHotkeys():
 	return [(_("Red") + " " + _("long"), "red_long", ""),
 		(_("Green") + " " + _("long"), "green_long", ""),
 		(_("Yellow") + " " + _("long"), "yellow_long", ""),
-		(_("Blue") + " " + _("long"), "blue_long", "Module/Screens.SoftcamSetup/SoftcamSetup"),
+		(_("Blue") + " " + _("long"), "blue_long", "SoftcamSetup"),
 		("F1/LAN", "f1", ""),
 		("F1" + " " + _("long"), "f1_long", ""),
 		("F2", "f2", ""),
@@ -174,7 +174,8 @@ def getHotkeyFunctions():
 	if SystemInfo["HasHDMI-CEC"]:
 		hotkeyFunctions.append((_("HDMI-CEC Source Active"), "Infobar/SourceActiveHdmiCec", "InfoBar"))
 		hotkeyFunctions.append((_("HDMI-CEC Source Inactive"), "Infobar/SourceInactiveHdmiCec", "InfoBar"))
-	hotkeyFunctions.append((_("Softcam Setup"), "Module/Screens.SoftcamSetup/SoftcamSetup", "Setup"))
+	if SystemInfo["HasSoftcamInstalled"]:
+		hotkeyFunctions.append((_("Softcam Setup"), "SoftcamSetup", "Setup"))
 	hotkeyFunctions.append((_("HotKey Setup"), "Module/Screens.Hotkey/HotkeySetup", "Setup"))
 	hotkeyFunctions.append((_("Software update"), "Module/Screens.SoftwareUpdate/UpdatePlugin", "Setup"))
 	hotkeyFunctions.append((_("Latest Commits"), "Module/Screens.About/CommitInfo", "Setup"))
@@ -192,6 +193,9 @@ def getHotkeyFunctions():
 	for plugin in plugins.getPluginsForMenu("system"):
 		if plugin[2]:
 			hotkeyFunctions.append((plugin[0], "MenuPlugin/system/" + plugin[2], "Setup"))
+	for plugin in plugins.getPluginsForMenu("video"):
+		if plugin[2]:
+			hotkeyFunctions.append((plugin[0], "MenuPlugin/video/" + plugin[2], "Setup"))
 	hotkeyFunctions.append((_("PowerMenu"), "Menu/shutdown", "Power"))
 	hotkeyFunctions.append((_("Standby"), "Module/Screens.Standby/Standby", "Power"))
 	hotkeyFunctions.append((_("Restart"), "Module/Screens.Standby/TryQuitMainloop/2", "Power"))
@@ -580,8 +584,11 @@ class InfoBarHotkey():
 					exec "self.session.open(" + ",".join(selected[2:]) + ")"
 				except:
 					print "[Hotkey] error during executing module %s, screen %s" % (selected[1], selected[2])
+			elif selected[0] == "SoftcamSetup" and SystemInfo["HasSoftcamInstalled"]:
+				from Screens.SoftcamSetup import SoftcamSetup
+				self.session.open(SoftcamSetup)
 			elif selected[0] == "Setup":
-				exec "from Screens.Setup import *"
+				from Screens.Setup import *
 				exec "self.session.open(Setup, \"" + selected[1] + "\")"
 			elif selected[0].startswith("Zap"):
 				if selected[0] == "ZapPanic":
