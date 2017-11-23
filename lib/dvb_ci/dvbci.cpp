@@ -580,7 +580,7 @@ void eDVBCIInterfaces::ciRemoved(eDVBCISlot *slot)
 		if (slot->linked_next)
 			slot->linked_next->setSource(slot->current_source);
 		else // last CI in chain
-			setInputSource(slot->current_tuner, slot->current_source);
+			setInputSource(slot->current_tuner, eDVBCISlot::getTunerLetter(slot->current_tuner));
 		slot->linked_next = 0;
 		slot->use_count=0;
 		slot->plugged=true;
@@ -934,7 +934,8 @@ void eDVBCIInterfaces::removePMTHandler(eDVBServicePMTHandler *pmthandler)
 				slot->sendCAPMT(pmthandler, caids);  // send a capmt without caids to remove a running service
 				slot->removeService(service_to_remove.getServiceID().get());
 				/* restore ci source to the default (tuner "A") */
-				slot->setSource("A");
+				if (slot->current_tuner == -1)
+					slot->setSource("A");
 			}
 
 			if (!--slot->use_count)
@@ -942,7 +943,7 @@ void eDVBCIInterfaces::removePMTHandler(eDVBServicePMTHandler *pmthandler)
 				if (slot->linked_next)
 					slot->linked_next->setSource(slot->current_source);
 				else
-					setInputSource(slot->current_tuner, slot->current_source);
+					setInputSource(slot->current_tuner, eDVBCISlot::getTunerLetter(slot->current_tuner));
 
 				if (base_slot != slot)
 				{
