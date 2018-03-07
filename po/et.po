@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 10:17+0100\n"
-"PO-Revision-Date: 2017-11-06 20:10+0200\n"
+"POT-Creation-Date: 2018-01-02 11:25+0100\n"
+"PO-Revision-Date: 2018-01-27 14:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, "
 "valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n "
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 msgid ""
@@ -198,6 +198,10 @@ msgstr "%02d:%02d"
 #, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
+
+#, python-format
+msgid "%2.1f sec"
+msgstr "%2.1f sek"
 
 #. TRANSLATORS: short time representation hour:minute
 #, python-format
@@ -463,6 +467,12 @@ msgstr "1.1"
 msgid "1.2"
 msgstr "1.2"
 
+msgid "10 MB/s"
+msgstr "10 MB/s"
+
+msgid "100 MB/s"
+msgstr "100 MB/s"
+
 msgid "10bit"
 msgstr "10bit"
 
@@ -492,6 +502,9 @@ msgstr "16:9 alati"
 
 msgid "18 V"
 msgstr "18 V"
+
+msgid "20 MB/s"
+msgstr "20 MB/s"
 
 msgid "23.976"
 msgstr "23.976"
@@ -537,6 +550,9 @@ msgstr "4:3 letterbox"
 
 msgid "4:3 PanScan"
 msgstr "4:3 PanScan"
+
+msgid "50 MB/s"
+msgstr "50 MB/s"
 
 msgid "8bit"
 msgstr "8bit"
@@ -1570,6 +1586,9 @@ msgstr "Täielik"
 msgid "Complex (allows mixing audio tracks and aspects)"
 msgstr "Täielik ( lubab audio radade miksimist )"
 
+msgid "Compress"
+msgstr "Suru kokku"
+
 msgid "Config Scan Details"
 msgstr "Säti otsingu detailid"
 
@@ -2009,6 +2028,9 @@ msgstr "Kustutamine nurjus!"
 msgid "Delete file"
 msgstr "Kustuta fail"
 
+msgid "Delete image"
+msgstr "Kustuta image"
+
 msgid "Delete playlist entry"
 msgstr "Kustuta esitusloendi kirje"
 
@@ -2153,9 +2175,6 @@ msgstr "Ära sea selle teenuse subtiitreid keskele"
 msgid "Do not change"
 msgstr "Ära muuda"
 
-msgid "Do not flash image"
-msgstr "Ära flashi tarkvara"
-
 msgid "Do not record"
 msgstr "Ära salvesta"
 
@@ -2226,10 +2245,10 @@ msgstr "Kas kirjutada see valik DVD plaadile?"
 #, python-format
 msgid ""
 "Do you want to flash image\n"
-"%s?"
+"%s"
 msgstr ""
-"Kas soovid flashida tarkvara\n"
-"%s?"
+"Kas soovid paigaldada image\n"
+"%s"
 
 msgid "Do you want to install the package:\n"
 msgstr "Kas paigaldada pakett:\n"
@@ -2595,6 +2614,9 @@ msgstr "Välju võrgu häälestusest"
 
 msgid "Exit/OK"
 msgstr "Välju/OK"
+
+msgid "Expand"
+msgstr "Laienda"
 
 msgid "Expert"
 msgstr "Ekspert"
@@ -3937,6 +3959,9 @@ msgstr "Mitu satelliiti"
 msgid "Multisat all select"
 msgstr "Paljude satelliitide valik"
 
+msgid "Multistream"
+msgstr "Multistream"
+
 msgid "Music/Ballet/Dance"
 msgstr "Muusika/Ballett/Tants"
 
@@ -4212,6 +4237,9 @@ msgstr "Ei, ma ei soovi paigaldada pluginaid"
 msgid "No, but restart from begin"
 msgstr "Ei, alusta uuesti algusest"
 
+msgid "No, do not flash image"
+msgstr "Ei, ära paigalda seda imaget"
+
 msgid "No, except Wakeup timer"
 msgstr "Ei, välja arvatud äratustaimer"
 
@@ -4367,6 +4395,9 @@ msgstr "Taimeri keelamise valikud"
 
 msgid "Orbital position"
 msgstr "Orbitaalpositsioon"
+
+msgid "Ordinary"
+msgstr "Tavaline"
 
 msgid "Original"
 msgstr "Algupärane"
@@ -5044,6 +5075,9 @@ msgstr "Värskenda"
 
 msgid "Refresh rate"
 msgstr "Värskendussagedus"
+
+msgid "Refreshing image list - Please wait..."
+msgstr "Värskendan image nimekirja - palun oota..."
 
 msgid "Refusing to move to the same directory"
 msgstr "Keeldub liigutamast samasse kausta"
@@ -6554,7 +6588,7 @@ msgstr ""
 " \n"
 " \n"
 "Eesti digi-tv foorum \n"
-"Viimati muudetud: 06. november 2017 \n"
+"Viimati muudetud: 27. jaanuar 2018 \n"
 " \n"
 "TÕLKE_INFO"
 
@@ -6641,6 +6675,8 @@ msgid ""
 "The current image might not be stable.\n"
 "For more information see %s."
 msgstr ""
+"Praegune image võib olla mittestabiilne.\n"
+"Enama info jaoks vaata %s."
 
 #, python-format
 msgid ""
@@ -6736,9 +6772,9 @@ msgstr ""
 
 #, python-format
 msgid ""
-"The status of the current beta image could not be checked because %s can not "
-"be reached."
-msgstr "Praeguse beta image olekut ei õnnestunud kontrollida,  %s ei vasta"
+"The status of the current image could not be checked because %s can not be "
+"reached."
+msgstr "Praeguse image seisu ei saa kontrollida, kuna %s ei ole kättesaadav."
 
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "Taimerite fail (timers.xml) on katki ja seda ei saa laadida."
@@ -7078,6 +7114,9 @@ msgstr "Edastamise moodus"
 msgid "Transponder"
 msgstr "Transponder"
 
+msgid "Transport Stream Type"
+msgstr "Transpordivoo tüüp"
+
 msgid "Trash can"
 msgstr "Prügikast"
 
@@ -7262,8 +7301,11 @@ msgstr "Uuendus"
 msgid "Update and ask to reboot"
 msgstr "Uuenda ja küsi luba taaskäivitamiseks"
 
-msgid "Update and reboot (recommended)"
-msgstr "Uuenda ja taaskäivita (soovitatav)"
+msgid "Update and reboot"
+msgstr "Uuenda ja taaskäivita"
+
+msgid "Update and reboot (recommended"
+msgstr "Uuenda ja taaskäivita (soovitatavalt)"
 
 msgid "Update channel list only"
 msgstr "Uuenda ainult kanalinimekiri"
@@ -7786,6 +7828,12 @@ msgstr "Jah, ainult ootelt"
 
 msgid "Yes, returning to movie list"
 msgstr "Jah, tagasi salvestiste nimekirja"
+
+msgid "Yes, with backup"
+msgstr "Jah, koos varukoopiaga"
+
+msgid "Yes, without backup"
+msgstr "Jah, ilma varukoopiata"
 
 msgid "Yesterday"
 msgstr "Eile"
@@ -8915,12 +8963,12 @@ msgid "skip forward"
 msgstr "mine edasi"
 
 #, python-format
-msgid "slot%s - %s"
-msgstr "pilu%s - %s"
+msgid "slot%s - %s (current image) with, backup"
+msgstr "slot%s - %s (praegune image) koos varukoopiaga"
 
 #, python-format
-msgid "slot%s - %s (current image)"
-msgstr "pilu%s - %s (praegune tarkvara)"
+msgid "slot%s - %s (current image), without backup"
+msgstr "slot%s - %s (praegune image), ilma varukoopiata"
 
 #, python-format
 msgid "slot%s - %s mode 1"
@@ -8939,8 +8987,20 @@ msgid "slot%s - %s mode 12 (current image)"
 msgstr "pilu%s - %s mood 12 (praegune tarkvara)"
 
 #, python-format
-msgid "slot%s - empty"
-msgstr "pilu%s - tühi"
+msgid "slot%s - %s, with backup"
+msgstr "slot%s - %s, koos varukoopiaga"
+
+#, python-format
+msgid "slot%s - %s, without backup"
+msgstr "slot%s - %s, ilma varukoopiata"
+
+#, python-format
+msgid "slot%s - empty, with backup"
+msgstr "slot%s - tühi, varukoopiaga"
+
+#, python-format
+msgid "slot%s - empty, without backup"
+msgstr "slot%s - tühi, ilma varukoopiata"
 
 msgid "soap/melodram/folkloric"
 msgstr "seep/melodraama/folkloor"
@@ -9453,7 +9513,7 @@ msgid "Clone TV screen to LCD"
 msgstr "Kopeeri TV ekraan LCD-le"
 
 msgid "Clone TV screen to LCD mode"
-msgstr ""
+msgstr "Klooni TV pilt LCD-le"
 
 msgid "Close PiP on exit"
 msgstr "Sulge PiP 'EXIT' nupuga"
@@ -9978,7 +10038,7 @@ msgstr ""
 "translit."
 
 msgid "Ignore DVB namespace sub network"
-msgstr ""
+msgstr "Eira DVB nimeruumi alavõrku"
 
 msgid "Include AIT in http streams"
 msgstr "Kaasa AIT http voogudesse"
@@ -10066,7 +10126,7 @@ msgid "Offline decode delay (ms)"
 msgstr "Võrguta dekodeerimise viide (ms)"
 
 msgid "On valid ONIDs, ignore frequency sub network part"
-msgstr ""
+msgstr "Kehtivate ONID puhul eira sageduse alavõrgu osa"
 
 msgid "Position of completed timers in timerlist"
 msgstr "Lõpetatud taimerite asukoht nimekirjas"
@@ -10163,7 +10223,7 @@ msgid "Scroll repeats"
 msgstr "Liigutamise kordused"
 
 msgid "Selects the mode how live tv should be shown on the LCD."
-msgstr ""
+msgstr "Valib viisi kuidas jooksvat TV pilti näidatakse LCD kaudu."
 
 msgid "Set fps for external subtitles"
 msgstr "Määra väliste subtiitrite kaadrisagedus"
@@ -11131,6 +11191,33 @@ msgstr "Varukoopia valmis. Me informeerime edasistest uuenduste käigust."
 
 msgid "Your receiver is shutting down. Please stand by..."
 msgstr "Vastuvõtja lülitub välja. Oota"
+
+#~ msgid "Do not flash image"
+#~ msgstr "Ära flashi tarkvara"
+
+#~ msgid ""
+#~ "Do you want to flash image\n"
+#~ "%s?"
+#~ msgstr ""
+#~ "Kas soovid flashida tarkvara\n"
+#~ "%s?"
+
+#~ msgid ""
+#~ "The status of the current beta image could not be checked because %s can "
+#~ "not be reached."
+#~ msgstr "Praeguse beta image olekut ei õnnestunud kontrollida,  %s ei vasta"
+
+#~ msgid "Update and reboot (recommended)"
+#~ msgstr "Uuenda ja taaskäivita (soovitatav)"
+
+#~ msgid "slot%s - %s"
+#~ msgstr "pilu%s - %s"
+
+#~ msgid "slot%s - %s (current image)"
+#~ msgstr "pilu%s - %s (praegune tarkvara)"
+
+#~ msgid "slot%s - empty"
+#~ msgstr "pilu%s - tühi"
 
 #~ msgid "DVB drivers: "
 #~ msgstr "DVB draiverid: "

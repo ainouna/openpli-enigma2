@@ -15,7 +15,6 @@ from Components.ProgressBar import ProgressBar
 from Tools.StbHardware import getFPVersion
 from enigma import eTimer, eLabel, eConsoleAppContainer
 
-from Components.HTMLComponent import HTMLComponent
 from Components.GUIComponent import GUIComponent
 import skin, os
 
@@ -39,7 +38,13 @@ class About(Screen):
 		self["ImageVersion"] = StaticText(ImageVersion)
 		# AboutText += ImageVersion + "\n"
 
-		EnigmaVersion = _("Enigma version: ") + about.getEnigmaVersionString()
+		EnigmaVersion = about.getEnigmaVersionString()
+		EnigmaVersion = EnigmaVersion.rsplit("-", EnigmaVersion.count("-") - 2)
+		if len(EnigmaVersion) == 3:
+			EnigmaVersion = EnigmaVersion[0] + " " + EnigmaVersion[2] + "-" + EnigmaVersion[1]
+		else:
+			EnigmaVersion = " ".join(EnigmaVersion)
+		EnigmaVersion = _("Enigma version: ") + EnigmaVersion
 		self["EnigmaVersion"] = StaticText(EnigmaVersion)
 		AboutText += "\n" + EnigmaVersion + "\n"
 
@@ -195,13 +200,11 @@ class CommitInfo(Screen):
 			("https://api.github.com/repos/openpli/openpli-oe-core/commits" + branch, "Openpli Oe Core"),
 			("https://api.github.com/repos/openpli/enigma2-plugins/commits", "Enigma2 Plugins"),
 			("https://api.github.com/repos/openpli/aio-grab/commits", "Aio Grab"),
-			("https://api.github.com/repos/openpli/gst-plugin-dvbmediasink/commits", "Gst Plugin Dvbmediasink"),
-			("https://api.github.com/repos/openpli/enigma2-plugin-extensions-xmltvimport/commits", "Plugin Xmltvimport"),
+			("https://api.github.com/repos/openpli/enigma2-plugin-extensions-epgimport/commits", "Plugin EPGImport"),
 			("https://api.github.com/repos/openpli/enigma2-plugin-skins-magic/commits", "Skin Magic SD"),
-			("https://api.github.com/repos/openpli/tuxtxt/commits", "Tuxtxt"),
 			("https://api.github.com/repos/littlesat/skin-PLiHD/commits", "Skin PLi HD"),
 			("https://api.github.com/repos/E2OpenPlugins/e2openplugin-OpenWebif/commits", "OpenWebif"),
-			("https://api.github.com/repos/haroo/HansSettings/commits", "OpenWebif")
+			("https://api.github.com/repos/haroo/HansSettings/commits", "Hans settings")
 		]
 		self.cachedProjects = {}
 		self.Timer = eTimer()
@@ -324,7 +327,7 @@ class MemoryInfo(Screen):
 		open("/proc/sys/vm/drop_caches", "w").write("3")
 		self.getMemoryInfo()
 
-class MemoryInfoSkinParams(HTMLComponent, GUIComponent):
+class MemoryInfoSkinParams(GUIComponent):
 	def __init__(self):
 		GUIComponent.__init__(self)
 		self.rows_in_column = 25
@@ -403,7 +406,7 @@ class Troubleshoot(Screen):
 
 	def appClosed(self, retval):
 		if retval:
-			self["AboutScrollLabel"].setText(_("Some error occured - Please try later"))
+			self["AboutScrollLabel"].setText(_("An error occurred - Please try again later"))
 
 	def dataAvail(self, data):
 		self["AboutScrollLabel"].appendText(data)
@@ -422,7 +425,7 @@ class Troubleshoot(Screen):
 				if self.container.execute(command):
 					raise Exception, "failed to execute: ", command
 			except Exception, e:
-				self["AboutScrollLabel"].setText("%s\n%s" % (_("Some error occured - Please try later"), e))
+				self["AboutScrollLabel"].setText("%s\n%s" % (_("An error occurred - Please try again later"), e))
 
 	def cancel(self):
 		self.container.appClosed.remove(self.appClosed)

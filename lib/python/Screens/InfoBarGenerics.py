@@ -43,12 +43,14 @@ from enigma import eTimer, eServiceCenter, eDVBServicePMTHandler, iServiceInform
 from time import time, localtime, strftime
 import os
 from bisect import insort
-from sys import maxint
 
 from RecordTimer import RecordTimerEntry, RecordTimer, findSafeRecordPath
 
 # hack alert!
 from Menu import MainMenu, mdom
+
+# sys.maxint on 64bit (2**63-1) fails with OverflowError on eActionMap.bindAction use 32bit value (2**31-1)
+maxint = 2147483647
 
 def isStandardInfoBar(self):
 	return self.__class__.__name__ == "InfoBar"
@@ -1310,7 +1312,7 @@ class InfoBarSeek:
 
 		self["SeekActions"] = InfoBarSeekActionMap(self, actionmap,
 			{
-				"playpauseService": (self.playpauseService, _("Pauze/Continue playback")),
+				"playpauseService": (self.playpauseService, _("Pause/Continue playback")),
 				"pauseService": (self.pauseService, _("Pause playback")),
 				"unPauseService": (self.unPauseService, _("Continue playback")),
 				"okButton": (self.okButton, _("Continue playback")),
@@ -1774,13 +1776,21 @@ class InfoBarShowMovies:
 # note that a timeshift can be enabled ("recording") and
 # activated (currently time-shifting).
 
-class InfoBarTimeshift:
+class InfoBarTimeshift():
 	def __init__(self):
 		self["TimeshiftActions"] = HelpableActionMap(self, "InfobarTimeshiftActions",
 			{
 				"timeshiftStart": (self.startTimeshift, _("Start timeshift")),  # the "yellow key"
-				"timeshiftStop": (self.stopTimeshift, _("Stop timeshift"))      # currently undefined :), probably 'TV'
-			}, prio=1)
+				"timeshiftStop": (self.stopTimeshift, _("Stop timeshift")),      # currently undefined :), probably 'TV'
+				"seekFwdManual": (self.seekFwdManual, _("Seek forward (enter time)")),
+				"seekBackManual": (self.seekBackManual, _("Seek backward (enter time)")),
+				"seekdef:1": (boundFunction(self.seekdef,1), _("Seek")),
+				"seekdef:3": (boundFunction(self.seekdef,3), _("Seek")),
+				"seekdef:4": (boundFunction(self.seekdef,4), _("Seek")),
+				"seekdef:6": (boundFunction(self.seekdef,6), _("Seek")),
+				"seekdef:7": (boundFunction(self.seekdef,7), _("Seek")),
+				"seekdef:9": (boundFunction(self.seekdef,9), _("Seek")),
+			}, prio=0)
 		self["TimeshiftActivateActions"] = ActionMap(["InfobarTimeshiftActivateActions"],
 			{
 				"timeshiftActivateEnd": self.activateTimeshiftEnd, # something like "rewind key"
@@ -1806,6 +1816,16 @@ class InfoBarTimeshift:
 				iPlayableService.evEnd: self.__serviceEnd
 			})
 
+	def seekdef(self, key):
+		if self.seekstate == self.SEEK_STATE_PLAY:
+			return 0 # trade as unhandled action
+		time = (-config.seek.selfdefined_13.value, False, config.seek.selfdefined_13.value,
+			-config.seek.selfdefined_46.value, False, config.seek.selfdefined_46.value,
+			-config.seek.selfdefined_79.value, False, config.seek.selfdefined_79.value)[key-1]
+		self.doSeekRelative(time * 90000)
+		self.pvrStateDialog.show()
+		return 1
+
 	def getTimeshift(self):
 		service = self.session.nav.getCurrentService()
 		return service and service.timeshift()
@@ -1818,6 +1838,25 @@ class InfoBarTimeshift:
 		ts = self.getTimeshift()
 		return ts and ts.isTimeshiftActive()
 
+	def playpauseStreamService(self):
+		service = self.session.nav.getCurrentService()
+		playingref = self.session.nav.getCurrentlyPlayingServiceReference()
+		if not playingref or playingref.type < eServiceReference.idUser:
+			return 0
+		if service and service.streamed():
+			pauseable = service.pause()
+			if pauseable:
+				if self.seekstate == self.SEEK_STATE_PLAY:
+					pauseable.pause()
+					self.pvrStateDialog.show()
+					self.seekstate = self.SEEK_STATE_PAUSE
+				else:
+					pauseable.unpause()
+					self.pvrStateDialog.hide()
+					self.seekstate = self.SEEK_STATE_PLAY
+				return
+		return 0
+
 	def startTimeshift(self, pauseService = True):
 		print "enable timeshift"
 		ts = self.getTimeshift()
@@ -1825,7 +1864,7 @@ class InfoBarTimeshift:
 			if not pauseService and not int(config.usage.timeshift_start_delay.value):
 				self.session.open(MessageBox, _("Timeshift not possible!"), MessageBox.TYPE_ERROR, simple = True)
 			print "no ts interface"
-			return 0
+			return self.playpauseStreamService()
 
 		if ts.isTimeshiftEnabled():
 			print "hu, timeshift already enabled?"
@@ -2560,7 +2599,7 @@ class InfoBarInstantRecord:
 	def addRecordingTime(self, entry):
 		if entry is not None and entry >= 0:
 			self.selectedEntry = entry
-			self.session.openWithCallback(self.inputAddRecordingTime, InputBox, title=_("How many minutes do you want add to record?"), text="5  ", maxSize=True, type=Input.NUMBER)
+			self.session.openWithCallback(self.inputAddRecordingTime, InputBox, title=_("How many minutes do you want add to the recording?"), text="5  ", maxSize=True, type=Input.NUMBER)
 
 	def inputAddRecordingTime(self, value):
 		if value:
