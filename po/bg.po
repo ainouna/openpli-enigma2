@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-19 21:31+0100\n"
-"PO-Revision-Date: 2018-03-05 20:41+0200\n"
-"Last-Translator: Martin Petkov <marto74bg@yahoo.co.uk>\n"
+"POT-Creation-Date: 2018-04-27 09:42+0200\n"
+"PO-Revision-Date: 2018-05-01 21:32+0300\n"
+"Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: Bulgarian\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 2.0.7\n"
 
 msgid ""
 "\n"
@@ -88,7 +88,7 @@ msgid ""
 "Restore your receiver settings."
 msgstr ""
 "\n"
-"Възстановяване на вашите receiver настройки."
+"Възстановяване настройките на вашия приемник."
 
 msgid ""
 "\n"
@@ -112,13 +112,6 @@ msgstr ""
 "\n"
 "Изберете вашето backup устройство.\n"
 "Текущо устройство: "
-
-msgid ""
-"\n"
-"Timer '%s' деактивиран!"
-msgstr ""
-"\n"
-"Таймер '%s' отключен!"
 
 msgid ""
 "\n"
@@ -549,13 +542,6 @@ msgstr ""
 "%s"
 
 msgid ""
-"A recording is currently running on the selected tuner. Please select a "
-"different tuner or consider to stop the recording to try again."
-msgstr ""
-"В момента тече запис на избрания тунер. Моля изберете друг тунер, или спрете "
-"записа преди да опитате отново сканиране."
-
-msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
 msgstr ""
@@ -613,7 +599,7 @@ msgstr ""
 "Спиране на ТВ и опит отново?\n"
 
 msgid "A/V settings"
-msgstr "Аудио/видео настройки"
+msgstr "Аудио / Видео настройки"
 
 msgid "AAC downmix"
 msgstr "AAC downmix"
@@ -634,7 +620,7 @@ msgid "ATSC"
 msgstr "ATSC"
 
 msgid "ATSC provider"
-msgstr "Провайдер ATSC"
+msgstr "Провайдър ATSC"
 
 msgid "Abort"
 msgstr "Отмени"
@@ -710,6 +696,9 @@ msgstr "Добави запис (без ограничение)"
 
 msgid "Add recording (stop after current event)"
 msgstr "Добави запис (спри след текущото предаване)"
+
+msgid "Add seperate receiver URL for import"
+msgstr "Добави URL на друг приемник за импорт"
 
 msgid "Add service"
 msgstr "Добавяне на услуга"
@@ -845,7 +834,13 @@ msgstr ""
 msgid "Allocate unused memory index"
 msgstr "Разпредели неизползваната памет"
 
+msgid "Allow unsupported modes"
+msgstr "Разрешаване на неподдържани режими"
+
 msgid "Allow quitting movieplayer with exit"
+msgstr "Позволи изход от видеоплеъра с exit"
+
+msgid "Allow quit movieplayer with exit"
 msgstr "Позволи изход от видеоплеъра с exit"
 
 msgid "Allow subtitle language to equal audio language"
@@ -856,6 +851,15 @@ msgstr "Позволи субтитри за хора с увреден слух
 
 msgid "Alpha"
 msgstr "Алфа"
+
+msgid "Also import at reboot/restart enigma2"
+msgstr "Импортиране при рестарт на приемника/enigma2"
+
+msgid "Also import from the extension menu"
+msgstr "Добави импортиране в менюто с разширенията"
+
+msgid "Also import when box is leaving standby"
+msgstr "Импортиране при изход от режим готовност"
 
 msgid "Also on standby"
 msgstr "В режим готовност също"
@@ -1084,7 +1088,7 @@ msgid "Authoring mode"
 msgstr "Режим авторизация"
 
 msgid "Auto"
-msgstr "Aвто"
+msgstr "Авто"
 
 msgid "Auto Diseqc"
 msgstr "Авто Diseqc"
@@ -1405,9 +1409,6 @@ msgstr "Канада"
 msgid "Cancel"
 msgstr "Отказ"
 
-msgid "Cannot create image list - please try later"
-msgstr "Не може да се създаде списък с имиджите - моля опитайте по-късно"
-
 msgid "Cannot determine"
 msgstr "Не може да се определи"
 
@@ -1458,7 +1459,7 @@ msgid "Change PIN"
 msgstr "Смяна PIN-код"
 
 msgid "Change bouquets in quickzap"
-msgstr "Смяна букет при бързопревкл."
+msgstr "Смяна на букет при бързо превключване"
 
 msgid "Change recording (add time)"
 msgstr "Промени запис (добавяне на време)"
@@ -1484,9 +1485,6 @@ msgstr "Канал"
 msgid "Channel Info"
 msgstr "Информация за канала"
 
-msgid "Channel Selection"
-msgstr "Избор канали"
-
 msgid "Channel list type"
 msgstr "Списък с канали тип"
 
@@ -1510,6 +1508,18 @@ msgstr "Номер на канала и име на услугата"
 
 msgid "Channelnumber, picon and servicename"
 msgstr "Номер на канала, пикон и име на услугата"
+
+msgid "Channels and EPG"
+msgstr "Канали и EPG"
+
+msgid "Channels from fallback tuner failed %s"
+msgstr "Канали които не могат да се импортират от резервния приемник %s"
+
+msgid "Channels from fallback tuner imported"
+msgstr "Каналите от резервния приемник са импортирани!"
+
+msgid "Channels only"
+msgstr "Само канали"
 
 msgid "Chap."
 msgstr "Глава."
@@ -1672,13 +1682,13 @@ msgid "Composition of the recording filenames"
 msgstr "Съдържание имената на записаните файлове"
 
 msgid "Compress"
-msgstr "Компресирай"
+msgstr "Свий"
 
 msgid "Config Scan Details"
 msgstr "Детайлни сведения за сканиране"
 
 msgid "Config resolution of pictures"
-msgstr "Настройка резолюцията на изображенията"
+msgstr "Настройка на резолюцията на изображенията"
 
 msgid "Configuration mode"
 msgstr "Режим Конфигурация"
@@ -2129,9 +2139,9 @@ msgstr ""
 "наличен."
 
 msgid ""
-"Configure which tuner type will be preferred, when the same service is "
+"Configure which tuner type will be preferred when the same service is "
 "available on different types of tuners. Choose 'no priority' to try each "
-"alternative one by one independently from tuner type."
+"alternative one by one regardless of the tuner type."
 msgstr ""
 "Настройка кой тунер ще се предпочита, когато един и същ канал е наличен при "
 "различни типове тунери. Изберете 'без приоритет' за проверка по ред, "
@@ -2151,9 +2161,6 @@ msgstr "Конфигуриране на вашата вътрешна LAN."
 
 msgid "Configure your network again"
 msgstr "Повторно конфигуриране на вашата мрежа."
-
-msgid "Configure your network settings, and press OK to start the scan"
-msgstr "Настройте вашата мрежа и натиснете OK за старт на сканирането"
 
 msgid "Configure your wireless LAN again"
 msgstr "Повторно конфигуриране на вашата WLAN мрежа."
@@ -2233,20 +2240,8 @@ msgstr "Контраст"
 msgid "Cook Islands"
 msgstr "Готварски Острови"
 
-msgid "Convert ext3 filesystem to ext4"
-msgstr "Конвертиране ext3 към ext4 файлова система"
-
-msgid "Convert ext3 to ext4"
-msgstr "Конвертиране ext3 към ext4"
-
-msgid "Converting ext3 to ext4..."
-msgstr "Конвертиране ext3 към ext4..."
-
 msgid "Copy"
 msgstr "Копие"
-
-msgid "Copy to..."
-msgstr "Копирай на..."
 
 msgid "Costa Rica"
 msgstr "Коста Рика"
@@ -2405,9 +2400,6 @@ msgstr "DVB CI Задръжка"
 
 msgid "DVB driver version: "
 msgstr "Версия на DVB драйверите: "
-
-msgid "DVB drivers: "
-msgstr "DVB драйвери: "
 
 msgid "DVB subtitle black transparency"
 msgstr "Прозрачност на черната лента при DVB субтитри"
@@ -2682,9 +2674,6 @@ msgstr "Спиране на таймер"
 msgid "Disabled"
 msgstr "Спрян"
 
-msgid "Disclaimer"
-msgstr "Общи условия"
-
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Запазено дисково пространство за записи (в GB)"
 
@@ -2730,9 +2719,6 @@ msgstr "Не центрирай DVB субтитрите за този кана�
 msgid "Do not change"
 msgstr "Не променяй"
 
-msgid "Do not flash image"
-msgstr "Не флашвай имидж"
-
 msgid "Do not record"
 msgstr "Не записвай"
 
@@ -2745,13 +2731,6 @@ msgid ""
 msgstr ""
 "Искате ли да проверите файловата система?\n"
 "Това може да отнеме доста време!"
-
-msgid ""
-"Do you really want to convert the filesystem?\n"
-"You cannot go back!"
-msgstr ""
-"Наистина ли искате да конвертирате файловата система?\n"
-"Не можете да спрете процеса!"
 
 msgid "Do you really want to delete %s?"
 msgstr "Наистина ли искате да изтриете %s?"
@@ -2794,28 +2773,6 @@ msgstr "Искате ли автоматично да възстановите �
 
 msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Наистина ли искате да запишете тази колекция на DVD?"
-
-msgid "Do you want to do a service scan?"
-msgstr "Искате ли да сканирам за канали?"
-
-msgid "Do you want to do another manual service scan?"
-msgstr "Искате ли да извършите друго ръчно сканиране?"
-
-msgid ""
-"Do you want to flash image\n"
-"%s\n"
-"without backup?"
-msgstr ""
-"Искате ли да флашнете имидж\n"
-"%s\n"
-"без backup?"
-
-msgid ""
-"Do you want to flash image\n"
-"%s?"
-msgstr ""
-"Искате ли да флашнете имидж\n"
-"%s?"
 
 msgid "Do you want to install Plugins?"
 msgstr "Искате ли да инсталирате плъгините?"
@@ -2921,14 +2878,14 @@ msgstr "ECM Инфо"
 msgid "EPG"
 msgstr "EPG"
 
-msgid "EPG Selection"
-msgstr "EPG Избор"
-
 msgid "EPG language selection 1"
 msgstr "EPG избор на език 1"
 
 msgid "EPG language selection 2"
 msgstr "EPG избор на език 2"
+
+msgid "EPG only"
+msgstr "Само EPG"
 
 msgid "EPG selection"
 msgstr "EPG избор"
@@ -2938,6 +2895,9 @@ msgstr "EPG настройки"
 
 msgid "ERROR - failed to scan (%s)!"
 msgstr "Грешка при сканиране (%s)!"
+
+msgid "ERROR downloading file %s"
+msgstr "Грешка при изтегляне на файл %s"
 
 msgid "East"
 msgstr "Изток"
@@ -3036,7 +2996,7 @@ msgid "Enable bouquet selection in multi-EPG"
 msgstr "Разреши избор на букет в multi-EPG"
 
 msgid "Enable fallback remote receiver"
-msgstr "Активиране на запасен приемник"
+msgstr "Активиране на допълнителен приемник"
 
 msgid "Enable freesat EPG"
 msgstr "Активиране на freesat EPG"
@@ -3053,9 +3013,10 @@ msgid ""
 "on the local tuner. Specify complete URL including http:// and port number "
 "(normally ...:8001), e.g. http://second_box:8001."
 msgstr ""
-"Разрешете допълнителен enigma2 приемник, да се опита да пусне стрийм от този "
-"канал, ако локалния тунер е зает.Укажете пълния URL, включително http:// и "
-"номер на порта (обикновено ...:8001), пример: http://IP_допълн.приемник:8001."
+"Разрешете да се опита пускането на стрийм на канал от допълнителен enigma2 "
+"приемник, ако локалния тунер е зает.Укажете пълния URL, включително http:// "
+"и номер на порта (обикновено ...:8001), пример: http://IP_допълн."
+"приемник:8001."
 
 msgid "Enable teletext caching"
 msgstr "Разреши кеширане на телетекст"
@@ -3065,6 +3026,13 @@ msgstr "Активирайте тази настройка ако Вашата �
 
 msgid "Enable timer conflict detection"
 msgstr "Активиране откриването на таймер конфликти"
+
+msgid ""
+"Enable to display all true/false, yes/no, on/off and enable/disable set up "
+"options as a graphical switch."
+msgstr ""
+"Активирайте, за показването на всички настройки за да/не и вкл./изкл. като "
+"графични превключватели."
 
 msgid "Enable volume control with arrow buttons"
 msgstr "Активиране управлението за силата на звука със стрелките"
@@ -3196,6 +3164,9 @@ msgstr "Еритрея"
 msgid "Error"
 msgstr "Грешка"
 
+msgid "Error %s"
+msgstr "Грешка %s"
+
 msgid "Error code"
 msgstr "Грешен код"
 
@@ -3227,6 +3198,15 @@ msgstr "Грешка при стартиране на плъгина"
 
 msgid "Error stop stream!"
 msgstr "Грешка при спиране на стрийма!"
+
+msgid "Error when writing epg.dat on server"
+msgstr "Грешка при записване epg.dat на сървъра"
+
+msgid "Error while retreiving epg.dat from server"
+msgstr "Грешка при получаване на epg.dat от сървъра"
+
+msgid "Error while retreiving location of epg.dat on server"
+msgstr "Грешка при получаване местоположението на файла epg.dat от сървъра"
 
 msgid ""
 "Error: %s\n"
@@ -3326,7 +3306,7 @@ msgid "Exit/OK"
 msgstr "Изход/OK"
 
 msgid "Expand"
-msgstr "Разширено"
+msgstr "Разгъни"
 
 msgid "Expert"
 msgstr "Експерт"
@@ -3470,6 +3450,9 @@ msgstr "Фолкландски Острови"
 msgid "Fallback remote receiver URL"
 msgstr "URL на резервния приемник"
 
+msgid "Fallback remote receiver setup"
+msgstr "Настройки на резервен приемник"
+
 msgid "Fan %d"
 msgstr "Вентилатор %d"
 
@@ -3512,9 +3495,6 @@ msgstr "Фиджи"
 msgid "File appears to be busy.\n"
 msgstr "Изглежда файлът се използва в момента.\n"
 
-msgid "File manager"
-msgstr "Файл мениджър"
-
 msgid "Filename"
 msgstr "Файл"
 
@@ -3553,12 +3533,6 @@ msgstr "Фиксиран"
 
 msgid "Flash image"
 msgstr "Флашване на имидж"
-
-msgid "Flash with backup"
-msgstr "Флашване с backup"
-
-msgid "Flash without backup"
-msgstr "Флашване без backup"
 
 msgid "Flashing image succesfull"
 msgstr "Флашването на имиджа завърши успешно"
@@ -3809,9 +3783,6 @@ msgstr "Гуаделупе"
 msgid "Guam"
 msgstr "Гуам"
 
-msgid "Green boost"
-msgstr "Подсилване на зелено"
-
 msgid "Guard interval"
 msgstr "Guard interval"
 
@@ -3820,6 +3791,9 @@ msgstr "Гватемала"
 
 msgid "Guernsey"
 msgstr "Гърнзи"
+
+msgid "GUI Settings"
+msgstr "GUI Настройки"
 
 msgid "Guinea"
 msgstr "Гвинея"
@@ -3880,7 +3854,7 @@ msgid "Hard disk"
 msgstr "Твърд Диск"
 
 msgid "Hard disk setup"
-msgstr "Настройки HDD"
+msgstr "Настройки на HDD"
 
 msgid "Hard disk standby after"
 msgstr "HDD в готовност след"
@@ -3974,9 +3948,6 @@ msgstr "Настройка на Бързи Бутони"
 
 msgid "Hotkey zap"
 msgstr "Превключване Бързи Бутони"
-
-msgid "How many minutes do you want to add to record?"
-msgstr "Колко минути желаете да добавите към записа?"
 
 msgid "How many minutes do you want to record?"
 msgstr "Колко минути желаете да запишете?"
@@ -4108,6 +4079,33 @@ msgid "Image: "
 msgstr "Имидж: "
 
 msgid ""
+"Import channels and/or EPG from remote receiver URL also when the receiver "
+"is getting out of standby"
+msgstr ""
+"Импортиране на канали/EPG от резервния приемник при изход от режим готовност"
+
+msgid ""
+"Import channels and/or EPG from remote receiver URL when receiver is booted"
+msgstr ""
+"Импортиране на канали/EPG от резервния приемник при стартиране на приемника"
+
+msgid ""
+"Import channels and/or EPG from remote receiver URL when receiver or enigma2 "
+"is restarted"
+msgstr ""
+"Импортиране на канали/EPG от резервния приемник при рестарт на приемника или "
+"enigma2"
+
+msgid "Import channels from fallback tuner"
+msgstr "Импортиране на канали от резервния тунер"
+
+msgid "Import from remote receiver URL"
+msgstr "Импортиране от URL на резервния приемник"
+
+msgid "Import remote receiver URL"
+msgstr "Импорт от URL на резервния приемник"
+
+msgid ""
 "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr ""
 "За започване на запис от таймер,\n"
@@ -4156,10 +4154,10 @@ msgid "Info bar"
 msgstr "Инфо Лента"
 
 msgid "Info bar timeout"
-msgstr "Времетраене ИнфоЛента"
+msgstr "Времетраене на ИнфоЛента"
 
 msgid "Infobar frontend data source"
-msgstr "Източник данни за интерфейса на инфо-лентата"
+msgstr "Източник на данни за интерфейса на инфо-лентата"
 
 msgid "Information"
 msgstr "Информация"
@@ -4236,17 +4234,11 @@ msgstr "Инсталирай разширение от HDD,USB или .tmp"
 msgid "Install picons on"
 msgstr "Инсталирай пикони в"
 
-msgid "Install softcam"
-msgstr "Инсталирай емулатор"
-
 msgid "Installation has completed."
 msgstr "Инсталирането завърши."
 
 msgid "Installation or removal has completed."
 msgstr "Инсталирането или премахването завърши."
-
-msgid "Installed: "
-msgstr "Инсталирано: "
 
 msgid "Installing"
 msgstr "Инсталиране"
@@ -4265,9 +4257,6 @@ msgstr "Незабавен запис..."
 
 msgid "Interface: "
 msgstr "Интерфейс: "
-
-msgid "Intermediate"
-msgstr "Междинен"
 
 msgid "Internal"
 msgstr "Вътрешен"
@@ -4556,9 +4545,6 @@ msgstr "Списък с наличните мрежи"
 msgid "List mode"
 msgstr "Режим списък"
 
-msgid "List of files"
-msgstr "Списък с файлове"
-
 msgid "List of storage devices"
 msgstr "Списък с устройствата за съхранение"
 
@@ -4653,6 +4639,11 @@ msgstr "Основно Меню"
 
 msgid "Maintain old EPG data for"
 msgstr "Съхрани старите EPG данни за (мин)"
+
+msgid ""
+"Make it possible to manually initiate the channels import and/or EPG via the "
+"extension menu"
+msgstr "Добави импортиране в менюто с разширенията"
 
 msgid "Make this mark an 'in' point"
 msgstr "Направи тази отметка като точка 'в'"
@@ -4790,14 +4781,6 @@ msgstr "Минимален интервал за изпращане на ком�
 msgid "Missing "
 msgstr "Липсва "
 
-msgctxt "Satellite configuration mode"
-msgid "Mode"
-msgstr "Режим"
-
-msgctxt "Video output mode"
-msgid "Mode"
-msgstr "Режим"
-
 msgid "Model"
 msgstr "Модел"
 
@@ -4866,9 +4849,6 @@ msgstr "Завърти на изток"
 
 msgid "Move to position X"
 msgstr "Завърти към позиция Х"
-
-msgid "Move to..."
-msgstr "Завърти към…"
 
 msgid "Move west"
 msgstr "Завърти на запад"
@@ -5073,14 +5053,6 @@ msgstr "Нова Зеландия"
 msgid "News Current Affairs"
 msgstr "Новини Текущи Събития"
 
-msgctxt "button label, 'next screen'"
-msgid "Next"
-msgstr "Следващ"
-
-msgctxt "now/next: 'next' event label"
-msgid "Next"
-msgstr "Следва"
-
 msgid "Nicaragua"
 msgstr "Никарагуа"
 
@@ -5114,9 +5086,6 @@ msgstr "Няма възрастово ограничение"
 msgid "No backup needed"
 msgstr "Няма нужда от backup"
 
-msgid "No cable tuner found!"
-msgstr "Няма открит кабелен тунер!"
-
 msgid ""
 "No data on transponder!\n"
 "(Timeout reading PAT)"
@@ -5132,6 +5101,9 @@ msgstr "Няма налично описание."
 
 msgid "No displayable files on this medium found!"
 msgstr "Няма поддържани файлове на този носител!"
+
+msgid "No epg.dat file found server"
+msgstr "Не е открит сървър с epg.dat"
 
 msgid "No event info found, recording indefinitely."
 msgstr "Няма инфо за предаването, незабавен запис."
@@ -5301,9 +5273,6 @@ msgstr "Не определен"
 msgid "Not associated"
 msgstr "Няма асоциации"
 
-msgid "Not configured"
-msgstr "Не е настроен"
-
 msgid ""
 "Not enough disk space. Please free up some disk space and try again. (%d MB "
 "required, %d MB available)"
@@ -5325,9 +5294,6 @@ msgstr ""
 "след включване, изберете опция 'Режим готовност при старт' като 'Не, с "
 "изключение на таймера за включване'."
 
-msgid "Nothing connected"
-msgstr "Нищо не е свързано"
-
 msgid ""
 "Nothing to scan!\n"
 "Please setup your tuner settings before you start a service scan."
@@ -5338,10 +5304,6 @@ msgstr ""
 msgid "Nothing to scan! Setup your tuner and try again."
 msgstr "Нищо за сканиране! Настройте вашия тунер и опитайте отново."
 
-msgid "Now"
-msgstr "Сега"
-
-msgctxt "now/next: 'now' event label"
 msgid "Now"
 msgstr "Сега"
 
@@ -5358,10 +5320,10 @@ msgstr ""
 "ярки нива на сенките. Ако сте го направили, натиснете OK."
 
 msgid "Number of channels shown in channel selection list"
-msgstr "Количество на каналите в списъка за избор на канал"
+msgstr "Брой на каналите показвани в списъка за избор на канал"
 
 msgid "Number of repeating text on display."
-msgstr "Количество повторения на текста на дисплея."
+msgstr "Брой повторения на текста на дисплея."
 
 msgid "OK"
 msgstr "OK"
@@ -5843,9 +5805,6 @@ msgstr "Моля изчакайте"
 msgid "Please wait (downloading channel list)"
 msgstr "Моля изчакайте (изтегля се списък с канали)"
 
-msgid "Please wait (downloading softcam)"
-msgstr "Моля изчакайте (изтегля се емулатор)"
-
 msgid "Please wait (updating packages)"
 msgstr "Моля изчакайте (обновяване на пакетите)"
 
@@ -6063,9 +6022,6 @@ msgstr "Натиснете ОК за избор на сателити"
 msgid "Press OK to select/deselect a CAId."
 msgstr "Натиснете ОК за избор/отмяна на CAId."
 
-msgid "Press OK to start the scan"
-msgstr "Натиснете ОК за да започне търсенето"
-
 msgid "Press OK to toggle the selection"
 msgstr "Натиснете ОК за потвърждение или отмяна"
 
@@ -6077,10 +6033,6 @@ msgstr "Натиснете ОК, запазване и изход..."
 
 msgid "Press yellow to set this interface as default interface."
 msgstr "Натиснете жълтия бутон за избор на този интерфейс като дефолтен."
-
-msgctxt "button label, 'previous screen'"
-msgid "Prev"
-msgstr "Предишен"
 
 msgid "Preview"
 msgstr "Преглед"
@@ -6162,9 +6114,6 @@ msgstr "Защита менюто за таймери"
 
 msgid "Provider"
 msgstr "Провайдър"
-
-msgid "Provider to scan"
-msgstr "Сканиране на Провайдър"
 
 msgid "Providers"
 msgstr "Провайдъри"
@@ -6282,17 +6231,6 @@ msgstr "Тип записи"
 
 msgid "Recording(s) are in progress or coming up in few seconds!"
 msgstr "Запис(и) се извършват или ще започнат до няколко секунди!"
-
-msgid ""
-"Recording(s) are in progress or coming up in few seconds!\n"
-"Do you still want to flash image\n"
-"%s\n"
-"without backup?"
-msgstr ""
-"Запис(и) се извършват или ще започнат до няколко секунди! Все още ли искате "
-"да флашнете имидж\n"
-"%s\n"
-"без backup?"
 
 msgid ""
 "Recording(s) are in progress or coming up in few seconds!\n"
@@ -6689,6 +6627,10 @@ msgstr "Съб"
 msgid "Satellite"
 msgstr "Сателит"
 
+msgctxt "Satellite configuration mode"
+msgid "Mode"
+msgstr "Режим"
+
 msgid "Satellite dish setup"
 msgstr "Настройка на сателитната антена"
 
@@ -6703,9 +6645,6 @@ msgstr "Геогр.дължина на сателита:"
 
 msgid "Satellites"
 msgstr "Сателити"
-
-msgid "Satfinder"
-msgstr "Търсене на Сателити"
 
 msgid "Sats"
 msgstr "Сателити"
@@ -6733,9 +6672,6 @@ msgstr "Запази измененията"
 
 msgid "Save playlist"
 msgstr "Запази плейлист"
-
-msgid "Save settinigs and EPG data"
-msgstr "Запази настройките и EPG данните"
 
 msgid "Save timeshift and zap"
 msgstr "Запази таймшифт и превключи"
@@ -6824,7 +6760,7 @@ msgid "Scroll delay"
 msgstr "Задръжка на превъртането"
 
 msgid "Scroll repeats"
-msgstr "Количество повторения"
+msgstr "Брой повторения"
 
 msgid "Search east"
 msgstr "Търсене на изток"
@@ -7023,12 +6959,6 @@ msgstr "Изберете канал за запис"
 msgid "Select copy destination for:"
 msgstr "Избор на местоположение за копие за:"
 
-msgid "Select destination for copy selected files..."
-msgstr "Избор на местоположение за копиране на избраните файлове..."
-
-msgid "Select destination for move selected files..."
-msgstr "Избор на местоположение за преместване на избраните файлове..."
-
 msgid "Select destination for:"
 msgstr "Избор на местоположение за:"
 
@@ -7037,11 +6967,6 @@ msgstr "Избор на място за съхранение на лог-фай�
 
 msgid "Select files for backup."
 msgstr "Избор на файлове за backup."
-
-msgid ""
-"Select files with 'OK' and then use 'Menu' or 'Green' for select operation"
-msgstr ""
-"Изберете файлове с ‘OK’ и след това ‘Меню’ или ‘Зелен’ за избор на действие"
 
 msgid "Select files/folders to backup"
 msgstr "Избор на файлове/папки за backup"
@@ -7079,9 +7004,6 @@ msgstr "Избор местоположение"
 
 msgid "Select movie"
 msgstr "Избор на филм"
-
-msgid "Select operation:"
-msgstr "Изберете действие:"
 
 msgid "Select path for logfile"
 msgstr "Избор на път за файл-лога"
@@ -7231,6 +7153,10 @@ msgstr "Изберете видео режим"
 
 msgid "Select wireless network"
 msgstr "Изберете безжична мрежа"
+
+msgid ""
+"Select yes when you want to import channels and/or EPG from a different URL"
+msgstr "Изберете Да, когато искате да импортирате канали/EPG от друг URL-адрес"
 
 msgid "Select your ATSC provider."
 msgstr "Изберете Вашия ATSC провайдър."
@@ -7503,6 +7429,9 @@ msgstr "Покажи PiP"
 msgid "Show SNR percentage instead of dB value"
 msgstr "Показвай SNR в проценти вместо в dB"
 
+msgid "Show True/False as graphical switch"
+msgstr "Показвай Да/Не като графичен превключвател"
+
 msgid "Show VCR scart on main menu"
 msgstr "Покажи VCR scart в главното меню"
 
@@ -7538,9 +7467,6 @@ msgstr "Покажи крипто данни от емулатора в инфо
 
 msgid "Show detailed event info"
 msgstr "Покажи детално инфо за предаването"
-
-msgid "Show disclaimer"
-msgstr "Покажи отказ от отговорност"
 
 msgid "Show event details"
 msgstr "Покажи инфо за предаването"
@@ -7610,6 +7536,26 @@ msgstr "Покажи филми"
 
 msgid "Show multi channel EPG"
 msgstr "Покажи мулти-канален EPG"
+
+msgid ""
+"Show notification when import channels and/or EPG from remote receiver URL "
+"did not complete"
+msgstr ""
+"Покажи известие когато импортирането на канали/EPG от URL на резервния "
+"приемник не завърши"
+
+msgid ""
+"Show notification when import channels and/or EPG from remote receiver URL "
+"is completed"
+msgstr ""
+"Покажи известие когато импортирането на канали/EPG от URL на резервния "
+"приемник завърши"
+
+msgid "Show notification when import channels was not successful"
+msgstr "Покажи известие когато импортирането на канали не е успешно"
+
+msgid "Show notification when import channels was successful"
+msgstr "Покажи известие когато импортирането на канали завърши успешно"
 
 msgid "Show packages to be upgraded"
 msgstr "Покажи пакетите, които ще бъдат обновени"
@@ -7767,9 +7713,6 @@ msgstr "Географска Дължина"
 msgid "Skin"
 msgstr "Скин"
 
-msgid "Skin setup"
-msgstr "Настройка на скина"
-
 msgid "Skins"
 msgstr "Скинове"
 
@@ -7845,9 +7788,6 @@ msgstr "Настройки на емулатора"
 msgid "Softcam setup"
 msgstr "Настройки на емулатора"
 
-msgid "Softcam type"
-msgstr "Тип на емулатора"
-
 msgid "Software"
 msgstr "Софтуер"
 
@@ -7871,9 +7811,6 @@ msgstr "Соломонови Острови"
 
 msgid "Somalia"
 msgstr "Сомалия"
-
-msgid "Some error occured - Please try later"
-msgstr "Възникна грешка - Моля опитайте по-късно"
 
 msgid "Some plugins are not available:\n"
 msgstr "Някои плъгини не са налични:\n"
@@ -7919,7 +7856,10 @@ msgid "Sort list:"
 msgstr "Подреждане на списъка:"
 
 msgid "Sort order for menu entries"
-msgstr "Начин на подреждане за редовете в меню"
+msgstr "Начин на подреждане на редовете в меню"
+
+msgid "Sort order for setup entries"
+msgstr "Начин на подреждане на редовете в настройки"
 
 msgid "Sort plugins list to default?"
 msgstr "Подреждане на списъка с плъгини по подразбиране?"
@@ -8347,9 +8287,6 @@ msgstr "Скорост на сигнала & FEC"
 msgid "Symbol rate:"
 msgstr "Скорост на сигнала:"
 
-msgid "Symbolrate:"
-msgstr "Скорост на сигнала:"
-
 msgid "Sync failure moving back to origin !"
 msgstr "Грешка при синхронизация,връщане към оригинала!"
 
@@ -8360,7 +8297,7 @@ msgid "System & Modulation"
 msgstr "Система & Модулация"
 
 msgid "TRANSLATOR_INFO"
-msgstr "Мартин Петков - България - 10.03.2018"
+msgstr "Мартин Петков - България - 01.05.2018"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS файл е твърде голям за ISO9660 ниво 1!"
@@ -8400,9 +8337,6 @@ msgstr "Температура и управление на вентилатор
 
 msgid "Terrestrial"
 msgstr "Наземна"
-
-msgid "Terrestrial provider"
-msgstr "Наземен провайдър"
 
 msgid "Test DiSEqC settings"
 msgstr "Тест DiSEqC настройки"
@@ -8458,28 +8392,6 @@ msgstr ""
 "DVD стандарта не поддържа H.264 (HDTV) видео стриймове. Искате ли да "
 "създадете специален формат DVD (който няма да може да се възпроизвежда в "
 "стандартни DVD плеъри)?"
-
-msgid ""
-"The OpenPLi team would like to point out that upgrading to the latest "
-"nightly build comes not only with the latest features, but also with some "
-"risks. After the update, it is possible that your device no longer works as "
-"expected. We recommend you create backups with Autobackup or Backupsuite. "
-"This allows you to quickly and easily restore your device to its previous "
-"state, should you experience any problems. If you encounter a 'bug', please "
-"report the issue on www.openpli.org.\n"
-"\n"
-"Do you understand this?"
-msgstr ""
-"Екипът на OpenPLi би искал да отбележи, че обновяването до последния нощен "
-"имидж идва не само с последните функции, но и с някои рискове. След "
-"актуализацията, не е изключено устройството да не работи повече така, както "
-"се очаква. Ние препоръчваме да създадете резервно копие с помощта на "
-"'Autobackup, Backupsuite, Automatic Full Backup'. Това позволява бързо и "
-"лесно да възстановите устройството в изходно положение, ако са възникнали "
-"някакви проблеми. Ако сте открили 'бъг', моля съобщете ни на този адрес www."
-"openpli.org.\n"
-"\n"
-"Разбрахте ли това предупреждение?"
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN-кода беше успешно променен."
@@ -8543,8 +8455,8 @@ msgid ""
 "The green area means a 10% border area of a full HD picture will be "
 "invisible.\n"
 "\n"
-"In other words, if the yellow box meets all four sides of your screen, then "
-"you have at least 5% overscan on all sides.\n"
+"In other words, if the yellow box touches all four sides of your screen, you "
+"have at least 5% overscan on all sides.\n"
 "\n"
 "If you see the tips of all eight arrowheads, then your TV has overscan "
 "disabled.\n"
@@ -8589,12 +8501,6 @@ msgid ""
 msgstr ""
 "Софтуер мениджър плъгина не е инсталиран!\n"
 "Моля инсталирайте го."
-
-msgid ""
-"The status of the current beta image could not be checked because %s can not "
-"be reached."
-msgstr ""
-"Статуса на текущата бета версия не може да се провери, поради %s не отговаря."
 
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "Таймер файла (timers.xml) е повреден и не може да се зареди."
@@ -8731,24 +8637,29 @@ msgstr ""
 "Тази опция позволява да се добави 'Настройка на емулатора' в менюто с "
 "разширения."
 
+msgid "This option allows you to alphabetically sort setup menu entries."
+msgstr ""
+"Тази опция позволява подреждането на редовете в менюто за настройки по "
+"азбучен ред."
+
 msgid "This option allows you to boost the blue tones in the picture."
 msgstr "Тази опция позволява да подсилите сините тонове в картината."
 
 msgid "This option allows you to boost the green tones in the picture."
 msgstr "Тази опция позволява да подсилите зелените тонове в картината."
 
-msgid "This option allows you can config the Colordepth for UHD"
-msgstr "Тази опция позволява да настроите дълбочината на цвета за UHD"
-
-msgid "This option allows you can config the Colorimetry for HDR."
-msgstr "Тази опция позволява да настроите колориметрията за HDR."
-
-msgid "This option allows you can config the Colorspace from Auto to RGB"
-msgstr ""
-"Тази опция позволява да настроите режима на цветовия модел от Авто до RGB"
-
 msgid "This option allows you to change the virtuell loadspeaker position."
 msgstr "Тази опция позволява да промените позицията на виртуалната динамика."
+
+msgid "This option allows you to configure the Colordepth for UHD"
+msgstr "Тази опция позволява да настроите дълбочината на цвета за UHD"
+
+msgid "This option allows you to configure the Colorimetry for HDR."
+msgstr "Тази опция позволява да настроите колориметрията за HDR."
+
+msgid "This option allows you to configure the Colorspace from Auto to RGB"
+msgstr ""
+"Тази опция позволява да настроите режима на цветовия модел от Авто до RGB"
 
 msgid ""
 "This option allows you to disable or change the virtuell loadspeaker "
@@ -8908,25 +8819,6 @@ msgstr ""
 "- валиден IP-адрес не е открит\n"
 "- моля проверете Вашия DHCP, мрежовия кабел и настройките на адаптера"
 
-msgid ""
-"This test checks whether your LAN adapter is set up for automatic IP address "
-"configuration with DHCP.\n"
-"If you get a \"disabled\" message:\n"
-" - then your LAN adapter is configured for manual IP setup\n"
-"- verify that you have entered correct IP informations in the adapter setup "
-"dialog.\n"
-"If you get an \"enabeld\" message:\n"
-"-verify that you have a configured and working DHCP server in your network."
-msgstr ""
-"Този тест проверява дали Вашия LAN адаптер е настроен за получаване на "
-"автоматичен IP-адрес от DHCP.\n"
-"При поява на съобщение \"изключено\":\n"
-"- Вашия LAN адаптер е конфигуриран за ръчна настройка на IP.\n"
-"- проверете, че сте въвели коректна информация в менюто за настройка на "
-"мрежа.\n"
-"При поява на съобщение \" включен\":\n"
-"- убедете се, че имате конфигуриран и работещ DHCP сървер във Вашата мрежа."
-
 msgid "This test detects your configured LAN adapter."
 msgstr "Този тест открива вашия конфигуриран LAN адаптер."
 
@@ -9039,9 +8931,6 @@ msgstr "Към избор на субтитри"
 msgid "Today"
 msgstr "Днес"
 
-msgid "Toggle Extra Keys"
-msgstr "Включи допълнителни бутони"
-
 msgid "Toggle HDMI In"
 msgstr "Включи HDMI In"
 
@@ -9098,9 +8987,6 @@ msgstr "Общо стрийминг клиенти: %d (%s)"
 
 msgid "Track"
 msgstr "Пътечка"
-
-msgid "Traditional Chinese"
-msgstr "Традиционен Китайски"
 
 msgid "Transcoding: "
 msgstr "Транскодиране: "
@@ -9190,9 +9076,6 @@ msgstr "Тунер слот"
 msgid "Tuner status:"
 msgstr "Тунер статус:"
 
-msgid "Tuner status %s"
-msgstr "Тунер статус %s"
-
 msgid "Tuner type"
 msgstr "Тип на тунера"
 
@@ -9227,6 +9110,9 @@ msgstr "Две"
 msgid "Type"
 msgstr "Тип"
 
+msgid "Type of LNB/device"
+msgstr "Тип LNB/устройство"
+
 msgid "Type of scan"
 msgstr "Тип търсене"
 
@@ -9256,6 +9142,9 @@ msgstr "USALS калибровка"
 
 msgid "USB stick"
 msgstr "USB флашка"
+
+msgid "User Mode"
+msgstr "Потребителски Режим"
 
 msgid "Uganda"
 msgstr "Уганда"
@@ -9427,7 +9316,7 @@ msgid "Use fastscan channel names"
 msgstr "Имена на каналите от бързо търсене"
 
 msgid "Use fastscan channel numbering"
-msgstr "Номерация на каналите от бързо търсене"
+msgstr "Номериране на каналите от бързо търсене"
 
 msgid "Use frequency or channel"
 msgstr "Използвай честота или канал"
@@ -9579,6 +9468,10 @@ msgstr "Избор на видео режим."
 
 msgid "Video output"
 msgstr "Видео Изход"
+
+msgctxt "Video output mode"
+msgid "Mode"
+msgstr "Режим"
 
 msgid "Video setup"
 msgstr "Видео Настройка"
@@ -9823,9 +9716,6 @@ msgstr "Западен лимит"
 msgid "Western Sahara"
 msgstr "Западна Сахара"
 
-msgid "What do you want to scan?"
-msgstr "Какво искате да търсите?"
-
 msgid "What type of service scan do you want?"
 msgstr "Какъв тип на търсене искате да изберете?"
 
@@ -9835,7 +9725,7 @@ msgid ""
 "bouquets.radio files, will still be loaded. This allows you for example to "
 "keep your own user bouquet while installed settings are upgraded"
 msgstr ""
-"Ако е включено, то при старт на енигма2 ще бъдат заредени достъпни букети, "
+"Ако е включено, при старт на енигма2 ще бъдат заредени достъпни букети, "
 "които на са включени в списъка bouquets.tv или bouquets.radio. Това Ви "
 "позволява например да запазите Вашите букети при актуализация на настройките"
 
@@ -9846,20 +9736,27 @@ msgid ""
 "When enabled the arrow buttons around the OK button will follow the "
 "'neutrino' style zap controls instead of the enigma2 style."
 msgstr ""
-"Ако е включено, то бутони (ляво/дясно, нагоре/надолу) около OK, ще бъдат в "
+"Ако е включено, бутони (ляво/дясно, нагоре/надолу) около OK, ще бъдат в "
 "'неутрино' стил за превключване на канал, вместо стила на енигма2."
 
 msgid ""
 "When enabled the left, right, CH+/-, B+/-, P+/- buttons will follow the "
 "'neutrino' style zap controls instead of the enigma2 style."
 msgstr ""
-"Ако е включено, то бутони ляво/дясно, CH+/-, B+/-, P+/- ще бъдат в "
-"'неутрино' стил за смяна набукетите, вместо стила на енигма2."
+"Ако е включено, бутони ляво/дясно, CH+/-, B+/-, P+/- ще бъдат в 'неутрино' "
+"стил за смяна набукетите, вместо стила на енигма2."
 
 msgid "When enabled the set top box is able to wakeup on LAN"
 msgstr ""
 "Ако е включено и ако се поддържа от приемника, то той може да се стартира "
 "дистанционно по LAN когато е изключен."
+
+msgid ""
+"When selected this allows video modes to be selected even if they are not "
+"reported as supported."
+msgstr ""
+"Когато е избрано, това позволява да се изберат видео режими, дори ако те не "
+"се отчитат като поддържани."
 
 msgid ""
 "When enabled then when you select a new channel in the channel selection the "
@@ -9874,7 +9771,7 @@ msgid ""
 "When enabled you can control the volume with the arrow buttons instead of "
 "getting the channel selection list"
 msgstr ""
-"Ако е включено, то можете да регулирате усилването на звука с бутони (ляво/"
+"Ако е включено, можете да регулирате усилването на звука с бутони (ляво/"
 "дясно) около бутон OK, вместо да се показва списъка с избор на канали."
 
 msgid ""
@@ -9904,14 +9801,14 @@ msgid ""
 "When enabled you can zap channels with the  CH+/-, B+/-, P+/- buttons "
 "instead of opening the channel selection list."
 msgstr ""
-"Ако е включено, то каналите ще се превключват с бутони CH+/-, B+/-, P+/- "
-"вместо отваряне на списъка с избор на канали."
+"Ако е включено, каналите ще се превключват с бутони CH+/-, B+/-, P+/- вместо "
+"отваряне на списъка с избор на канали."
 
 msgid ""
 "When enabled you get the channel selection list via the OK button, the "
 "infobar toggle is then transfered to exit button"
 msgstr ""
-"Ако е включено, то списъка с избор на канали ще се отваря с бутон OK, а  "
+"Ако е включено, списъка с избор на канали ще се отваря с бутон OK, а  "
 "превключването на инфо-лентата ще става с бутон изход."
 
 msgid ""
@@ -9956,8 +9853,8 @@ msgid ""
 "When enabled, a recording is allowed to interrupt live tv, when there are no "
 "free tuners."
 msgstr ""
-"Ако е включено, то при старт на таймер за запис, предаването на live tv ще "
-"бъде спряно, когато няма свободни тунери."
+"Ако е включено, при старт на таймер за запис, предаването на live tv ще бъде "
+"спряно, когато няма свободни тунери."
 
 msgid ""
 "When enabled, a warning will be displayed and the user will get an option to "
@@ -9972,8 +9869,8 @@ msgid ""
 "streams are always descrambled if 0x100 is added to the service type, "
 "regardless of this setting. Default off."
 msgstr ""
-"Ако е включено, то получените http стриймове ще бъдат винаги декодирани. "
-"Това заема повече ресурси (декодиране демултиплекс), включете само при "
+"Ако е включено, получените http стриймове ще бъдат винаги декодирани. Това "
+"заема повече ресурси (декодиране демултиплекс), включете само при "
 "необходимост. Индивидуални стриймове винаги се декодират ако 0x100 се добави "
 "към типа на канала, независимо от тази настройка. По подразбиране изключено."
 
@@ -9982,7 +9879,7 @@ msgstr "Ако е включено, трябва удостоверяване з
 
 msgid "When enabled, channel numbering will start at '1' for each bouquet."
 msgstr ""
-"Ако е включено, то номерацията на каналите във всеки букет ще започва с '1'."
+"Ако е включено, номерацията на каналите във всеки букет ще започва с '1'."
 
 msgid ""
 "When enabled, content with an aspect ratio of 4:3 will be stretched to fit "
@@ -10028,15 +9925,15 @@ msgstr ""
 msgid ""
 "When enabled, external subtitles will be always turned on for playback movie."
 msgstr ""
-"Ако е включено, то външните субтитри ще бъдат винаги включени за "
+"Ако е включено, външните субтитри ще бъдат винаги включени за "
 "възпроизвеждане на филми."
 
 msgid ""
 "When enabled, graphical DVB subtitles are preferred over teletext subtitles, "
 "when both types are available."
 msgstr ""
-"Ако е включено,то ще бъде даден приоритет на графичните DVB субтитри, а не "
-"на телетекст субтитрите, когато и двата типа са достъпни."
+"Ако е включено, ще бъде даден приоритет на графичните DVB субтитри, а не на "
+"телетекст субтитрите, когато и двата типа са достъпни."
 
 msgid "When enabled, graphical DVB subtitles will be centered horizontally."
 msgstr ""
@@ -10060,12 +9957,12 @@ msgid ""
 "When enabled, http streams are descrambled on the server side. The (remote) "
 "client receiver does not have to do descrambling. Default on."
 msgstr ""
-"Ако е включено, то http стриймовете ще се декодират от сървъра. "
+"Ако е включено, http стриймовете ще се декодират от сървъра. "
 "(Дистанционният) клиент на стрийма няма нужда да декодира. Поподразбиране "
 "включено."
 
 msgid "When enabled, it is possible to leave the movieplayer with exit."
-msgstr "Ако е включено, то може да се затвори видеоплеъра с бутон изход."
+msgstr "Ако е включено, можете да затворите видеоплеъра с бутон изход."
 
 msgid ""
 "When enabled, measure power consumption to detect when the rotor stops "
@@ -10075,7 +9972,7 @@ msgstr ""
 "когато мотора престане да се върти (ако се поддържа от приемника)."
 
 msgid "When enabled, number markers will be hidden."
-msgstr "Ако е включено, то номерата на маркерите няма да се показват."
+msgstr "Ако е включено, номерата на маркерите няма да се показват."
 
 msgid "When enabled, reformat subtitles to match the width of the screen."
 msgstr ""
@@ -10083,7 +9980,7 @@ msgstr ""
 "екрана."
 
 msgid "When enabled, services may be grouped in multiple bouquets."
-msgstr "Ако е включено, то каналите могат да се групират в няколко букета."
+msgstr "Ако е включено, каналите могат да се групират в няколко букета."
 
 msgid "When enabled, show channel numbers in the channel selection screen."
 msgstr ""
@@ -10225,21 +10122,6 @@ msgstr ""
 "Когато изображението на канала има съотношение на страните 4:3, изберете "
 "дали да се мащабира/разтегне картината."
 
-msgid ""
-"When you do a factory reset, you will lose ALL your configuration data\n"
-"(including bouquets, services, satellite data ...)\n"
-"After completion of factory reset, your receiver will restart "
-"automatically!\n"
-"\n"
-"Really do a factory reset?"
-msgstr ""
-"Ако възстановите фабричните настройки, се губят всички данни\n"
-"(включително букети, канали, данни за сателити ...)\n"
-"След възстановяването на фабричните настройки, Вашия приемник ще се "
-"рестартира автоматично!\n"
-"\n"
-"Да възстановя ли фабричните настройки?"
-
 msgid "Where do you want to backup your settings?"
 msgstr "Къде искате да съхраните вашите настройки?"
 
@@ -10275,9 +10157,6 @@ msgstr "Без съобщение"
 
 msgid "Wizard to arrange the overscan"
 msgstr "Помощник за настройка на свръхсканиране(overscan)"
-
-msgid "Would you like to install a softcam?"
-msgstr "Искате ли да инсталирате емулатор?"
 
 msgid "Would you save the entered PIN %s persistent?"
 msgstr "Искате ли да съхраните въведения PIN-код %s като постоянен?"
@@ -10348,15 +10227,6 @@ msgstr "Да, съхрани моите настройки!"
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Да, изтрий този филм и върни към списъка с филми"
 
-msgid "Yes, do a manual scan now"
-msgstr "Да, започни ръчно търсене"
-
-msgid "Yes, do an automatic scan now"
-msgstr "Да, започни автоматично търсене"
-
-msgid "Yes, do another manual scan now"
-msgstr "Да, започни ново търсене"
-
 msgid "Yes, only from deep standby"
 msgstr "Да, само от изключен"
 
@@ -10418,63 +10288,6 @@ msgstr "Можете да премахнете този плъгин."
 msgid "You cannot delete this!"
 msgstr "Не може да го изтриете!"
 
-msgid ""
-"You did not see all eight arrow heads. This means your TV has overscan "
-"enabled and presents you with a zoomed-in picture, causing you to loose part "
-"of a full HD screen. In addition to this you may also miss parts of the user "
-"interface, for example volume bars and more.\n"
-"\n"
-"Unfortunately, your model of receiver is not capable to adjust the "
-"dimensions of the user interface. If not everything is visible, you should "
-"change the installed skin to one that supports the overscan area of your "
-"TV.\n"
-"\n"
-"When you select a different skin, the user interface of your receiver will "
-"restart.\n"
-"\n"
-"Note: you can always start the Overscan wizard later,  via\n"
-"\n"
-"menu->installation->system->Overscan wizard"
-msgstr ""
-"Вие не виждате всички глави на стрелките. Това означава, че Вашия ТВ е с "
-"включено свръхсканиране което Ви показва увеличен образ, и част от HD "
-"картината няма да се вижда. Вие може да не виждате също част от "
-"потребителския интерфейс, като лентата за усилването и др.\n"
-"\n"
-"За съжаление Вашия модел приемник не може да регулира размера на "
-"потребителския интерфейс. Ако не всичко се вижда, то трябва да смените скина "
-"с такъв, който поддържа свръхсканираната зона за Вашия ТВ.\n"
-"\n"
-"При избор на нов скин, потребителския интерфейс ще се рестартира.\n"
-"\n"
-"Отбележете: Вие винаги можете да стартирате помощника за свръхсканиране по-"
-"късно чрез\n"
-"\n"
-"меню->Настройки->Система->Помощник за Свръхсканиране"
-
-msgid ""
-"You did not see all eight arrow heads. This means your TV has overscan "
-"enabled and presents you with a zoomed-in picture, causing you to loose part "
-"of a full HD screen. In addition this you may also miss parts of the user "
-"interface, for example volume bars and more.\n"
-"\n"
-"You can now try to resize and change the position of the user interface "
-"until you see the eight arrow heads.\n"
-"\n"
-"When done press OK.\n"
-"\n"
-msgstr ""
-"Вие не виждате всички глави на стрелките. Това означава, че Вашия ТВ е с "
-"включено свръхсканиране което Ви показва увеличен образ, и част от HD "
-"картината няма да се вижда. Вие може да не виждате също част от "
-"потребителския интерфейс, като лентата за усилването и др.\n"
-"\n"
-"Опитайте да промените размера на потребителския интерфейс докато не видите "
-"осемте глави на стрелките.\n"
-"\n"
-"Когато завършите, натиснете ОК.\n"
-"\n"
-
 msgid "You didn't select a channel to record from."
 msgstr "Не сте избрали канал за запис."
 
@@ -10510,9 +10323,6 @@ msgstr ""
 "Вашия приемник трябва да бъде спрян. След изпълнение на инструкциите за "
 "актуализация дадени Ви от сайта, новия имидж ще Ви попита за възстановяване "
 "на Вашите настройки."
-
-msgid "You system does not support ext4"
-msgstr "Вашата система не поддържа ext4"
 
 msgid ""
 "Your backup succeeded. We will now continue to explain the further upgrade "
@@ -10679,9 +10489,6 @@ msgstr "Таймер - превключих на канал %s като PiP!"
 msgid "Zapped to timer service %s!"
 msgstr "Таймер - превключих на канал %s!"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5"
-msgstr "Zgemma H.S/H.2S/H.2H/H5"
-
 msgid "Zgemma Star S/2S/H1/H2"
 msgstr "Zgemma Star S/2S/H1/H2"
 
@@ -10761,7 +10568,7 @@ msgid "advanced"
 msgstr "разширен"
 
 msgid "adventure/western/war"
-msgstr "приключения/вестерн/военный"
+msgstr "приключенски/уестърн/военен"
 
 msgid "advertisement/shopping"
 msgstr "реклама/шоппинг"
@@ -10792,9 +10599,6 @@ msgstr "и повече не питай по време на тази сесия
 
 msgid "and never ask this again"
 msgstr "и повече никога не питай"
-
-msgid "and never show this message again"
-msgstr "и никогда не показвай това съобщение"
 
 msgid "and select next channel"
 msgstr "и избери следващия канал"
@@ -10855,6 +10659,14 @@ msgstr "долу"
 
 msgid "broadcasting/press"
 msgstr "предаване/преса"
+
+msgctxt "button label, 'next screen'"
+msgid "Next"
+msgstr "Следващ"
+
+msgctxt "button label, 'previous screen'"
+msgid "Prev"
+msgstr "Предишен"
 
 msgid "by date"
 msgstr "по дата"
@@ -11348,6 +11160,14 @@ msgstr "не е тестван"
 
 msgid "nothing connected"
 msgstr "нищо не е свързано"
+
+msgctxt "now/next: 'next' event label"
+msgid "Next"
+msgstr "Следва"
+
+msgctxt "now/next: 'now' event label"
+msgid "Now"
+msgstr "Сега"
 
 msgid "of a DUAL layer medium used."
 msgstr "от двуслоен диск е използвано."

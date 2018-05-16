@@ -18,13 +18,20 @@ def getImageVersionString():
 		pass
 	return _("unavailable")
 
+# WW -placeholder for BC purposes, commented out for the moment in the Screen
 def getFlashDateString():
-	try:
-		return time.strftime(_("%Y-%m-%d %H:%M"), time.localtime(os.path.getatime("/bin")))
-	except:
-		return _("unknown")
+	return _("unknown")
 
 def getBuildDateString():
+	try:
+		if os.path.isfile('/etc/version'):
+			version = open("/etc/version","r").read()
+			return "%s-%s-%s" % (version[:4], version[4:6], version[6:8])
+	except:
+		pass
+	return _("unknown")
+
+def getUpdateDateString():
 	try:
 		from glob import glob
 		build = [x.split("-")[-2:-1][0][-8:] for x in open(glob("/var/lib/opkg/info/openpli-bootlogo.control")[0], "r") if x.startswith("Version:")][0]
@@ -42,8 +49,12 @@ def getEnigmaVersionString():
 	return enigma_version
 
 def getGStreamerVersionString():
-	import enigma
-	return enigma.getGStreamerVersionString()
+	try:
+		from glob import glob
+		gst = [x.split("Version: ") for x in open(glob("/var/lib/opkg/info/gstreamer[0-9].[0-9].control")[0], "r") if x.startswith("Version:")][0]
+		return "%s" % gst[1].split("+")[0].replace("\n","")
+	except:
+		return _("unknown")
 
 def getKernelVersionString():
 	try:
@@ -106,8 +117,12 @@ def getDriverInstalledDate():
 			driver = [x.split("-")[-2:-1][0][-8:] for x in open(glob("/var/lib/opkg/info/*-dvb-modules-*.control")[0], "r") if x.startswith("Version:")][0]
 			return  "%s-%s-%s" % (driver[:4], driver[4:6], driver[6:])
 		except:
-			driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/*-dvb-proxy-*.control")[0], "r") if x.startswith("Version:")][0]
-			return  "%s" % driver[1].replace("\n","")
+			try:
+				driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/*-dvb-proxy-*.control")[0], "r") if x.startswith("Version:")][0]
+				return  "%s" % driver[1].replace("\n","")
+			except:
+				driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/*-platform-util-*.control")[0], "r") if x.startswith("Version:")][0]
+				return  "%s" % driver[1].replace("\n","")
 	except:
 		return _("unknown")
 
