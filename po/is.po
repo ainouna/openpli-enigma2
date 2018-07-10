@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 09:42+0200\n"
+"POT-Creation-Date: 2018-07-08 11:27+0430\n"
 "PO-Revision-Date: 2011-05-07 12:23+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -756,7 +756,16 @@ msgstr "Stilla hljóð/mynd"
 msgid "AAC downmix"
 msgstr ""
 
+msgid "AAC transcoding"
+msgstr ""
+
+msgid "AC3"
+msgstr ""
+
 msgid "AC3 downmix"
+msgstr ""
+
+msgid "AC3 plus transcoding"
 msgstr ""
 
 msgid "ACQUIRING TSID/ONID"
@@ -881,9 +890,6 @@ msgstr "bæta við upptöku (endalaus)"
 msgid "Add recording (stop after current event)"
 msgstr "bæta við upptöku (stoppa eftir núverandi atriði)"
 
-msgid "Add seperate receiver URL for import"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Add service"
@@ -999,6 +1005,12 @@ msgstr ""
 msgid "Allocate unused memory index"
 msgstr ""
 
+msgid "Allow 10bit"
+msgstr ""
+
+msgid "Allow 12bit"
+msgstr ""
+
 msgid "Allow quit movieplayer with exit"
 msgstr ""
 
@@ -1010,6 +1022,10 @@ msgstr ""
 
 msgid "Allow subtitles for hearing impaired"
 msgstr ""
+
+#, fuzzy
+msgid "Allow unsupported modes"
+msgstr "ekki stutt"
 
 msgid "Alpha"
 msgstr "Gegnsæi"
@@ -1297,6 +1313,10 @@ msgstr "Sjálfvirkt"
 
 msgid "Automatic Scan"
 msgstr ""
+
+#, fuzzy
+msgid "Automatic bookmarks"
+msgstr "Sjálfvirk leit"
 
 #, fuzzy
 msgid "Automatic scan"
@@ -1777,6 +1797,9 @@ msgstr ""
 msgid "Choose bouquet"
 msgstr ""
 
+msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr ""
 
@@ -2202,6 +2225,18 @@ msgstr ""
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr ""
 
+msgid "Configure whether AAC sound tracks should be transcoded."
+msgstr ""
+
+msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
+msgstr ""
+
+msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
+msgstr ""
+
+msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
+msgstr ""
+
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr ""
 
@@ -2358,7 +2393,7 @@ msgstr "Búa til DVD-ISO"
 msgid "Create new folder and exit"
 msgstr ""
 
-msgid "Create seperate radio userbouquet"
+msgid "Create separate radio userbouquet"
 msgstr ""
 
 #, python-format
@@ -2473,7 +2508,13 @@ msgstr "meiri stillingar"
 msgid "DMM normal"
 msgstr ""
 
+msgid "DTS"
+msgstr ""
+
 msgid "DTS downmix"
+msgstr ""
+
+msgid "DTS-HD downmix"
 msgstr ""
 
 msgid "DUAL LAYER DVD"
@@ -2704,6 +2745,9 @@ msgstr "Lýsing"
 msgid "Deselect"
 msgstr "Ekki velja"
 
+msgid "Destination of fallback remote receiver"
+msgstr ""
+
 msgid "Details for plugin: "
 msgstr "Upplýsingar um íforrit:"
 
@@ -2831,6 +2875,9 @@ msgstr "Skjár og notenda viðmót"
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display movie length in movielist (except single line style)."
+msgstr ""
+
 #
 #, fuzzy
 msgid "Display setup"
@@ -2875,6 +2922,9 @@ msgstr "ekki breyta"
 #, fuzzy
 msgid "Do not record"
 msgstr "ekki taka upp"
+
+msgid "Do not show file extensions for registered multimedia files."
+msgstr ""
 
 #
 #, fuzzy
@@ -3054,6 +3104,14 @@ msgstr "Hleð niður"
 msgid "Downloading plugin information. Please wait..."
 msgstr "Hala niður íforrits upplýsingum. Vinsamlega bíðið..."
 
+msgid "Downmix"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Drop unconfigured satellites"
+msgstr "eyða völdum gervihnetti"
+
 #
 msgid "Dutch"
 msgstr "Hollenska"
@@ -3159,6 +3217,9 @@ msgstr ""
 msgid "Electronic Program Guide"
 msgstr "Rafrænn dagskrárstjóri (EPG)"
 
+msgid "Empty slot"
+msgstr ""
+
 #
 msgid "Enable"
 msgstr "Virkja"
@@ -3213,6 +3274,9 @@ msgid "Enable fallback remote receiver"
 msgstr ""
 
 msgid "Enable freesat EPG"
+msgstr ""
+
+msgid "Enable import timer from fallback tuner"
 msgstr ""
 
 #
@@ -3298,7 +3362,15 @@ msgstr "Ný útgáfa:"
 msgid "Enigma2 skin selector"
 msgstr "enigma2 og netkerfi"
 
+#
+#, fuzzy
+msgid "Enter IP address"
+msgstr "IP Netfang"
+
 msgid "Enter PIN"
+msgstr ""
+
+msgid "Enter URL"
 msgstr ""
 
 msgid "Enter if you are in the east or west hemisphere."
@@ -3391,6 +3463,12 @@ msgid "Error when writing epg.dat on server"
 msgstr ""
 
 msgid "Error while retreiving epg.dat from server"
+msgstr ""
+
+#, python-format
+msgid ""
+"Error while retreiving fallback timer information\n"
+"%s"
 msgstr ""
 
 msgid "Error while retreiving location of epg.dat on server"
@@ -3651,10 +3729,25 @@ msgstr ""
 msgid "Falkland Islands (Malvinas)"
 msgstr ""
 
+msgid "Fallback Timer"
+msgstr ""
+
+msgid "Fallback remote receiver"
+msgstr ""
+
+msgid "Fallback remote receiver IP"
+msgstr ""
+
+msgid "Fallback remote receiver Port"
+msgstr ""
+
 msgid "Fallback remote receiver URL"
 msgstr ""
 
 msgid "Fallback remote receiver setup"
+msgstr ""
+
+msgid "Fallback tuner setup"
 msgstr ""
 
 #, python-format
@@ -4104,6 +4197,9 @@ msgstr ""
 msgid "HDMI HDR Type"
 msgstr ""
 
+msgid "HDMI audio source"
+msgstr ""
+
 msgid "HDMI-CEC Source Active"
 msgstr ""
 
@@ -4116,8 +4212,16 @@ msgstr ""
 msgid "HDR10"
 msgstr ""
 
+#, fuzzy
+msgid "HDR10 support"
+msgstr "ekki stutt"
+
 msgid "HLG"
 msgstr ""
+
+#, fuzzy
+msgid "HLG support"
+msgstr "ekki stutt"
 
 #
 #, fuzzy
@@ -4278,6 +4382,9 @@ msgstr ""
 msgid "IP address"
 msgstr "IP Netfang"
 
+msgid "IP of fallback remote receiver"
+msgstr ""
+
 #
 msgid "ISO file is too large for this filesystem!"
 msgstr "Iso skrá er of stór fyrir þetta skráarkerfi!"
@@ -4293,6 +4400,18 @@ msgid "Icons"
 msgstr ""
 
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
+msgstr ""
+
+msgid "If enabled, then there will be displayed icons for new/unseen items too."
+msgstr ""
+
+msgid "If is disabled, then after Copy/Move will not be target directory stored into bookmarks."
+msgstr ""
+
+msgid "If is enabled and movie playback is finished, then after return to movielist will not be automaticaly start service playback."
+msgstr ""
+
+msgid "If set as 'Yes', then audiofiles are played in 'list mode' only, instead in full screen player."
 msgstr ""
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
@@ -4382,6 +4501,10 @@ msgstr ""
 
 msgid "Include AIT in http streams"
 msgstr ""
+
+#, fuzzy
+msgid "Include CI assignment"
+msgstr "CI stillingar"
 
 msgid "Include ECM in http streams"
 msgstr ""
@@ -4915,6 +5038,9 @@ msgstr "Litháíska"
 msgid "Lithuanian"
 msgstr "Litháíska"
 
+msgid "Live decoder"
+msgstr ""
+
 #
 msgid "Load"
 msgstr "Hleð"
@@ -5280,11 +5406,6 @@ msgstr "Handvirk stilling"
 
 msgid "Movie location"
 msgstr "Staðsetning bíómynda"
-
-#
-#, fuzzy
-msgid "Movie manager"
-msgstr "Hugbúnaðarpakka stjóri"
 
 #, fuzzy
 msgid "Movie selection"
@@ -5943,6 +6064,9 @@ msgstr "Skrifa yfir stillinga skrár ?"
 msgid "PAL"
 msgstr "PAL"
 
+msgid "PCM"
+msgstr ""
+
 msgid "PCR PID"
 msgstr "PCR PID"
 
@@ -6033,6 +6157,9 @@ msgstr "Forritun foreldrakóða á rásir"
 msgid "Parental control setup"
 msgstr "Uppsetning á foreldrastýringu"
 
+msgid "Passthrough"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Pause"
@@ -6109,13 +6236,13 @@ msgstr "Spila"
 msgid "Play DVD"
 msgstr "Spila DVD"
 
-msgid "Play audio in background"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Play audio-CD..."
 msgstr "Spila hljóð disk..."
+
+msgid "Play audiofiles in list mode"
+msgstr ""
 
 msgid "Play back media files"
 msgstr ""
@@ -6454,6 +6581,9 @@ msgstr "Tengi C"
 msgid "Port D"
 msgstr "Tengi D"
 
+msgid "Port of fallback remote receiver"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Portugal"
@@ -6599,6 +6729,11 @@ msgstr ""
 #
 #, fuzzy
 msgid "Press OK to select a provider."
+msgstr "Ýttu á OK til að velja sendanda."
+
+#
+#, fuzzy
+msgid "Press OK to select a service."
 msgstr "Ýttu á OK til að velja sendanda."
 
 msgid "Press OK to select satellites"
@@ -7312,6 +7447,11 @@ msgstr ""
 msgid "Saint Vincent and the Grenadines"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Same as stream"
+msgstr "Stoppa prófun"
+
 msgid "Same resolution as skin"
 msgstr ""
 
@@ -7851,9 +7991,6 @@ msgstr "Veldu mynd stillingu"
 msgid "Select wireless network"
 msgstr "Veldu þráðlaust net"
 
-msgid "Select yes when you want to import channels and/or EPG from a different URL"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Select your ATSC provider."
@@ -7884,6 +8021,9 @@ msgid "Selecting this option allows you to configure a group of satellites in on
 msgstr ""
 
 msgid "Selects the mode how live tv should be shown on the LCD."
+msgstr ""
+
+msgid "Selects video source displayed on the LCD."
 msgstr ""
 
 msgid "Send 'sourceactive' before zap timers"
@@ -8006,8 +8146,15 @@ msgstr ""
 msgid "Services"
 msgstr "Rásir"
 
+msgid "Set CI assignment for detection of available services."
+msgstr ""
+
 msgid "Set PIN"
 msgstr ""
+
+#, fuzzy
+msgid "Set action when movie playback is finished."
+msgstr "Aðgerð þegar mynd byrjar"
 
 msgid "Set all hotkey to default?"
 msgstr ""
@@ -8031,12 +8178,20 @@ msgstr ""
 msgid "Set fps for external subtitles"
 msgstr ""
 
+msgid "Set if You want see status icons, progress bars or nothing."
+msgstr ""
+
 #
 msgid "Set interface as default Interface"
 msgstr "Gera að sjálfgefnu korti"
 
 msgid "Set limits"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Set movielist type."
+msgstr "loka myndalista"
 
 msgid "Set pin code persistent"
 msgstr ""
@@ -8077,6 +8232,9 @@ msgstr "Setja spennu og 22KHz"
 #
 msgid "Settings"
 msgstr "Stillingar"
+
+msgid "Settings can be different for each directory separately (for non removeable devices only)."
+msgstr ""
 
 #
 msgid "Setup"
@@ -8638,6 +8796,9 @@ msgid "Sort list:"
 msgstr ""
 
 msgid "Sort order for menu entries"
+msgstr ""
+
+msgid "Sort order for setup entries"
 msgstr ""
 
 msgid "Sort plugins list to default?"
@@ -9464,6 +9625,9 @@ msgstr ""
 msgid "This option allows you to add the softcam setup in the extensions menu."
 msgstr ""
 
+msgid "This option allows you to alphabetically sort setup menu entries."
+msgstr ""
+
 msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
@@ -9492,6 +9656,18 @@ msgid "This option allows you to enable 3D surround softlimiter."
 msgstr ""
 
 msgid "This option allows you to enable 3D surround sound."
+msgstr ""
+
+msgid "This option allows you to enable or disable the 10 bit color mode"
+msgstr ""
+
+msgid "This option allows you to enable or disable the 12 bit color mode"
+msgstr ""
+
+msgid "This option allows you to force the HDR10 modes for UHD"
+msgstr ""
+
+msgid "This option allows you to force the HLG modes for UHD"
 msgstr ""
 
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
@@ -10039,6 +10215,9 @@ msgstr "Hætta við að hætta við"
 msgid "Unencrypted"
 msgstr "Opin rás"
 
+msgid "Unexpected error while retreiving fallback tuner's timer information"
+msgstr ""
+
 msgid "UnhandledKey"
 msgstr "Ónotaður"
 
@@ -10489,6 +10668,9 @@ msgstr "WEP"
 msgid "WLAN connection"
 msgstr "WLAN nettenging"
 
+msgid "WMA pro downmix"
+msgstr ""
+
 #
 msgid "WPA"
 msgstr "WPA"
@@ -10641,6 +10823,9 @@ msgid "When enabled the left, right, CH+/-, B+/-, P+/- buttons will follow the '
 msgstr ""
 
 msgid "When enabled the set top box is able to wakeup on LAN"
+msgstr ""
+
+msgid "When enabled the timer from the fallback tuner is imported"
 msgstr ""
 
 msgid "When enabled then when you select a new channel in the channel selection the channel selection will not close. It will only close when you select the current playing service. This is a kind of preview mode"
@@ -10817,6 +11002,9 @@ msgid "When nonzero, a recording will start earlier than the starting time indic
 msgstr ""
 
 msgid "When nonzero, a recording will stop later than the ending time indicated by the EPG."
+msgstr ""
+
+msgid "When selected this allows video modes to be selected even if they are not reported as supported."
 msgstr ""
 
 msgid "When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture."
@@ -10997,6 +11185,9 @@ msgstr "Þú getur hætt við að fjarlægja."
 msgid "You can continue watching TV etc. while this is running."
 msgstr ""
 
+msgid "You can enable if will be displayed extended EPG description for item."
+msgstr ""
+
 msgid "You can install this plugin."
 msgstr "Þú getur sett inn þetta íforrit."
 
@@ -11005,6 +11196,16 @@ msgstr ""
 
 msgid "You can remove this plugin."
 msgstr "Þú getur tekið út þetta íforrit."
+
+msgid "You can set how will be finished movieplayer with 'Exit' button."
+msgstr ""
+
+msgid "You can set selected directory as 'root' directory for movie player."
+msgstr ""
+
+#, fuzzy
+msgid "You can set sorting type for items in movielist."
+msgstr "Hlaða inn lengd myndar í myndalista"
 
 #
 msgid "You cannot delete this!"
@@ -11183,6 +11384,9 @@ msgid "Zap to"
 msgstr ""
 
 msgid "Zap to selected channel"
+msgstr ""
+
+msgid "Zap to selected channel and exit GMEPG"
 msgstr ""
 
 msgid "Zap to selected channel, or show detailed event info (depends on configuration)"
@@ -11454,6 +11658,21 @@ msgstr "staðfest"
 msgid "connected"
 msgstr "tengt"
 
+msgid "controlled by HDMI"
+msgstr ""
+
+msgid "convert to AC3"
+msgstr ""
+
+msgid "convert to DTS"
+msgstr ""
+
+msgid "convert to multi channel PCM"
+msgstr ""
+
+msgid "convert to multi-channel PCM"
+msgstr ""
+
 msgid "cooking"
 msgstr ""
 
@@ -11683,6 +11902,19 @@ msgstr ""
 
 msgid "football/soccer"
 msgstr ""
+
+msgid "force AC3 plus"
+msgstr ""
+
+#
+#, fuzzy
+msgid "force disabled"
+msgstr "óvirkt"
+
+#
+#, fuzzy
+msgid "force enabled"
+msgstr "virkt"
 
 msgid "foreign countries/expeditions"
 msgstr ""
@@ -12302,14 +12534,6 @@ msgstr ""
 msgid "slot%s - %s, without backup"
 msgstr ""
 
-#, python-format
-msgid "slot%s - empty, with backup"
-msgstr ""
-
-#, python-format
-msgid "slot%s - empty, without backup"
-msgstr ""
-
 msgid "soap/melodram/folkloric"
 msgstr ""
 
@@ -12456,6 +12680,9 @@ msgstr ""
 
 msgid "until standby/restart"
 msgstr "bíða til biðstöðu/endurræsingu"
+
+msgid "use best, controlled by HDMI"
+msgstr ""
 
 #
 msgid "user defined"

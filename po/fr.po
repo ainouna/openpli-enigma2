@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-12 10:45+0200\n"
-"PO-Revision-Date: 2018-05-12 10:46+0200\n"
+"POT-Creation-Date: 2018-07-08 11:27+0430\n"
+"PO-Revision-Date: 2018-07-08 18:05+0200\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
 "Language: fr\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.8\n"
 
 msgid ""
 "\n"
@@ -714,8 +714,17 @@ msgstr "Paramètres A/V"
 msgid "AAC downmix"
 msgstr "Downmix AAC"
 
+msgid "AAC transcoding"
+msgstr "AAC transcodage"
+
+msgid "AC3"
+msgstr "AC3"
+
 msgid "AC3 downmix"
 msgstr "Downmix AC3"
+
+msgid "AC3 plus transcoding"
+msgstr "AC3 plus transcodage"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "ACQUISITION DE TSID/ONID"
@@ -914,6 +923,12 @@ msgstr "Alloue un numéro au LNB physique que vous configurez. Vous serez capabl
 
 msgid "Allocate unused memory index"
 msgstr "Allouer indice de la mémoire inutilisée"
+
+msgid "Allow 10bit"
+msgstr "Autoriser 10bit"
+
+msgid "Allow 12bit"
+msgstr "Autoriser 12bit"
 
 msgid "Allow quit movieplayer with exit"
 msgstr "Autoriser de quitter Movieplayer avec la touche EXIT"
@@ -1660,6 +1675,9 @@ msgstr "Choisir tuner"
 msgid "Choose bouquet"
 msgstr "Choisir le bouquet"
 
+msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
+msgstr "Configure si plusieurs pistes sonores doivent être remixées en PCM ou SPDIF."
+
 msgid "Choose which tuner to configure."
 msgstr "Choisissez le tuner à configurer."
 
@@ -2057,6 +2075,18 @@ msgstr "Configure comment les programmations terminées apparaissent dans la lis
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Configure si (et pour combien de temps) une deuxième barre d'informations s'affiche lorsque vous appuyez sur OK à deux reprises. La seconde barre contient des informations supplémentaires sur la chaîne actuelle."
 
+msgid "Configure whether AAC sound tracks should be transcoded."
+msgstr "Configure si plusieurs les pistes sons AAC doivent être transcodées."
+
+msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
+msgstr "Configure si plusieurs pistes sonores ACS3 doivent être transcodée en AC3."
+
+msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
+msgstr "Configure si plusieurs pistes sonores DTS-HD doivent être remixées ou transcodées."
+
+msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
+msgstr "Configure si les pistes sonores WMA pro doivent être remixées ou transcodées."
+
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr "Configure si la piste PCM multi canaux doit être activée."
 
@@ -2206,7 +2236,7 @@ msgstr "Créer DVD-ISO"
 msgid "Create new folder and exit"
 msgstr "Créer un répertoire et quitter"
 
-msgid "Create seperate radio userbouquet"
+msgid "Create separate radio userbouquet"
 msgstr "Créer des bouquets radio séparés"
 
 #, python-format
@@ -2314,8 +2344,14 @@ msgstr "DMM avancée"
 msgid "DMM normal"
 msgstr "DMM normal"
 
+msgid "DTS"
+msgstr "DTS"
+
 msgid "DTS downmix"
 msgstr "Downmix DTS"
+
+msgid "DTS-HD downmix"
+msgstr "DTS-HD downmix"
 
 msgid "DUAL LAYER DVD"
 msgstr "DVD DOUBLE COUCHE"
@@ -2815,6 +2851,12 @@ msgstr "Téléchargement de l'image"
 msgid "Downloading plugin information. Please wait..."
 msgstr "Téléchargement des informations sur les extensions. Patientez SVP..."
 
+msgid "Downmix"
+msgstr "Downmix"
+
+msgid "Drop unconfigured satellites"
+msgstr "Oublier les satellites non configurés"
+
 msgid "Dutch"
 msgstr "Néerlandais"
 
@@ -2958,6 +3000,9 @@ msgstr "Activer le récepteur distant de repli"
 
 msgid "Enable freesat EPG"
 msgstr "Activer EPG freesat"
+
+msgid "Enable import timer from fallback tuner"
+msgstr "Importer les programmations du récepteur distant de repli"
 
 msgid "Enable multiple bouquets"
 msgstr "Activer bouquets multiples"
@@ -3133,6 +3178,14 @@ msgstr "Erreur lors de l’écriture du epg.dat sur le serveur"
 
 msgid "Error while retreiving epg.dat from server"
 msgstr "Erreur lors de la réception du fichier epg.dat du serveur"
+
+#, python-format
+msgid ""
+"Error while retreiving fallback timer information\n"
+"%s"
+msgstr ""
+"Erreur lors de la récupération des informations de programmation de repli\n"
+"%s"
 
 msgid "Error while retreiving location of epg.dat on server"
 msgstr "Erreur pour trouver la localisation du fichier epg.dat sur le serveur"
@@ -3368,6 +3421,9 @@ msgstr "Échoué:"
 
 msgid "Falkland Islands (Malvinas)"
 msgstr "Îles des Falkland (Malouines)"
+
+msgid "Fallback Timer"
+msgstr "Programmation de repli"
 
 msgid "Fallback remote receiver"
 msgstr "Récepteur distant de repli"
@@ -3781,6 +3837,9 @@ msgstr "Espace colorimétrique HDMI"
 msgid "HDMI HDR Type"
 msgstr "Type HDMI HDR"
 
+msgid "HDMI audio source"
+msgstr "source audioHDMI"
+
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC source active"
 
@@ -3793,8 +3852,14 @@ msgstr "Configurer HDMI-CEC"
 msgid "HDR10"
 msgstr "HDR10"
 
+msgid "HDR10 support"
+msgstr "supporte HDR10"
+
 msgid "HLG"
 msgstr "HLG"
+
+msgid "HLG support"
+msgstr "supporte HLG"
 
 msgid "Haiti"
 msgstr "Haïti"
@@ -4043,6 +4108,9 @@ msgstr "Arrêt automatique en cas d'inactivité"
 
 msgid "Include AIT in http streams"
 msgstr "Inclure AIT dans les flux HTTP"
+
+msgid "Include CI assignment"
+msgstr "Inclure l’assignation CI"
 
 msgid "Include ECM in http streams"
 msgstr "Inclure ECM dans les flux HTTP"
@@ -4484,6 +4552,9 @@ msgstr "Lituanie"
 msgid "Lithuanian"
 msgstr "Lituanien"
 
+msgid "Live decoder"
+msgstr "Décodeur en direct"
+
 msgid "Load"
 msgstr "Charger"
 
@@ -4787,9 +4858,6 @@ msgstr "Configuration de la liste de films"
 
 msgid "Movie location"
 msgstr "Emplacement des films"
-
-msgid "Movie manager"
-msgstr "Gestionnaire de films"
 
 msgid "Movie selection"
 msgstr "Sélection des films"
@@ -5347,6 +5415,9 @@ msgstr "Ecraser les fichiers de configuration?"
 msgid "PAL"
 msgstr "PAL"
 
+msgid "PCM"
+msgstr "PCM"
+
 msgid "PCR PID"
 msgstr "PID PCR"
 
@@ -5422,6 +5493,9 @@ msgstr "Éditeur des services avec contrôle parental"
 
 msgid "Parental control setup"
 msgstr "Paramètres du contrôle parental"
+
+msgid "Passthrough"
+msgstr "Traverser (Passthrough)"
 
 msgid "Pause"
 msgstr "Pause"
@@ -5897,6 +5971,9 @@ msgstr "Appuyez sur OK pour sélectionner un groupe de satellites à configurer 
 
 msgid "Press OK to select a provider."
 msgstr "Appuyez sur OK pour sélectionner un opérateur."
+
+msgid "Press OK to select a service."
+msgstr "Appuyez sur OK pour sélectionner un service."
 
 msgid "Press OK to select satellites"
 msgstr "Appuyez sur OK pour sélectionner les satellites"
@@ -6860,7 +6937,7 @@ msgid "Select how quickly the dish should move between satellites."
 msgstr "Sélectionnez à quelle vitesse l’antenne doit se déplacer entre les satellites."
 
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
-msgstr "Sélectionnez la configuration de votre antenne satellite p.e. antenne fixe, LNB seul, commutateur DiSEqC, positinneur, etc."
+msgstr "Sélectionnez la configuration de votre antenne satellite p.e. antenne fixe, LNB seul, commutateur DiSEqC, positionneur, etc."
 
 msgid "Select input device"
 msgstr "Choisir le périphérique entrée"
@@ -6994,6 +7071,9 @@ msgstr "En sélectionnant cette option cela vous permettra de configurer un grou
 msgid "Selects the mode how live tv should be shown on the LCD."
 msgstr "Choisissez le mode qui doit être utilisé pour afficher la TV en direct sur l’écran LCD."
 
+msgid "Selects video source displayed on the LCD."
+msgstr "Choisissez la source vidéo affichée sur l’écran LCD."
+
 msgid "Send 'sourceactive' before zap timers"
 msgstr "Envoyer ‘sourceactive’ avant les timers de zap"
 
@@ -7089,6 +7169,9 @@ msgstr "Nom du service"
 
 msgid "Services"
 msgstr "Services"
+
+msgid "Set CI assignment for detection of available services."
+msgstr "Définir l’assignation du CI pour la détection des services disponibles."
 
 msgid "Set PIN"
 msgstr "Définir le PIN"
@@ -8081,7 +8164,7 @@ msgstr ""
 "Traduction Française\n"
 "Enigma2 - OpenPLi\n"
 "Support: www.openpli.org\n"
-"Dernière MAJ: 12-05-2018"
+"Dernière MAJ: 08-07-2018"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "Fichier TS trop grand pour le niveau 1 ISO9660!"
@@ -8410,6 +8493,18 @@ msgstr "Cette option vous permet d’activer le limiteur doux du 3D surround."
 
 msgid "This option allows you to enable 3D surround sound."
 msgstr "Cette option vous permet d’activer le son 3D surround."
+
+msgid "This option allows you to enable or disable the 10 bit color mode"
+msgstr "Cette option vous permet d’activer ou désactiver le mode couleur 10 bit"
+
+msgid "This option allows you to enable or disable the 12 bit color mode"
+msgstr "Cette option vous permet d’activer ou désactiver le mode couleur 12 bit"
+
+msgid "This option allows you to force the HDR10 modes for UHD"
+msgstr "Cette option vous permet de forcer le mode HDR10 pour l’UHD"
+
+msgid "This option allows you to force the HLG modes for UHD"
+msgstr "Cette option vous permet de forcer le mode HLG pour l’UHD"
 
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr "Cette option vous permet de masquer et trier les entrées des menus. Lorsqu’il est activé vous pouvez changer l’ordre et masquer les entrées des menus via le bouton bleu."
@@ -8884,6 +8979,9 @@ msgstr "Défaire désinstallation"
 msgid "Unencrypted"
 msgstr "Non crypté"
 
+msgid "Unexpected error while retreiving fallback tuner's timer information"
+msgstr "Erreur inattendue lors de la récupération des informations de programmation du récepteur de repli"
+
 msgid "UnhandledKey"
 msgstr "Clé non prise en charge"
 
@@ -9260,6 +9358,9 @@ msgstr "WEP"
 msgid "WLAN connection"
 msgstr "Connexion WLAN"
 
+msgid "WMA pro downmix"
+msgstr "Downmix WMA pro"
+
 msgid "WPA"
 msgstr "WPA"
 
@@ -9410,6 +9511,9 @@ msgstr "Lorsqu'elle est activée, les boutons Gauche, Droite, CH+/-, B+/-, P+/- 
 
 msgid "When enabled the set top box is able to wakeup on LAN"
 msgstr "Lorsqu'elle est activée, le récepteur est capable de réagir au réveil depuis le réseau (wakeup on LAN)"
+
+msgid "When enabled the timer from the fallback tuner is imported"
+msgstr "Lorsque c’est activé les programmations du récepteur de repli sont importées"
 
 msgid "When enabled then when you select a new channel in the channel selection the channel selection will not close. It will only close when you select the current playing service. This is a kind of preview mode"
 msgstr "Lorsqu'elle est activée, quand vous sélectionnez une chaîne dans la liste celle-ci ne va pas se fermer. Il se fermera uniquement lorsque vous sélectionnerez le service courant. C'est une sorte d'aperçu."
@@ -10197,6 +10301,21 @@ msgstr "Confirmé"
 msgid "connected"
 msgstr "Connecté"
 
+msgid "controlled by HDMI"
+msgstr "Contrôlé par HDMI"
+
+msgid "convert to AC3"
+msgstr "convertir en AC3"
+
+msgid "convert to DTS"
+msgstr "convertir en DTS"
+
+msgid "convert to multi channel PCM"
+msgstr "convertir en PCM multi-canaux"
+
+msgid "convert to multi-channel PCM"
+msgstr "convertir en PCM multi-canaux"
+
 msgid "cooking"
 msgstr "Cuisine"
 
@@ -10394,6 +10513,15 @@ msgstr "Folk/Musique traditionnelle"
 
 msgid "football/soccer"
 msgstr "Football/Foot"
+
+msgid "force AC3 plus"
+msgstr "forcer AC3 plus"
+
+msgid "force disabled"
+msgstr "forcer désactivé"
+
+msgid "force enabled"
+msgstr "forcer activé"
 
 msgid "foreign countries/expeditions"
 msgstr "Pays étrangers/Expéditions"
@@ -11056,6 +11184,9 @@ msgstr "non testable"
 
 msgid "until standby/restart"
 msgstr "Jusqu'à veille/redémarrage"
+
+msgid "use best, controlled by HDMI"
+msgstr "utiliser le meilleur, contrôler par HDMI"
 
 msgid "user defined"
 msgstr "Défini par l'utilisateur"

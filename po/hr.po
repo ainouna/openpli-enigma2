@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 09:42+0200\n"
+"POT-Creation-Date: 2018-07-08 11:27+0430\n"
 "PO-Revision-Date: 2008-01-27 23:38+0100\n"
 "Last-Translator: Jurica <jurica@clarkdigital.com>\n"
 "Language-Team:  <jurica@dream-multimedia.eu>\n"
@@ -744,7 +744,16 @@ msgstr "Postavke TV-a"
 msgid "AAC downmix"
 msgstr ""
 
+msgid "AAC transcoding"
+msgstr ""
+
+msgid "AC3"
+msgstr ""
+
 msgid "AC3 downmix"
+msgstr ""
+
+msgid "AC3 plus transcoding"
 msgstr ""
 
 msgid "ACQUIRING TSID/ONID"
@@ -871,9 +880,6 @@ msgstr "dodaj snimanje (nedefinirano)"
 msgid "Add recording (stop after current event)"
 msgstr "dodaj snimanje (zaustavi nakon trenutnog događaja)"
 
-msgid "Add seperate receiver URL for import"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Add service"
@@ -999,6 +1005,12 @@ msgstr ""
 msgid "Allocate unused memory index"
 msgstr ""
 
+msgid "Allow 10bit"
+msgstr ""
+
+msgid "Allow 12bit"
+msgstr ""
+
 msgid "Allow quit movieplayer with exit"
 msgstr ""
 
@@ -1009,6 +1021,9 @@ msgid "Allow subtitle language to equal audio language"
 msgstr ""
 
 msgid "Allow subtitles for hearing impaired"
+msgstr ""
+
+msgid "Allow unsupported modes"
 msgstr ""
 
 #
@@ -1298,6 +1313,11 @@ msgstr ""
 
 msgid "Automatic Scan"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Automatic bookmarks"
+msgstr "Automatsko skeniranje "
 
 #
 #, fuzzy
@@ -1824,6 +1844,9 @@ msgstr ""
 msgid "Choose bouquet"
 msgstr ""
 
+msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr ""
 
@@ -2259,6 +2282,18 @@ msgstr ""
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr ""
 
+msgid "Configure whether AAC sound tracks should be transcoded."
+msgstr ""
+
+msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
+msgstr ""
+
+msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
+msgstr ""
+
+msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
+msgstr ""
+
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr ""
 
@@ -2422,7 +2457,7 @@ msgstr ""
 msgid "Create new folder and exit"
 msgstr ""
 
-msgid "Create seperate radio userbouquet"
+msgid "Create separate radio userbouquet"
 msgstr ""
 
 #
@@ -2552,7 +2587,13 @@ msgstr "napredno"
 msgid "DMM normal"
 msgstr ""
 
+msgid "DTS"
+msgstr ""
+
 msgid "DTS downmix"
+msgstr ""
+
+msgid "DTS-HD downmix"
 msgstr ""
 
 #
@@ -2787,6 +2828,9 @@ msgstr "Opis"
 msgid "Deselect"
 msgstr ""
 
+msgid "Destination of fallback remote receiver"
+msgstr ""
+
 msgid "Details for plugin: "
 msgstr ""
 
@@ -2910,6 +2954,9 @@ msgstr ""
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display movie length in movielist (except single line style)."
+msgstr ""
+
 #
 #, fuzzy
 msgid "Display setup"
@@ -2955,6 +3002,9 @@ msgstr "ne mijenjaj"
 #, fuzzy
 msgid "Do not record"
 msgstr "ne snimaj"
+
+msgid "Do not show file extensions for registered multimedia files."
+msgstr ""
 
 #
 #, fuzzy
@@ -3138,6 +3188,12 @@ msgstr "Skidam"
 msgid "Downloading plugin information. Please wait..."
 msgstr "Skidam informacije o dodacima. Molim pričekajte..."
 
+msgid "Downmix"
+msgstr ""
+
+msgid "Drop unconfigured satellites"
+msgstr ""
+
 #
 msgid "Dutch"
 msgstr "Nizozemski"
@@ -3243,6 +3299,9 @@ msgstr ""
 msgid "Electronic Program Guide"
 msgstr "Elektronički Programski Vodič"
 
+msgid "Empty slot"
+msgstr ""
+
 #
 msgid "Enable"
 msgstr "Omogući"
@@ -3297,6 +3356,9 @@ msgid "Enable fallback remote receiver"
 msgstr ""
 
 msgid "Enable freesat EPG"
+msgstr ""
+
+msgid "Enable import timer from fallback tuner"
 msgstr ""
 
 #
@@ -3378,7 +3440,15 @@ msgstr "Nova verzija:"
 msgid "Enigma2 skin selector"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enter IP address"
+msgstr "IP Adresa"
+
 msgid "Enter PIN"
+msgstr ""
+
+msgid "Enter URL"
 msgstr ""
 
 msgid "Enter if you are in the east or west hemisphere."
@@ -3474,6 +3544,12 @@ msgid "Error when writing epg.dat on server"
 msgstr ""
 
 msgid "Error while retreiving epg.dat from server"
+msgstr ""
+
+#, python-format
+msgid ""
+"Error while retreiving fallback timer information\n"
+"%s"
 msgstr ""
 
 msgid "Error while retreiving location of epg.dat on server"
@@ -3739,10 +3815,25 @@ msgstr ""
 msgid "Falkland Islands (Malvinas)"
 msgstr ""
 
+msgid "Fallback Timer"
+msgstr ""
+
+msgid "Fallback remote receiver"
+msgstr ""
+
+msgid "Fallback remote receiver IP"
+msgstr ""
+
+msgid "Fallback remote receiver Port"
+msgstr ""
+
 msgid "Fallback remote receiver URL"
 msgstr ""
 
 msgid "Fallback remote receiver setup"
+msgstr ""
+
+msgid "Fallback tuner setup"
 msgstr ""
 
 #
@@ -4187,6 +4278,9 @@ msgstr ""
 msgid "HDMI HDR Type"
 msgstr ""
 
+msgid "HDMI audio source"
+msgstr ""
+
 msgid "HDMI-CEC Source Active"
 msgstr ""
 
@@ -4199,7 +4293,13 @@ msgstr ""
 msgid "HDR10"
 msgstr ""
 
+msgid "HDR10 support"
+msgstr ""
+
 msgid "HLG"
+msgstr ""
+
+msgid "HLG support"
 msgstr ""
 
 #
@@ -4361,6 +4461,9 @@ msgstr ""
 msgid "IP address"
 msgstr "IP Adresa"
 
+msgid "IP of fallback remote receiver"
+msgstr ""
+
 #
 msgid "ISO file is too large for this filesystem!"
 msgstr ""
@@ -4376,6 +4479,18 @@ msgid "Icons"
 msgstr ""
 
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
+msgstr ""
+
+msgid "If enabled, then there will be displayed icons for new/unseen items too."
+msgstr ""
+
+msgid "If is disabled, then after Copy/Move will not be target directory stored into bookmarks."
+msgstr ""
+
+msgid "If is enabled and movie playback is finished, then after return to movielist will not be automaticaly start service playback."
+msgstr ""
+
+msgid "If set as 'Yes', then audiofiles are played in 'list mode' only, instead in full screen player."
 msgstr ""
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
@@ -4462,6 +4577,11 @@ msgstr ""
 
 msgid "Include AIT in http streams"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Include CI assignment"
+msgstr "Zajedničko sučelje"
 
 msgid "Include ECM in http streams"
 msgstr ""
@@ -4983,6 +5103,9 @@ msgstr "Litvanski"
 msgid "Lithuanian"
 msgstr "Litvanski"
 
+msgid "Live decoder"
+msgstr ""
+
 #
 msgid "Load"
 msgstr ""
@@ -5349,9 +5472,6 @@ msgstr "Konfiguracija Tunera"
 
 #
 msgid "Movie location"
-msgstr ""
-
-msgid "Movie manager"
 msgstr ""
 
 #
@@ -6003,6 +6123,9 @@ msgstr "Konfiguracija Tunera"
 msgid "PAL"
 msgstr "PAL"
 
+msgid "PCM"
+msgstr ""
+
 msgid "PCR PID"
 msgstr ""
 
@@ -6092,6 +6215,9 @@ msgstr "Editor Usluga za roditeljsku zaštitu"
 msgid "Parental control setup"
 msgstr "Postavke roditeljske zaštite"
 
+msgid "Passthrough"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Pause"
@@ -6166,10 +6292,10 @@ msgstr ""
 msgid "Play DVD"
 msgstr ""
 
-msgid "Play audio in background"
+msgid "Play audio-CD..."
 msgstr ""
 
-msgid "Play audio-CD..."
+msgid "Play audiofiles in list mode"
 msgstr ""
 
 msgid "Play back media files"
@@ -6509,6 +6635,9 @@ msgstr "Port C"
 msgid "Port D"
 msgstr "Port D"
 
+msgid "Port of fallback remote receiver"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Portugal"
@@ -6653,6 +6782,11 @@ msgstr ""
 #
 #, fuzzy
 msgid "Press OK to select a provider."
+msgstr "Pritisnite ok za skeniranje"
+
+#
+#, fuzzy
+msgid "Press OK to select a service."
 msgstr "Pritisnite ok za skeniranje"
 
 msgid "Press OK to select satellites"
@@ -7368,6 +7502,9 @@ msgstr ""
 msgid "Saint Vincent and the Grenadines"
 msgstr ""
 
+msgid "Same as stream"
+msgstr ""
+
 msgid "Same resolution as skin"
 msgstr ""
 
@@ -7916,9 +8053,6 @@ msgstr ""
 msgid "Select wireless network"
 msgstr ""
 
-msgid "Select yes when you want to import channels and/or EPG from a different URL"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Select your ATSC provider."
@@ -7949,6 +8083,9 @@ msgid "Selecting this option allows you to configure a group of satellites in on
 msgstr ""
 
 msgid "Selects the mode how live tv should be shown on the LCD."
+msgstr ""
+
+msgid "Selects video source displayed on the LCD."
 msgstr ""
 
 msgid "Send 'sourceactive' before zap timers"
@@ -8069,7 +8206,13 @@ msgstr ""
 msgid "Services"
 msgstr "Usluge"
 
+msgid "Set CI assignment for detection of available services."
+msgstr ""
+
 msgid "Set PIN"
+msgstr ""
+
+msgid "Set action when movie playback is finished."
 msgstr ""
 
 msgid "Set all hotkey to default?"
@@ -8095,12 +8238,20 @@ msgstr ""
 msgid "Set fps for external subtitles"
 msgstr ""
 
+msgid "Set if You want see status icons, progress bars or nothing."
+msgstr ""
+
 #
 msgid "Set interface as default Interface"
 msgstr ""
 
 msgid "Set limits"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Set movielist type."
+msgstr "izađi iz izbornika filmova"
 
 msgid "Set pin code persistent"
 msgstr ""
@@ -8138,6 +8289,9 @@ msgstr ""
 #
 msgid "Settings"
 msgstr "Postavke"
+
+msgid "Settings can be different for each directory separately (for non removeable devices only)."
+msgstr ""
 
 #
 msgid "Setup"
@@ -8675,6 +8829,9 @@ msgid "Sort list:"
 msgstr ""
 
 msgid "Sort order for menu entries"
+msgstr ""
+
+msgid "Sort order for setup entries"
 msgstr ""
 
 msgid "Sort plugins list to default?"
@@ -9474,6 +9631,9 @@ msgstr ""
 msgid "This option allows you to add the softcam setup in the extensions menu."
 msgstr ""
 
+msgid "This option allows you to alphabetically sort setup menu entries."
+msgstr ""
+
 msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
@@ -9502,6 +9662,18 @@ msgid "This option allows you to enable 3D surround softlimiter."
 msgstr ""
 
 msgid "This option allows you to enable 3D surround sound."
+msgstr ""
+
+msgid "This option allows you to enable or disable the 10 bit color mode"
+msgstr ""
+
+msgid "This option allows you to enable or disable the 12 bit color mode"
+msgstr ""
+
+msgid "This option allows you to force the HDR10 modes for UHD"
+msgstr ""
+
+msgid "This option allows you to force the HLG modes for UHD"
 msgstr ""
 
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
@@ -10029,6 +10201,9 @@ msgstr ""
 msgid "Unencrypted"
 msgstr ""
 
+msgid "Unexpected error while retreiving fallback tuner's timer information"
+msgstr ""
+
 #
 msgid "UnhandledKey"
 msgstr ""
@@ -10470,6 +10645,9 @@ msgstr ""
 msgid "WLAN connection"
 msgstr ""
 
+msgid "WMA pro downmix"
+msgstr ""
+
 #
 msgid "WPA"
 msgstr ""
@@ -10616,6 +10794,9 @@ msgid "When enabled the left, right, CH+/-, B+/-, P+/- buttons will follow the '
 msgstr ""
 
 msgid "When enabled the set top box is able to wakeup on LAN"
+msgstr ""
+
+msgid "When enabled the timer from the fallback tuner is imported"
 msgstr ""
 
 msgid "When enabled then when you select a new channel in the channel selection the channel selection will not close. It will only close when you select the current playing service. This is a kind of preview mode"
@@ -10790,6 +10971,9 @@ msgid "When nonzero, a recording will start earlier than the starting time indic
 msgstr ""
 
 msgid "When nonzero, a recording will stop later than the ending time indicated by the EPG."
+msgstr ""
+
+msgid "When selected this allows video modes to be selected even if they are not reported as supported."
 msgstr ""
 
 msgid "When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture."
@@ -10967,6 +11151,9 @@ msgstr ""
 msgid "You can continue watching TV etc. while this is running."
 msgstr ""
 
+msgid "You can enable if will be displayed extended EPG description for item."
+msgstr ""
+
 #
 msgid "You can install this plugin."
 msgstr ""
@@ -10976,6 +11163,15 @@ msgstr ""
 
 #
 msgid "You can remove this plugin."
+msgstr ""
+
+msgid "You can set how will be finished movieplayer with 'Exit' button."
+msgstr ""
+
+msgid "You can set selected directory as 'root' directory for movie player."
+msgstr ""
+
+msgid "You can set sorting type for items in movielist."
 msgstr ""
 
 #
@@ -11146,6 +11342,9 @@ msgid "Zap to"
 msgstr ""
 
 msgid "Zap to selected channel"
+msgstr ""
+
+msgid "Zap to selected channel and exit GMEPG"
 msgstr ""
 
 msgid "Zap to selected channel, or show detailed event info (depends on configuration)"
@@ -11422,6 +11621,21 @@ msgstr ""
 msgid "connected"
 msgstr ""
 
+msgid "controlled by HDMI"
+msgstr ""
+
+msgid "convert to AC3"
+msgstr ""
+
+msgid "convert to DTS"
+msgstr ""
+
+msgid "convert to multi channel PCM"
+msgstr ""
+
+msgid "convert to multi-channel PCM"
+msgstr ""
+
 msgid "cooking"
 msgstr ""
 
@@ -11653,6 +11867,19 @@ msgstr ""
 
 msgid "football/soccer"
 msgstr ""
+
+msgid "force AC3 plus"
+msgstr ""
+
+#
+#, fuzzy
+msgid "force disabled"
+msgstr "onemogućeno"
+
+#
+#, fuzzy
+msgid "force enabled"
+msgstr "omogućeno"
 
 msgid "foreign countries/expeditions"
 msgstr ""
@@ -12274,14 +12501,6 @@ msgstr ""
 msgid "slot%s - %s, without backup"
 msgstr ""
 
-#, python-format
-msgid "slot%s - empty, with backup"
-msgstr ""
-
-#, python-format
-msgid "slot%s - empty, without backup"
-msgstr ""
-
 msgid "soap/melodram/folkloric"
 msgstr ""
 
@@ -12428,6 +12647,9 @@ msgstr ""
 
 #
 msgid "until standby/restart"
+msgstr ""
+
+msgid "use best, controlled by HDMI"
 msgstr ""
 
 #

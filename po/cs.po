@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 09:42+0200\n"
+"POT-Creation-Date: 2018-07-08 11:27+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
@@ -800,8 +800,21 @@ msgstr "Nastavení A/V"
 msgid "AAC downmix"
 msgstr ""
 
+#
+#, fuzzy
+msgid "AAC transcoding"
+msgstr "Transkódování: "
+
+msgid "AC3"
+msgstr ""
+
 msgid "AC3 downmix"
 msgstr ""
+
+#
+#, fuzzy
+msgid "AC3 plus transcoding"
+msgstr "Transkódování: "
 
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
@@ -1045,6 +1058,12 @@ msgstr "Přiřaďte číslo fyzickému LNB, který konfigurujete. Tento LNB mů�
 msgid "Allocate unused memory index"
 msgstr "Přidělit nepoužitou paměť"
 
+msgid "Allow 10bit"
+msgstr ""
+
+msgid "Allow 12bit"
+msgstr ""
+
 msgid "Allow quit movieplayer with exit"
 msgstr "Umožnit zavírat movieplayer pomocí Exit"
 
@@ -1059,9 +1078,6 @@ msgstr "Povolit titulky pro sluchově postižené"
 
 msgid "Allow unsupported modes"
 msgstr "Povolit nepodporované režimy"
-
-msgid "When selected this allows video modes to be selected even if they are not reported as supported."
-msgstr "Umožňuje zvolit módy videa i přesto, že nejsou označeny jako podporované."
 
 #
 msgid "Alpha"
@@ -1372,6 +1388,10 @@ msgstr "Automatické"
 
 msgid "Automatic Scan"
 msgstr "Automatické prohledávání"
+
+#
+msgid "Automatic bookmarks"
+msgstr "Automatické záložky"
 
 #
 msgid "Automatic scan"
@@ -1893,6 +1913,10 @@ msgstr "Zvolte tuner"
 msgid "Choose bouquet"
 msgstr "Zvolte přehled"
 
+#, fuzzy
+msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
+msgstr "Nastavuje, zda bude vícekanálový zvuk přepočítáván na stereo."
+
 msgid "Choose which tuner to configure."
 msgstr "Vyberte si, který tuner chcete nastavovat."
 
@@ -2334,6 +2358,22 @@ msgstr "Nastavuje, kde se budou v seznamu časovačů zobrazovat dokončené ča
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Nastavuje, zda (a jak dlouho) bude zobrazován druhý infobar, jestliže je dvakrát stisknuto tlačítko OK. Druhý infobar obsahuje další informace o aktuálním kanálu."
 
+#, fuzzy
+msgid "Configure whether AAC sound tracks should be transcoded."
+msgstr "Nastavuje, zda bude vícekanálový zvuk přepočítáván na stereo."
+
+#, fuzzy
+msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
+msgstr "Nastavuje, zda bude vícekanálový zvuk přepočítáván na stereo."
+
+#, fuzzy
+msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
+msgstr "Nastavuje, zda bude vícekanálový zvuk přepočítáván na stereo."
+
+#, fuzzy
+msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
+msgstr "Nastavuje, zda bude vícekanálový zvuk přepočítáván na stereo."
+
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr "Nastavuje, zda by měl být povolen vícekanálový PCM zvuk."
 
@@ -2502,7 +2542,7 @@ msgstr "vytvořit DVD-ISO"
 msgid "Create new folder and exit"
 msgstr "Založit nový adresář a ukončit"
 
-msgid "Create seperate radio userbouquet"
+msgid "Create separate radio userbouquet"
 msgstr "Založit samostatný uživatelský přehled pro rádio"
 
 #
@@ -2632,7 +2672,13 @@ msgstr "rozšířené"
 msgid "DMM normal"
 msgstr "normální"
 
+msgid "DTS"
+msgstr ""
+
 msgid "DTS downmix"
+msgstr ""
+
+msgid "DTS-HD downmix"
 msgstr ""
 
 #
@@ -2861,6 +2907,10 @@ msgstr "Popis"
 msgid "Deselect"
 msgstr "Odebrat"
 
+# ##
+msgid "Destination of fallback remote receiver"
+msgstr "Umístění vzdáleného záložního přijímače"
+
 msgid "Details for plugin: "
 msgstr "Detaily pluginu: "
 
@@ -2994,6 +3044,10 @@ msgid "Display message before playing next movie"
 msgstr "Zobrazovat zprávu před dalším přehrávaným filmem"
 
 #
+msgid "Display movie length in movielist (except single line style)."
+msgstr "Zobrazovat délku filmu v seznamu souborů (kromě jednořádkového seznamu)."
+
+#
 msgid "Display setup"
 msgstr "Nastavení displeje"
 
@@ -3029,6 +3083,10 @@ msgstr "Neměnit"
 #
 msgid "Do not record"
 msgstr "Nenahrávat"
+
+#
+msgid "Do not show file extensions for registered multimedia files."
+msgstr "Nezobrazovat přípony pro registrované multimediální soubory."
 
 #
 msgid "Do nothing"
@@ -3219,6 +3277,13 @@ msgstr "Stahuje se image"
 msgid "Downloading plugin information. Please wait..."
 msgstr "Stahuji informace o pluginech. Prosím, čekejte..."
 
+msgid "Downmix"
+msgstr ""
+
+#
+msgid "Drop unconfigured satellites"
+msgstr "Vynechat nenakonfigurované satelity"
+
 #
 msgid "Dutch"
 msgstr "Holandsky"
@@ -3386,6 +3451,9 @@ msgstr "Povolit záložní přijímač"
 msgid "Enable freesat EPG"
 msgstr "Povolit freesat EPG"
 
+msgid "Enable import timer from fallback tuner"
+msgstr "Importovat časovače ze záložního přijímače"
+
 #
 msgid "Enable multiple bouquets"
 msgstr "Povolit vícenásobné přehledy"
@@ -3467,8 +3535,14 @@ msgstr "Enigma verze: "
 msgid "Enigma2 skin selector"
 msgstr "Enigma2 výběr skinu"
 
+msgid "Enter IP address"
+msgstr "Zadejte IP adresu"
+
 msgid "Enter PIN"
 msgstr "Zadejte PIN"
+
+msgid "Enter URL"
+msgstr "Zadejte URL"
 
 msgid "Enter if you are in the east or west hemisphere."
 msgstr "Zadejte, zda jste na východní nebo západní polokouli."
@@ -3573,6 +3647,14 @@ msgstr "Chyba při zápisu epg.dat na serveru"
 
 msgid "Error while retreiving epg.dat from server"
 msgstr "Chyba při načítání epg.dat na serveru"
+
+#, python-format
+msgid ""
+"Error while retreiving fallback timer information\n"
+"%s"
+msgstr ""
+"Chyba při získávání informací o záložních časovačích\n"
+"%s"
 
 msgid "Error while retreiving location of epg.dat on server"
 msgstr "Chyba při načítání umístění epg.dat na serveru"
@@ -3842,11 +3924,26 @@ msgstr "Selhalo:"
 msgid "Falkland Islands (Malvinas)"
 msgstr "Falklandy"
 
+msgid "Fallback Timer"
+msgstr "Záložní časovač"
+
+msgid "Fallback remote receiver"
+msgstr "Záložní přijímač"
+
+msgid "Fallback remote receiver IP"
+msgstr "IP adresa záložního přijímače"
+
+msgid "Fallback remote receiver Port"
+msgstr "Port záložního přijímače"
+
 msgid "Fallback remote receiver URL"
 msgstr "Adresa vzdáleného záložního přijímače"
 
 msgid "Fallback remote receiver setup"
 msgstr "Záložní přijímač"
+
+msgid "Fallback tuner setup"
+msgstr "Nastavení záložního tuneru"
 
 #
 #, python-format
@@ -4289,6 +4386,10 @@ msgstr "Barevný prostor HDMI"
 msgid "HDMI HDR Type"
 msgstr "HDMI HDR typ"
 
+#, fuzzy
+msgid "HDMI audio source"
+msgstr "Barevný prostor HDMI"
+
 #
 msgid "HDMI-CEC Source Active"
 msgstr ""
@@ -4303,8 +4404,16 @@ msgstr "Nastavení HDMI-CEC"
 msgid "HDR10"
 msgstr ""
 
+#, fuzzy
+msgid "HDR10 support"
+msgstr "nepodporováno"
+
 msgid "HLG"
 msgstr ""
+
+#, fuzzy
+msgid "HLG support"
+msgstr "nepodporováno"
 
 #
 msgid "Haiti"
@@ -4457,6 +4566,9 @@ msgstr ""
 msgid "IP address"
 msgstr "IP adresa"
 
+msgid "IP of fallback remote receiver"
+msgstr "IP adresa vzdáleného záložního přijímače"
+
 #
 msgid "ISO file is too large for this filesystem!"
 msgstr "soubor ISO je příliš veliký pro tento systém"
@@ -4474,6 +4586,22 @@ msgstr "Ikony"
 
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr "Jestliže je povoleno, displej zobrazuje 12 znaků místo 8, ale pouze v latin-1/translit."
+
+#
+msgid "If enabled, then there will be displayed icons for new/unseen items too."
+msgstr "Jestliže je povoleno, budou zobrazovány ikony také pro nové/neshlédnuté položky."
+
+#
+msgid "If is disabled, then after Copy/Move will not be target directory stored into bookmarks."
+msgstr "Jestliže je zakázáno, funkce Kopírovat/Přemístit nebudou ukládat cílový adresář do záložek."
+
+#
+msgid "If is enabled and movie playback is finished, then after return to movielist will not be automaticaly start service playback."
+msgstr "Jestliže je povoleno a je dokončeno přehrávání, pak při návratu do seznamu souborů nebude automaticky spuštěno přehrávání programu."
+
+#
+msgid "If set as 'Yes', then audiofiles are played in 'list mode' only, instead in full screen player."
+msgstr "Jestliže je povoleno, audio soubory budou přehrávány v režimu seznamu namísto celoobrazovkového přehrávání."
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "Pokud je nastaveno 'Ano', hodnoty signálu (SNR, atd.) budou počítány z API V3. To je stará verze rozhraní API, která byla již nahrazena."
@@ -4551,37 +4679,6 @@ msgstr "Importovat ze záložního přijímače"
 msgid "Import remote receiver URL"
 msgstr "Adresa vzdáleného přijímače pro import"
 
-# ##
-msgid "Destination of fallback remote receiver"
-msgstr "Umístění vzdáleného záložního přijímače"
-
-msgid "Enter IP address"
-msgstr "Zadejte IP adresu"
-
-msgid "Enter URL"
-msgstr "Zadejte URL"
-
-msgid "Fallback remote receiver"
-msgstr "Záložní přijímač"
-
-msgid "Fallback remote receiver IP"
-msgstr "IP adresa záložního přijímače"
-
-msgid "Fallback remote receiver Port"
-msgstr "Port záložního přijímače"
-
-msgid "Fallback tuner setup"
-msgstr "Nastavení záložního tuneru"
-
-msgid "IP of fallback remote receiver"
-msgstr "IP adresa vzdáleného záložního přijímače"
-
-msgid "Port of fallback remote receiver"
-msgstr "Port vzdáleného záložního přijímače"
-
-msgid "Same as stream"
-msgstr "Stejná jako stream"
-
 #
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Aby mohla být zaznamenána událost z časovače, bylo přepnuto na nahrávaný program!\n"
@@ -4596,6 +4693,11 @@ msgstr "Časovač neaktivity"
 #
 msgid "Include AIT in http streams"
 msgstr "Včetně AIT v http streamech"
+
+#
+#, fuzzy
+msgid "Include CI assignment"
+msgstr "CI přiřazení"
 
 #
 msgid "Include ECM in http streams"
@@ -5117,6 +5219,9 @@ msgstr "Litva"
 msgid "Lithuanian"
 msgstr "Litevsky"
 
+msgid "Live decoder"
+msgstr ""
+
 #
 msgid "Load"
 msgstr "Načíst"
@@ -5475,9 +5580,6 @@ msgstr "Nastavení seznamu filmů"
 msgid "Movie location"
 msgstr "Umístění souboru"
 
-msgid "Movie manager"
-msgstr "Správce souborů"
-
 msgid "Movie selection"
 msgstr "Výběr filmů"
 
@@ -5748,7 +5850,7 @@ msgstr ""
 "(Vypršel časový limit čtení PAT)"
 
 msgid "No data received yet"
-msgstr ""
+msgstr "Dosud nebyla přijata žádná data"
 
 #
 msgid "No delay"
@@ -6130,6 +6232,9 @@ msgstr "Přepsat konfigurační soubory?"
 msgid "PAL"
 msgstr "PAL"
 
+msgid "PCM"
+msgstr ""
+
 msgid "PCR PID"
 msgstr ""
 
@@ -6216,6 +6321,9 @@ msgstr "Nastavení rodičovského zámku"
 msgid "Parental control setup"
 msgstr "Nastavení rodičovského zámku"
 
+msgid "Passthrough"
+msgstr ""
+
 #
 msgid "Pause"
 msgstr "Pauza"
@@ -6289,6 +6397,10 @@ msgstr "přehrát DVD"
 #
 msgid "Play audio-CD..."
 msgstr "Přehrát audio-CD..."
+
+#
+msgid "Play audiofiles in list mode"
+msgstr "Přehrávat audio soubory v režimu seznamu"
 
 msgid "Play back media files"
 msgstr "Přehrát soubory"
@@ -6424,70 +6536,6 @@ msgstr "Prosím, vyberte playlist"
 #
 msgid "Please select a sub service..."
 msgstr "Prosím vyberte podprogram..."
-
-#
-msgid "You can set sorting type for items in movielist."
-msgstr "Můžete nastavit způsob třídění v seznamu filmů."
-
-#
-msgid "You can enable if will be displayed extended EPG description for item."
-msgstr "Můžete povolit, zda se pro položku bude zobrazovat rozšířený EPG popis."
-
-#
-msgid "Set movielist type."
-msgstr "Nastavení typu seznamu filmů."
-
-#
-msgid "Settings can be different for each directory separately (for non removeable devices only)."
-msgstr "Nastavení může být odlišné pro každý adresář zvlášť (pouze pro lokální zařízení)."
-
-#
-msgid "You can set how will be finished movieplayer with 'Exit' button."
-msgstr "Můžete nastavit, jak bude ukončován přehrávač při použití tlačítka 'Exit'."
-
-#
-msgid "Set action when movie playback is finished."
-msgstr "Zvolte akci při dokončení přehrávání souboru."
-
-#
-msgid "If is enabled and movie playback is finished, then after return to movielist will not be automaticaly start service playback."
-msgstr "Jestliže je povoleno a je dokončeno přehrávání, pak při návratu do seznamu souborů nebude automaticky spuštěno přehrávání programu."
-
-#
-msgid "Display movie length in movielist (except single line style)."
-msgstr "Zobrazovat délku filmu v seznamu souborů (kromě jednořádkového seznamu)."
-
-#
-msgid "Set if You want see status icons, progress bars or nothing."
-msgstr "Nastavte, zda chcete zobrazovat stavové ikony, pásky nebo nic."
-
-#
-msgid "If enabled, then there will be displayed icons for new/unseen items too."
-msgstr "Jestliže je povoleno, budou zobrazovány ikony také pro nové/neshlédnuté položky."
-
-#
-msgid "If set as 'Yes', then audiofiles are played in 'list mode' only, instead in full screen player."
-msgstr "Jestliže je povoleno, audio soubory budou přehrávány v režimu seznamu namísto celoobrazovkového přehrávání."
-
-#
-msgid "You can set selected directory as 'root' directory for movie player."
-msgstr "Můžete nastavit vybraný adresář jako 'kořenový' adresář přehrávače."
-
-#
-msgid "Do not show file extensions for registered multimedia files."
-msgstr "Nezobrazovat přípony pro registrované multimediální soubory."
-
-#
-msgid "If is disabled, then after Copy/Move will not be target directory stored into bookmarks."
-msgstr "Jestliže je zakázáno, funkce Kopírovat/Přemístit nebudou ukládat cílový adresář do záložek."
-
-#
-msgid "Play audiofiles in list mode"
-msgstr "Přehrávat audio soubory v režimu seznamu"
-
-#
-msgid "Automatic bookmarks"
-msgstr "Automatické záložky"
 
 #
 msgid "Please select a subservice to record..."
@@ -6696,6 +6744,9 @@ msgstr "Port C"
 msgid "Port D"
 msgstr "Port D"
 
+msgid "Port of fallback remote receiver"
+msgstr "Port vzdáleného záložního přijímače"
+
 #
 msgid "Portugal"
 msgstr "Portugalsko"
@@ -6851,6 +6902,11 @@ msgstr "Stiskněte OK k vybrání skupiny satelitů pro konfiguraci v jednom blo
 
 #
 msgid "Press OK to select a provider."
+msgstr "Stiskněte OK k vybrání poskytovatele."
+
+#
+#, fuzzy
+msgid "Press OK to select a service."
 msgstr "Stiskněte OK k vybrání poskytovatele."
 
 #
@@ -7570,6 +7626,9 @@ msgstr "Saint-Pierre a Miquelon"
 msgid "Saint Vincent and the Grenadines"
 msgstr "Svatý Vincenc a Grenadiny"
 
+msgid "Same as stream"
+msgstr "Stejná jako stream"
+
 msgid "Same resolution as skin"
 msgstr "Stejné rozlišení jako skin"
 
@@ -8130,6 +8189,9 @@ msgstr "Tato volba umožňuje konfigurovat skupinu satelitů v jednom bloku."
 msgid "Selects the mode how live tv should be shown on the LCD."
 msgstr "Výběr režimu zobrazení TV na LCD."
 
+msgid "Selects video source displayed on the LCD."
+msgstr "Výběr zdroje videa zobrazeného na LCD."
+
 msgid "Send 'sourceactive' before zap timers"
 msgstr "Posílat 'sourceactive' před časovači pro přepnutí"
 
@@ -8241,8 +8303,15 @@ msgstr "Název programu"
 msgid "Services"
 msgstr "Programy"
 
+msgid "Set CI assignment for detection of available services."
+msgstr ""
+
 msgid "Set PIN"
 msgstr "Zadat PIN"
+
+#
+msgid "Set action when movie playback is finished."
+msgstr "Zvolte akci při dokončení přehrávání souboru."
 
 msgid "Set all hotkey to default?"
 msgstr "Výchozí nastavení hotkey?"
@@ -8269,11 +8338,19 @@ msgid "Set fps for external subtitles"
 msgstr "Změna FPS pro externí titulky"
 
 #
+msgid "Set if You want see status icons, progress bars or nothing."
+msgstr "Nastavte, zda chcete zobrazovat stavové ikony, pásky nebo nic."
+
+#
 msgid "Set interface as default Interface"
 msgstr "Nastavit interface jako standardní"
 
 msgid "Set limits"
 msgstr "Nastavit meze"
+
+#
+msgid "Set movielist type."
+msgstr "Nastavení typu seznamu filmů."
 
 msgid "Set pin code persistent"
 msgstr "Nastavit trvalý pin kód"
@@ -8313,6 +8390,10 @@ msgstr "Nastavovat napětí a 22KHz"
 #
 msgid "Settings"
 msgstr "Nastavení"
+
+#
+msgid "Settings can be different for each directory separately (for non removeable devices only)."
+msgstr "Nastavení může být odlišné pro každý adresář zvlášť (pouze pro lokální zařízení)."
 
 #
 msgid "Setup"
@@ -8860,6 +8941,9 @@ msgstr "Setřídit seznam"
 msgid "Sort order for menu entries"
 msgstr "Pořadí seřazení položek menu"
 
+msgid "Sort order for setup entries"
+msgstr "Seřazení položek nastavení"
+
 msgid "Sort plugins list to default?"
 msgstr "Výchozí setřídění pluginů?"
 
@@ -9366,7 +9450,7 @@ msgstr ""
 "Pro případné korekce můžete kontaktovat autora\n"
 "na výše uvedené adrese.\n"
 "\n"
-"®08.05.2018"
+"®28.05.2018"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -9686,6 +9770,9 @@ msgstr "UmožŇuje povolit vertical scaler dejagging."
 msgid "This option allows you to add the softcam setup in the extensions menu."
 msgstr "Umožňuje přidat položku 'Nastavení softcamu' do menu rozšíření."
 
+msgid "This option allows you to alphabetically sort setup menu entries."
+msgstr "Tato volba umožňuje abecedně setřídit položky nastavení."
+
 msgid "This option allows you to boost the blue tones in the picture."
 msgstr "Umožňuje zesílit modré tóny v obrazu."
 
@@ -9715,6 +9802,22 @@ msgstr "Povoluje 3D surround softlimiter."
 
 msgid "This option allows you to enable 3D surround sound."
 msgstr "Povoluje 3D surround zvuk."
+
+#, fuzzy
+msgid "This option allows you to enable or disable the 10 bit color mode"
+msgstr "Umožňuje zakázat nebo změnit polohu virtuálního reproduktoru."
+
+#, fuzzy
+msgid "This option allows you to enable or disable the 12 bit color mode"
+msgstr "Umožňuje zakázat nebo změnit polohu virtuálního reproduktoru."
+
+#, fuzzy
+msgid "This option allows you to force the HDR10 modes for UHD"
+msgstr "Toto nastavení umožňuje konfigurovat barevnou hloubku pro UHD"
+
+#, fuzzy
+msgid "This option allows you to force the HLG modes for UHD"
+msgstr "Toto nastavení umožňuje konfigurovat barevnou hloubku pro UHD"
 
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr "Umožňuje skrýt a třídit položky menu. Při zvolení může uživatel měnit pořadí a skrýt položky menu pomocí modrého tlačítka a následně pomocí < >"
@@ -10259,6 +10362,9 @@ msgstr "Ponechat"
 msgid "Unencrypted"
 msgstr "Nezabezpečeno"
 
+msgid "Unexpected error while retreiving fallback tuner's timer information"
+msgstr "Neočekávaná chyba při načítání informací o časovači záložního přijímače"
+
 #
 msgid "UnhandledKey"
 msgstr "Neošetřené tlačítko"
@@ -10702,6 +10808,9 @@ msgstr "WEP"
 msgid "WLAN connection"
 msgstr "WLAN připojení"
 
+msgid "WMA pro downmix"
+msgstr ""
+
 #
 msgid "WPA"
 msgstr "WPA"
@@ -10864,6 +10973,9 @@ msgstr "Jestliže je povoleno, pak tlačítka vlevo, vpravo, CH+/-, B+/-, P+/- b
 
 msgid "When enabled the set top box is able to wakeup on LAN"
 msgstr "Jestliže je zapnuto, pak je přijímač schopen probouzení v síti LAN"
+
+msgid "When enabled the timer from the fallback tuner is imported"
+msgstr "Jestliže je povoleno, pak jsou do přehledu časovačů importovány časovače ze záložního přijímače"
 
 msgid "When enabled then when you select a new channel in the channel selection the channel selection will not close. It will only close when you select the current playing service. This is a kind of preview mode"
 msgstr "Pokud je povoleno a vyberete nový kanál ve výběru kanálů, pak výběr kanálů nebude uzavřen. Zavře se pouze tehdy, jestliže vyberete aktuální přehrávanou službu. To je druh režimu náhledu"
@@ -11042,6 +11154,9 @@ msgstr "Při nenulové hodnotě nahrávání začne dříve, než je čas začá
 
 msgid "When nonzero, a recording will stop later than the ending time indicated by the EPG."
 msgstr "Při nenulové hodnotě nahrávání skončí později, než je čas konce uvedený v EPG."
+
+msgid "When selected this allows video modes to be selected even if they are not reported as supported."
+msgstr "Umožňuje zvolit módy videa i přesto, že nejsou označeny jako podporované."
 
 msgid "When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture."
 msgstr "Pro obsah s poměrem stran 16:9 zvolte, zda chcete změnit velikost/roztáhnout obraz."
@@ -11223,6 +11338,10 @@ msgid "You can continue watching TV etc. while this is running."
 msgstr "V průběhu můžete pokračovat ve sledování TV atd."
 
 #
+msgid "You can enable if will be displayed extended EPG description for item."
+msgstr "Můžete povolit, zda se pro položku bude zobrazovat rozšířený EPG popis."
+
+#
 msgid "You can install this plugin."
 msgstr "Můžete instalovat tento plugin."
 
@@ -11232,6 +11351,18 @@ msgstr "Můžete vypalovat pouze nahrávky z přijímače!"
 #
 msgid "You can remove this plugin."
 msgstr "Můžete odstranit tento plugin"
+
+#
+msgid "You can set how will be finished movieplayer with 'Exit' button."
+msgstr "Můžete nastavit, jak bude ukončován přehrávač při použití tlačítka 'Exit'."
+
+#
+msgid "You can set selected directory as 'root' directory for movie player."
+msgstr "Můžete nastavit vybraný adresář jako 'kořenový' adresář přehrávače."
+
+#
+msgid "You can set sorting type for items in movielist."
+msgstr "Můžete nastavit způsob třídění v seznamu filmů."
 
 #
 msgid "You cannot delete this!"
@@ -11440,6 +11571,9 @@ msgstr "Přepnout na"
 
 msgid "Zap to selected channel"
 msgstr "Přepnout na vybraný kanál"
+
+msgid "Zap to selected channel and exit GMEPG"
+msgstr "Přepnout na vybraný kanál a ukončit GMEPG"
 
 msgid "Zap to selected channel, or show detailed event info (depends on configuration)"
 msgstr "Přepnout na vybraný kanál nebo zobrazit detailní informace o události (v závislosti na nastavení)"
@@ -11716,6 +11850,23 @@ msgstr "potvrzeno"
 msgid "connected"
 msgstr "připojeno"
 
+msgid "controlled by HDMI"
+msgstr ""
+
+msgid "convert to AC3"
+msgstr ""
+
+msgid "convert to DTS"
+msgstr ""
+
+#, fuzzy
+msgid "convert to multi channel PCM"
+msgstr "Zobrazovat vícekanálovou EPG"
+
+#, fuzzy
+msgid "convert to multi-channel PCM"
+msgstr "Zobrazovat vícekanálovou EPG"
+
 msgid "cooking"
 msgstr "vaření"
 
@@ -11948,6 +12099,19 @@ msgstr "folk/tradiční hudba"
 
 msgid "football/soccer"
 msgstr "fotbal"
+
+msgid "force AC3 plus"
+msgstr ""
+
+#
+#, fuzzy
+msgid "force disabled"
+msgstr "Zakázáno"
+
+#
+#, fuzzy
+msgid "force enabled"
+msgstr "Povoleno"
 
 msgid "foreign countries/expeditions"
 msgstr "cizí země/expedice"
@@ -12580,14 +12744,6 @@ msgstr "Slot%s - %s, se zálohou"
 msgid "slot%s - %s, without backup"
 msgstr "Slot%s - %s, bez zálohy"
 
-#, python-format
-msgid "slot%s - empty, with backup"
-msgstr "Slot%s - volný, se zálohou"
-
-#, python-format
-msgid "slot%s - empty, without backup"
-msgstr "Slot%s - volný, bez zálohy"
-
 msgid "soap/melodram/folkloric"
 msgstr "soap/melodrama/folklórní"
 
@@ -12739,6 +12895,9 @@ msgstr "netestovatelné"
 #
 msgid "until standby/restart"
 msgstr "do standby/restartu"
+
+msgid "use best, controlled by HDMI"
+msgstr ""
 
 #
 msgid "user defined"
