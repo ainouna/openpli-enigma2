@@ -641,8 +641,7 @@ class RecordTimerEntry(timer.TimerEntry, object):
 	def log_tuner(self, level, state):
 		feinfo = self.record_service and hasattr(self.record_service, "frontendInfo") and self.record_service.frontendInfo()
 		fedata = feinfo and hasattr(feinfo, "getFrontendData") and feinfo.getFrontendData()
-		tn = fedata and fedata.get("tuner_number")
-		tuner_info = tn is not None and chr(ord('A') + tn) or "?"
+		tuner_info = fedata and "tuner_number" in fedata and chr(ord('A') + fedata.get("tuner_number")) or "(fallback) stream"
 		self.log(level, "%s recording on tuner: %s" % (state, tuner_info))
 
 	def timeChanged(self):
@@ -1015,6 +1014,10 @@ class RecordTimer(timer.Timer):
 		elif timersanitycheck.doubleCheck():
 			print "[RecordTimer] ignore double timer..."
 			return None
+		elif not loadtimer and not entry.disabled and not entry.justplay and entry.state == 0 and not (entry.service_ref and '%3a//' in entry.service_ref.ref.toString()):
+			for x in check_timer_list:
+				if x.begin == entry.begin and not x.disabled and not x.justplay and not (x.service_ref and '%3a//' in x.service_ref.ref.toString()):
+					entry.begin += 1
 		entry.timeChanged()
 		print "[Timer] Record " + str(entry)
 		entry.Timer = self

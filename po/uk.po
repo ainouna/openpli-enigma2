@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-08 11:27+0430\n"
+"POT-Creation-Date: 2018-10-27 22:08+0200\n"
 "PO-Revision-Date: 2016-11-17 12:51+0200\n"
 "Last-Translator: vovan43<vovan43@ex.ua>, sety <tim1065@mail.ru>, Irkoff <irkoff@gmail.com>\n"
 "Language-Team: gisclub.tv <http://gisclub.tv/>\n"
@@ -69,6 +69,12 @@ msgstr ""
 "\n"
 "Натисніть ОК на пульті для продовження."
 
+#, fuzzy
+msgid ""
+"\n"
+"Press OK or Exit to abort!"
+msgstr "Натисніть OK для пошуку."
+
 msgid ""
 "\n"
 "Recording in progress."
@@ -89,13 +95,6 @@ msgid ""
 msgstr ""
 "\n"
 "Відновити налаштування вашого ресивера."
-
-msgid ""
-"\n"
-"Restore your receiver with a new firmware."
-msgstr ""
-"\n"
-"Відновити ваш ресивер з новою прошивкою."
 
 msgid ""
 "\n"
@@ -388,6 +387,7 @@ msgstr "%k:%M %e/%m"
 #, python-format
 msgid ""
 "%s\n"
+"Press ok for multiboot selection\n"
 "Press exit to close"
 msgstr ""
 
@@ -728,20 +728,8 @@ msgstr "Аудіо/Відео налаштування"
 msgid "AAC downmix"
 msgstr "AAC мікшування"
 
-#, fuzzy
-msgid "AAC transcoding"
-msgstr "Транскодування:"
-
-#, fuzzy
-msgid "AC3"
-msgstr "PDC"
-
 msgid "AC3 downmix"
 msgstr "AC3 мікшування"
-
-#, fuzzy
-msgid "AC3 plus transcoding"
-msgstr "Транскодування:"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
@@ -1192,6 +1180,10 @@ msgid "Australia"
 msgstr "Італійський"
 
 #, fuzzy
+msgid "Australian"
+msgstr "Італійський"
+
+#, fuzzy
 msgid "Austria"
 msgstr "кінний спорт"
 
@@ -1232,6 +1224,17 @@ msgstr "Автоматичне відтворення файлів Blu-Ray"
 msgid "Auto scart switching"
 msgstr "Автоматичне перемикання SCART"
 
+#, fuzzy, python-format
+msgid "Autoinstalling %s"
+msgstr "Інсталяція"
+
+#, fuzzy
+msgid "Autoinstalling Completed"
+msgstr "Інсталяцію завершено."
+
+msgid "Autoinstalling please wait for packages being updated"
+msgstr ""
+
 msgid "Automatic"
 msgstr "Автоматично"
 
@@ -1252,6 +1255,10 @@ msgid "Automatically turn on external subtitles"
 msgstr "Автоматичне включення зовнішніх субтитрів"
 
 msgid "Available format variables"
+msgstr "Доступні формати перемінних"
+
+#, fuzzy
+msgid "Available locales are:"
 msgstr "Доступні формати перемінних"
 
 msgid "Azerbaijan"
@@ -1351,6 +1358,10 @@ msgstr "Поведінка при закінченні відео"
 
 msgid "Belarus"
 msgstr ""
+
+#, fuzzy
+msgid "Belgian"
+msgstr "Норвезька"
 
 msgid "Belgium"
 msgstr ""
@@ -1533,6 +1544,9 @@ msgstr ""
 msgid "Cancel"
 msgstr "Відмінити"
 
+msgid "Cancel any text changes and exit"
+msgstr ""
+
 msgid "Cancelled upon user request"
 msgstr ""
 
@@ -1707,10 +1721,6 @@ msgstr "Виберіть тюнер"
 
 msgid "Choose bouquet"
 msgstr "Виберіть букет"
-
-#, fuzzy
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "Виберіть, чи слід багатоканальну звукову доріжку декодувати в стереозвук."
 
 msgid "Choose which tuner to configure."
 msgstr "Виберіть тюнер для налаштування."
@@ -2115,22 +2125,6 @@ msgstr "Вкажіть, в якому місці списку таймерів �
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Чи потрібно показати (і як довго) другий інфобар при натисканні кнопки OK двічі.Другий інфобар містить додаткову інформацію про поточний канал."
 
-#, fuzzy
-msgid "Configure whether AAC sound tracks should be transcoded."
-msgstr "Виберіть, чи слід багатоканальну звукову доріжку декодувати в стереозвук."
-
-#, fuzzy
-msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
-msgstr "Виберіть, чи слід багатоканальну звукову доріжку декодувати в стереозвук."
-
-#, fuzzy
-msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
-msgstr "Виберіть, чи слід багатоканальну звукову доріжку декодувати в стереозвук."
-
-#, fuzzy
-msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
-msgstr "Виберіть, чи слід багатоканальну звукову доріжку декодувати в стереозвук."
-
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr "Налаштування: чи повинен бути включений багатоканальний PCM звук."
 
@@ -2225,9 +2219,6 @@ msgstr "Зміст не поміщається на DVD!"
 msgid "Continue"
 msgstr "Продовжити"
 
-msgid "Continue in background"
-msgstr "Продовжити у фоновому режимі"
-
 msgid "Continue playback"
 msgstr "Продовжити відтворення"
 
@@ -2255,7 +2246,7 @@ msgstr ""
 msgid "Could not find installed channel list."
 msgstr "Неможливо відкрити список каналів."
 
-msgid "Could not find suitable media - Please insert a media (e.g. USB stick) and try again!"
+msgid "Could not find suitable media - Please remove some downloaded images or insert a media (e.g. USB stick) with sufficiant free space and try again!"
 msgstr ""
 
 msgid "Could not load medium! No disc inserted?"
@@ -2397,14 +2388,7 @@ msgstr "DMM розширений"
 msgid "DMM normal"
 msgstr "DMM нормальний"
 
-msgid "DTS"
-msgstr ""
-
 msgid "DTS downmix"
-msgstr "DTS downmix"
-
-#, fuzzy
-msgid "DTS-HD downmix"
 msgstr "DTS downmix"
 
 msgid "DUAL LAYER DVD"
@@ -2493,6 +2477,10 @@ msgstr "Місце записів за замовчуванням"
 msgid "Default settings"
 msgstr "Налаштування за замовчуванням"
 
+#, fuzzy
+msgid "Define the location of the EPG Cache file."
+msgstr "Налаштування співвідношення сторін екрану."
+
 msgid "Delay after change voltage before switch command"
 msgstr "Затримка після зміни напруги перед командою перемикача"
 
@@ -2577,6 +2565,12 @@ msgstr "Видалити запис з плейлиста"
 
 msgid "Delete saved playlist"
 msgstr "Видалити збережений плейлист"
+
+msgid "Delete the character to the left of text buffer cursor"
+msgstr ""
+
+msgid "Delete the character under the text buffer cursor"
+msgstr ""
 
 msgid "Delete timer"
 msgstr "Видалити таймер"
@@ -2914,10 +2908,6 @@ msgstr "Завантаження"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Завантаження інформації про плагіни. чекайте..."
-
-#, fuzzy
-msgid "Downmix"
-msgstr "DTS downmix"
 
 #, fuzzy
 msgid "Drop unconfigured satellites"
@@ -3595,6 +3585,10 @@ msgstr ""
 msgid "Flash image"
 msgstr ""
 
+#, fuzzy
+msgid "Flashing Image"
+msgstr "Завантаження"
+
 msgid "Flashing image succesfull"
 msgstr ""
 
@@ -3684,7 +3678,7 @@ msgstr "Зберігати екран"
 msgid "Full transparency"
 msgstr "Повна прозорість"
 
-msgid "Fulview resulution"
+msgid "Full view resolution"
 msgstr "Повна роздільна здатність перегляду"
 
 msgid "Function of OK button"
@@ -3841,6 +3835,9 @@ msgstr "Грецький"
 msgid "Greek"
 msgstr "Грецький"
 
+msgid "Greek (Modern)"
+msgstr ""
+
 msgid "Green"
 msgstr "Зелена"
 
@@ -3906,10 +3903,6 @@ msgid "HDMI HDR Type"
 msgstr "NIM і Тип тюнера"
 
 #, fuzzy
-msgid "HDMI audio source"
-msgstr "Колірна насиченість"
-
-#, fuzzy
 msgid "HDMI-CEC Source Active"
 msgstr "Все одним пультом(HDMI-CEC)"
 
@@ -3925,6 +3918,9 @@ msgstr ""
 #, fuzzy
 msgid "HDR10 support"
 msgstr "невідома"
+
+msgid "HELP"
+msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -3972,6 +3968,9 @@ msgstr "Допома в налаштуванні антени"
 
 msgid "Hidden network"
 msgstr "Прихована мережа"
+
+msgid "Hide"
+msgstr ""
 
 msgid "Hide channel list in radio mode"
 msgstr "Приховати список каналів в режимі радіо"
@@ -4068,6 +4067,12 @@ msgid "I do not want to perform any service scans"
 msgstr "Ви хочете почати сканування?"
 
 msgid "IDLE"
+msgstr ""
+
+msgid "INFO"
+msgstr ""
+
+msgid "INS"
 msgstr ""
 
 msgid "IP address"
@@ -4291,12 +4296,6 @@ msgstr "Налаштування пульта"
 msgid "Install"
 msgstr "Встановити"
 
-msgid "Install a new image with a USB stick"
-msgstr "Встановити новий імідж з USB"
-
-msgid "Install a new image with your web browser"
-msgstr "Встановити новий імідж через web браузер"
-
 msgid "Install channel list"
 msgstr "Інсталювати список каналів"
 
@@ -4374,6 +4373,9 @@ msgid "Ipkg"
 msgstr "Ipkg"
 
 msgid "Iran (Islamic Republic of)"
+msgstr ""
+
+msgid "Iran, Islamic Republic"
 msgstr ""
 
 msgid "Iraq"
@@ -4478,6 +4480,10 @@ msgstr ""
 
 msgid "Keyboard"
 msgstr "Клавіатура"
+
+#, fuzzy
+msgid "Keyboard data entry"
+msgstr "Налаштування клавіатури"
 
 msgid "Keyboard map"
 msgstr "Розкладка клавіатури"
@@ -4668,8 +4674,15 @@ msgstr "Завантаження незв'язаних букетів"
 msgid "Local network"
 msgstr "Локальна мережа"
 
+#, fuzzy
+msgid "Locale"
+msgstr "Локальна мережа"
+
 msgid "Location"
 msgstr "Розташування"
+
+msgid "Location EPG Cache file"
+msgstr ""
 
 msgid "Location for instant recordings"
 msgstr "Розташування моментальних записів"
@@ -4696,6 +4709,9 @@ msgid "Longitude"
 msgstr "Довгота"
 
 msgid "Loop through from"
+msgstr ""
+
+msgid "Lower case"
 msgstr ""
 
 #, fuzzy
@@ -4941,6 +4957,30 @@ msgstr "Перемістити картинку в картинці"
 msgid "Move east"
 msgstr "Переміщення на схід"
 
+msgid "Move the text buffer cursor left"
+msgstr ""
+
+msgid "Move the text buffer cursor right"
+msgstr ""
+
+msgid "Move the text buffer cursor to the first character"
+msgstr ""
+
+msgid "Move the text buffer cursor to the last character"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor down"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor left"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor right"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor up"
+msgstr ""
+
 msgid "Move to position X"
 msgstr "Переміщення до позиції Х"
 
@@ -5181,9 +5221,6 @@ msgstr "HDD не знайдений або не встановлений!"
 msgid "No age block"
 msgstr "Немає вікового обмеження"
 
-msgid "No backup needed"
-msgstr "Резервне копіювання не потрібно"
-
 msgid ""
 "No data on transponder!\n"
 "(Timeout reading PAT)"
@@ -5317,14 +5354,8 @@ msgstr "Ні, рестарт і почати спочатку"
 msgid "No, do not flash image"
 msgstr "Ні, нічого не робити."
 
-msgid "No, do nothing."
-msgstr "Ні, нічого не робити."
-
 msgid "No, except Wakeup timer"
 msgstr "Ні, за винятком таймера збудити"
-
-msgid "No, just start my receiver"
-msgstr "Ні, включити ресивер"
 
 msgid "No, never"
 msgstr "Ні, ніколи"
@@ -5410,11 +5441,11 @@ msgstr "Кількість каналів показувати в списку �
 msgid "Number of repeating text on display."
 msgstr "Кількість повторення тексту на дисплеї."
 
+msgid "Number or SMS style data entry"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
-
-msgid "OK, guide me through the upgrade process"
-msgstr "OK, підказувати мені в процесі оновлення"
 
 msgid "ONID"
 msgstr "ONID"
@@ -5430,6 +5461,9 @@ msgstr "OSD налаштування"
 
 msgid "OSD transparency"
 msgstr "Прозорість OSD"
+
+msgid "OVR"
+msgstr ""
 
 msgid "Off"
 msgstr "Вимкн."
@@ -5608,9 +5642,6 @@ msgstr "Редактор сервісів батьківського контр�
 msgid "Parental control setup"
 msgstr "Налаштування батьківського контролю"
 
-msgid "Passthrough"
-msgstr ""
-
 msgid "Pause"
 msgstr "Пауза"
 
@@ -5725,6 +5756,10 @@ msgid ""
 msgstr ""
 "Будь ласка, налаштуйте або перевірте конфігурацію DNS заповнивши потрібні дані\n"
 "Коли будете готові - натисніть ОК для продовження."
+
+#, fuzzy
+msgid "Please configure the fallback tuner setup?"
+msgstr "Запасний URL віддаленого приймача"
 
 msgid ""
 "Please configure your internet connection by filling out the required values.\n"
@@ -5863,6 +5898,9 @@ msgstr "Налаштуйте тюнер А"
 #, fuzzy
 msgid "Please set up tuner R"
 msgstr "Налаштуйте тюнер А"
+
+msgid "Please setup the following basic configs!"
+msgstr ""
 
 msgid ""
 "Please use direction keys to move the PiP window.\n"
@@ -6270,6 +6308,10 @@ msgstr "Дійсно вийти з меню підсервісів?"
 msgid "Really reboot now?"
 msgstr "Дійсно вийти з меню підсервісів?"
 
+#, fuzzy
+msgid "Really restart in debug mode now?"
+msgstr "Дійсно рестарт зараз?"
+
 msgid "Really restart now?"
 msgstr "Дійсно рестарт зараз?"
 
@@ -6545,6 +6587,10 @@ msgstr "Встановити службу запуску "
 msgid "Restart enigma"
 msgstr "Рестарт E2"
 
+#, fuzzy
+msgid "Restart enigma in debug mode"
+msgstr "Рестарт E2"
+
 msgid "Restart network"
 msgstr "Перезапустити мережу"
 
@@ -6588,11 +6634,11 @@ msgid "Resuming playback"
 msgstr "Відновлення відтворення"
 
 #, fuzzy
-msgid "Retreiving image list - Please wait..."
+msgid "Retrieving image list - Please wait..."
 msgstr "Отримання інформації про плагін. Будь ласка чекайте..."
 
 #, fuzzy
-msgid "Retreiving image slots - Please wait..."
+msgid "Retrieving image slots - Please wait..."
 msgstr "Пошук доступних оновлень. Будь ласка зачекайте ..."
 
 msgid "Return to movie list"
@@ -6781,6 +6827,10 @@ msgstr "Зберегти і перезапустити  таймшифт"
 
 msgid "Save and stop timeshift"
 msgstr "Зберегти і зупинити таймшифт"
+
+#, fuzzy
+msgid "Save any text changes and exit"
+msgstr "Збереження і вихід"
 
 msgid "Save changes"
 msgstr "Зберегти зміни"
@@ -7096,6 +7146,10 @@ msgstr "Вибір пристрою введення"
 msgid "Select interface"
 msgstr "Виберіть інтерфейс"
 
+#, fuzzy
+msgid "Select locale"
+msgstr "Вибір місця"
+
 msgid "Select location"
 msgstr "Вибір місця"
 
@@ -7128,6 +7182,9 @@ msgid "Select target folder"
 msgstr "Вибрати цільову папку"
 
 msgid "Select the Unicable channel to be assigned to this tuner. This is a unique value. Be certain that no other device connected to this same Unicable system is allocated to the same Unicable channel."
+msgstr ""
+
+msgid "Select the character or action under the virtual keyboard cursor"
 msgstr ""
 
 msgid "Select the format of your Unicable device. Choices are 'SCR Unicable' (Unicable I format), or 'SCR JESS' (Unicable II format)."
@@ -7173,6 +7230,12 @@ msgid "Select the type of LNB/device being used (normally 'Universal'). If your 
 msgstr ""
 
 msgid "Select the type of Unicable device you are using."
+msgstr ""
+
+msgid "Select the virtual keyboard locale from a menu"
+msgstr ""
+
+msgid "Select the virtual keyboard shifted character set"
 msgstr ""
 
 msgid "Select upgrade source"
@@ -7435,6 +7498,10 @@ msgstr "Наступний скрипт"
 
 msgid "Short filenames"
 msgstr "Коротка назва"
+
+#, fuzzy
+msgid "Show"
+msgstr "Показати PIP"
 
 msgid "Show Audioselection"
 msgstr "Показувати вибір Аудіо"
@@ -7828,9 +7895,6 @@ msgstr "Менеджер управіння софтом"
 msgid "Software manager setup"
 msgstr "Налаштування менеджера софта"
 
-msgid "Software restore"
-msgstr "Відновлення софта"
-
 msgid "Software update"
 msgstr "Оновлення софта"
 
@@ -7926,6 +7990,14 @@ msgstr ""
 
 msgid "Spanish"
 msgstr "Іспанський"
+
+#, fuzzy
+msgid "Special 1"
+msgstr "спеціальна подія"
+
+#, fuzzy
+msgid "Special 2"
+msgstr "спеціальна подія"
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
 msgstr "Вкажіть додаткові тимчасові рамки, щоб ігнорувати таймер неактивності сну"
@@ -8427,9 +8499,6 @@ msgstr "PIN-код був успішно збережений."
 msgid "The PIN codes you entered are different."
 msgstr "Введений PIN код не вірний"
 
-msgid "The backup failed. Please choose a different backup location."
-msgstr "Збереження не виконано. Виберіть інше місце розташування. "
-
 #, fuzzy, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -8545,6 +8614,10 @@ msgstr ""
 "Рестарт GUI ресивера\n"
 "через помилку в mytest.py"
 
+#, fuzzy
+msgid "The user interface of your receiver is restarting in debug mode"
+msgstr "Рестарт GUI ресивера"
+
 msgid ""
 "The wireless LAN plugin is not installed!\n"
 "Please install it and choose what you want to do next."
@@ -8558,12 +8631,6 @@ msgid ""
 msgstr ""
 "Плагін Witeless LAN не встановлений!\n"
 "Будь ласка, встановіть його."
-
-msgid "The wizard can backup your current settings. Do you want to do a backup now?"
-msgstr "Майстер може зберегти Ваші поточні настройки. Ви хочете зробити це зараз?"
-
-msgid "The wizard is finished now."
-msgstr "Майстер закінчив роботу."
 
 msgid "There are at least "
 msgstr "Знайдено принаймні "
@@ -8944,6 +9011,9 @@ msgstr "Показати/сховати миготливу лінію для ц�
 msgid "Toggle infoBar"
 msgstr "Переключити інфобар"
 
+msgid "Toggle new text inserts before or overwrites existing text"
+msgstr ""
+
 msgid "Toggle show/hide"
 msgstr "Переключення показати / приховати"
 
@@ -9176,6 +9246,18 @@ msgstr "Не оброблений ключ"
 msgid "Unhide parental control services"
 msgstr "Показати приховані заблоковані ресурси"
 
+#, fuzzy
+msgid "Unicable delay after change voltage before switch command"
+msgstr "Затримка після зміни напруги перед командою перемикача"
+
+#, fuzzy
+msgid "Unicable delay after enable voltage before switch command"
+msgstr "Затримка після включення напруги перед командою перемикача"
+
+#, fuzzy
+msgid "Unicable delay after last diseqc command"
+msgstr "Затримка після останньої команди DiSEqC"
+
 msgid "Uninstall"
 msgstr "Видалити"
 
@@ -9183,6 +9265,9 @@ msgid "United Arab Emirates"
 msgstr ""
 
 msgid "United Kingdom"
+msgstr ""
+
+msgid "United States"
 msgstr ""
 
 msgid "United States Minor Outlying Islands"
@@ -9205,6 +9290,10 @@ msgstr "Помилка відключення"
 
 msgid "Unsupported"
 msgstr "Невідома"
+
+#, fuzzy
+msgid "Unzipping Image"
+msgstr "Завантаження"
 
 msgid "Update"
 msgstr "Оновлення"
@@ -9246,6 +9335,9 @@ msgstr "Оновлення каталогу софта"
 
 msgid "Upgrading"
 msgstr "Оновлення"
+
+msgid "Upper case"
+msgstr ""
 
 msgid "Uruguay"
 msgstr ""
@@ -9405,6 +9497,10 @@ msgstr "VU+"
 msgid "Vanuatu"
 msgstr "Вручну"
 
+#, fuzzy
+msgid "Various"
+msgstr "Грати наступне відео"
+
 msgid "Venezuela (Bolivarian Republic of)"
 msgstr ""
 
@@ -9527,6 +9623,14 @@ msgstr ""
 msgid "Virgin Islands (U.S.)"
 msgstr ""
 
+#, fuzzy
+msgid "Virtual KeyBoard Functions"
+msgstr "Віртуальна клавіатура"
+
+#, fuzzy
+msgid "Virtual KeyBoard Text:"
+msgstr "Віртуальна клавіатура"
+
 msgid "Virtual keyboard"
 msgstr "Віртуальна клавіатура"
 
@@ -9550,10 +9654,6 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "WLAN з'єднання"
-
-#, fuzzy
-msgid "WMA pro downmix"
-msgstr "AAC мікшування"
 
 msgid "WPA"
 msgstr "WPA"
@@ -9649,9 +9749,6 @@ msgstr ""
 "Відзначте місце з якого ви хочете почати редагування. Натисність OK, виберіть 'початок редагування'.\n"
 "\"\n"
 "\"Після, відзначте точку закінчення редагування, натисніть OK, виберіть'кінець редагування'. От і все;)"
-
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
-msgstr "Ласкаво просимо в майстер оновлення іміджу. Майстер допоможе вам в оновленні програмного забезпечення вашого ресивера шляхом збереження ваших поточних налаштувань і коротких підказок щодо процесу оновлення."
 
 msgid ""
 "Welcome.\n"
@@ -9908,9 +10005,6 @@ msgstr "Коли зображення на каналі має співвідн�
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Коли зображення на каналі має співвідношення сторін 4:3, виберіть, чи слід масштабувати / розтягнути картинку."
 
-msgid "Where do you want to backup your settings?"
-msgstr "Де ви хочете зберегти установки?"
-
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Куди зберегти тимчасові файли відкладеного перегляду?"
 
@@ -9940,6 +10034,10 @@ msgstr "З повідомленням"
 
 msgid "Without popup"
 msgstr "Без повідомлення"
+
+#, fuzzy
+msgid "Wizard setup"
+msgstr "Налаштування відео"
 
 msgid "Wizard to arrange the overscan"
 msgstr "Майстер організації розтягнення"
@@ -10010,9 +10108,6 @@ msgstr "Так, завжди"
 msgid "Yes, and delete this movie"
 msgstr "Так, видалити цей запис"
 
-msgid "Yes, backup my settings!"
-msgstr "Так, зберегти мої установки!"
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Так, видалити це відео і повернутися до списку відео"
 
@@ -10021,12 +10116,6 @@ msgstr ""
 
 msgid "Yes, only from standby"
 msgstr ""
-
-msgid "Yes, perform a shutdown now."
-msgstr "Так, вимкнути зараз."
-
-msgid "Yes, restore the settings now"
-msgstr "Так, відновити установки зараз"
 
 msgid "Yes, returning to movie list"
 msgstr "Так,повернутися до списку записів"
@@ -10125,12 +10214,6 @@ msgstr ""
 msgid "You didn't select a channel to record from."
 msgstr "Ви не обрали канал запису."
 
-msgid "You have chosen to backup your settings. Please press OK to start the backup now."
-msgstr "Ви вибрали резервне копіювання налаштувань. Будь ласка, натисніть кнопку ОК для початку резервного копіювання."
-
-msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
-msgstr "Ви вибрали відновлення налаштувань. Enigma2 буде перезапущено відразу після відновлення. Натисніть ОК для відновлення."
-
 #, python-format
 msgid "You have to wait %s!"
 msgstr "Необхідно зачекати %s!"
@@ -10140,17 +10223,6 @@ msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
 "Ви повинні переключитися на обслуговування  %s (%s - '%s')!\n"
 "\n"
-
-#, fuzzy
-msgid ""
-"You need a PC connected to your receiver. If you need further instructions, please visit the website https://openpli.org\n"
-"Your receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
-msgstr ""
-"Вам потрібно комп'ютер приєднаний до вашого ресивера. Якщо вам необхідні додаткові інструкції, будь ласка, відвідайте сайт http://www.dm7025.de.\n"
-"Ваш ресивер повинен бути зупинений. Після виконання Вами інструкцій по оновленню з сайту, нове ПЗ запросить відновлення Ваших установок. "
-
-msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
-msgstr "Резервна копія створена. Тепер ми продовжимо процес оновлення. "
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Ваша колекція перевищує розмір одношарового диска. Вам потрібен чистий двошаровий DVD!"
@@ -10220,9 +10292,6 @@ msgstr "Перезавантаження ресивера"
 
 msgid "Your receiver is shutting down"
 msgstr "Ваш ресивер переходить в глибокий режим Очікування"
-
-msgid "Your receiver is shutting down. Please stand by..."
-msgstr "Ваш ресивер виключаеться. Будь ласка, почекайте..."
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 msgstr "Зараз ваш ресивер може бути непридатним для використання. Зверніться доінструкції для отримання додаткової допомоги до його перезавантаження."
@@ -10301,6 +10370,9 @@ msgstr "Перейти на перший сервіс"
 #, fuzzy
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
 msgstr "Zgemma H.S/H.2S/H.2H/H5"
+
+msgid "Zgemma H9"
+msgstr ""
 
 msgid "Zgemma Star S/2S/H1/H2"
 msgstr "Zgemma Star S/2S/H1/H2"
@@ -10523,20 +10595,6 @@ msgstr "підключено"
 msgid "controlled by HDMI"
 msgstr ""
 
-msgid "convert to AC3"
-msgstr ""
-
-msgid "convert to DTS"
-msgstr ""
-
-#, fuzzy
-msgid "convert to multi channel PCM"
-msgstr "Багатоканальне PCM"
-
-#, fuzzy
-msgid "convert to multi-channel PCM"
-msgstr "Багатоканальне PCM"
-
 msgid "cooking"
 msgstr "приготування"
 
@@ -10735,9 +10793,6 @@ msgstr "народна/традиційна музика"
 msgid "football/soccer"
 msgstr "футбол"
 
-msgid "force AC3 plus"
-msgstr ""
-
 #, fuzzy
 msgid "force disabled"
 msgstr "вимкнено"
@@ -10787,9 +10842,6 @@ msgstr "висота"
 
 msgid "help..."
 msgstr "допомога..."
-
-msgid "hide"
-msgstr "приховувати"
 
 msgid "horizontal"
 msgstr "горизонтальна"
@@ -11205,9 +11257,6 @@ msgstr "Всі постачальники послуг"
 msgid "set as startup service"
 msgstr "зробити сервіс стартовим"
 
-msgid "show"
-msgstr "показати"
-
 msgid "show DVD main menu"
 msgstr "показати DVD в головному меню"
 
@@ -11412,9 +11461,6 @@ msgstr "неперевірено"
 
 msgid "until standby/restart"
 msgstr "до режиму очікування/перезавантаження"
-
-msgid "use best, controlled by HDMI"
-msgstr ""
 
 msgid "user defined"
 msgstr "визначений користувачем"

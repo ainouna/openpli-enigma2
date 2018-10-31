@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-08 11:27+0430\n"
+"POT-Creation-Date: 2018-10-27 22:08+0200\n"
 "PO-Revision-Date: 2010-08-20 00:08+0200\n"
 "Last-Translator: Hazem <moustafagamal@hotmail.com>\n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -68,6 +68,13 @@ msgstr ""
 "\n"
 "أضغط موافق من الريموت للاستمرار"
 
+#
+#, fuzzy
+msgid ""
+"\n"
+"Press OK or Exit to abort!"
+msgstr "اضغط موافق للبحث"
+
 msgid ""
 "\n"
 "Recording in progress."
@@ -84,11 +91,6 @@ msgstr ""
 msgid ""
 "\n"
 "Restore your receiver settings."
-msgstr ""
-
-msgid ""
-"\n"
-"Restore your receiver with a new firmware."
 msgstr ""
 
 #
@@ -417,6 +419,7 @@ msgstr ""
 #, python-format
 msgid ""
 "%s\n"
+"Press ok for multiboot selection\n"
 "Press exit to close"
 msgstr ""
 
@@ -769,16 +772,7 @@ msgstr "إعدادات الصوت والصوره"
 msgid "AAC downmix"
 msgstr ""
 
-msgid "AAC transcoding"
-msgstr ""
-
-msgid "AC3"
-msgstr ""
-
 msgid "AC3 downmix"
-msgstr ""
-
-msgid "AC3 plus transcoding"
 msgstr ""
 
 msgid "ACQUIRING TSID/ONID"
@@ -1279,6 +1273,10 @@ msgstr ""
 msgid "Australia"
 msgstr "إيطالى"
 
+#, fuzzy
+msgid "Australian"
+msgstr "إيطالى"
+
 msgid "Austria"
 msgstr ""
 
@@ -1323,6 +1321,17 @@ msgstr ""
 msgid "Auto scart switching"
 msgstr "التحول الآلى الى السكارت"
 
+#, fuzzy, python-format
+msgid "Autoinstalling %s"
+msgstr "جارى التثبيت"
+
+#, fuzzy
+msgid "Autoinstalling Completed"
+msgstr "إنتهاء التثبيت."
+
+msgid "Autoinstalling please wait for packages being updated"
+msgstr ""
+
 msgid "Automatic"
 msgstr "آلى"
 
@@ -1346,6 +1355,10 @@ msgid "Automatically turn on external subtitles"
 msgstr ""
 
 msgid "Available format variables"
+msgstr "متغيرات النسق المتاحه"
+
+#, fuzzy
+msgid "Available locales are:"
 msgstr "متغيرات النسق المتاحه"
 
 msgid "Azerbaijan"
@@ -1454,6 +1467,11 @@ msgstr "التصرف عندما يصل الفيلم للنهايه"
 
 msgid "Belarus"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Belgian"
+msgstr "نرويجى"
 
 msgid "Belgium"
 msgstr ""
@@ -1646,6 +1664,9 @@ msgstr ""
 msgid "Cancel"
 msgstr "إلغاء"
 
+msgid "Cancel any text changes and exit"
+msgstr ""
+
 msgid "Cancelled upon user request"
 msgstr ""
 
@@ -1831,9 +1852,6 @@ msgid "Choose Tuner"
 msgstr ""
 
 msgid "Choose bouquet"
-msgstr ""
-
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
 msgstr ""
 
 msgid "Choose which tuner to configure."
@@ -2258,18 +2276,6 @@ msgstr ""
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr ""
 
-msgid "Configure whether AAC sound tracks should be transcoded."
-msgstr ""
-
-msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
-msgstr ""
-
-msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
-msgstr ""
-
-msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
-msgstr ""
-
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr ""
 
@@ -2363,9 +2369,6 @@ msgstr "المحتوى لا يناسب دى فى دى !"
 msgid "Continue"
 msgstr ""
 
-msgid "Continue in background"
-msgstr "استمر فى الخلفيه"
-
 #, fuzzy
 msgid "Continue playback"
 msgstr "استمرار العرض"
@@ -2394,7 +2397,7 @@ msgstr ""
 msgid "Could not find installed channel list."
 msgstr ""
 
-msgid "Could not find suitable media - Please insert a media (e.g. USB stick) and try again!"
+msgid "Could not find suitable media - Please remove some downloaded images or insert a media (e.g. USB stick) with sufficiant free space and try again!"
 msgstr ""
 
 #
@@ -2541,13 +2544,7 @@ msgstr "متقدم"
 msgid "DMM normal"
 msgstr ""
 
-msgid "DTS"
-msgstr ""
-
 msgid "DTS downmix"
-msgstr ""
-
-msgid "DTS-HD downmix"
 msgstr ""
 
 msgid "DUAL LAYER DVD"
@@ -2643,6 +2640,9 @@ msgstr "المكان الافتراضى للفيلم"
 msgid "Default settings"
 msgstr "الاعدادات الافتراضيه"
 
+msgid "Define the location of the EPG Cache file."
+msgstr ""
+
 msgid "Delay after change voltage before switch command"
 msgstr ""
 
@@ -2733,6 +2733,12 @@ msgstr "مسح مدخل قائمة العرض"
 #, fuzzy
 msgid "Delete saved playlist"
 msgstr "مسح قائمة العرض المحفوظه"
+
+msgid "Delete the character to the left of text buffer cursor"
+msgstr ""
+
+msgid "Delete the character under the text buffer cursor"
+msgstr ""
 
 msgid "Delete timer"
 msgstr ""
@@ -3094,9 +3100,6 @@ msgstr "جارى التحميل"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "جارى تحميل معلومات عن البلج إن. رجاء الانتظار.."
-
-msgid "Downmix"
-msgstr ""
 
 #, fuzzy
 msgid "Drop unconfigured satellites"
@@ -3815,6 +3818,10 @@ msgstr "شحن"
 msgid "Flash image"
 msgstr "شحن"
 
+#, fuzzy
+msgid "Flashing Image"
+msgstr "شحن"
+
 msgid "Flashing image succesfull"
 msgstr ""
 
@@ -3912,7 +3919,7 @@ msgstr ""
 msgid "Full transparency"
 msgstr ""
 
-msgid "Fulview resulution"
+msgid "Full view resolution"
 msgstr ""
 
 msgid "Function of OK button"
@@ -4085,6 +4092,9 @@ msgstr "اليونان"
 msgid "Greek"
 msgstr "اليونان"
 
+msgid "Greek (Modern)"
+msgstr ""
+
 msgid "Green"
 msgstr ""
 
@@ -4145,9 +4155,6 @@ msgstr ""
 msgid "HDMI HDR Type"
 msgstr ""
 
-msgid "HDMI audio source"
-msgstr ""
-
 msgid "HDMI-CEC Source Active"
 msgstr ""
 
@@ -4161,6 +4168,9 @@ msgid "HDR10"
 msgstr ""
 
 msgid "HDR10 support"
+msgstr ""
+
+msgid "HELP"
 msgstr ""
 
 msgid "HLG"
@@ -4214,6 +4224,9 @@ msgid "Helps setting up your antenna"
 msgstr ""
 
 msgid "Hidden network"
+msgstr ""
+
+msgid "Hide"
 msgstr ""
 
 msgid "Hide channel list in radio mode"
@@ -4314,6 +4327,12 @@ msgid "I do not want to perform any service scans"
 msgstr "هل تريد عمل بحث"
 
 msgid "IDLE"
+msgstr ""
+
+msgid "INFO"
+msgstr ""
+
+msgid "INS"
 msgstr ""
 
 #
@@ -4548,13 +4567,6 @@ msgstr ""
 msgid "Install"
 msgstr "تثبيت"
 
-#
-msgid "Install a new image with a USB stick"
-msgstr ""
-
-msgid "Install a new image with your web browser"
-msgstr "تثبيت صوره جديد بواسطه متصفح الشبكه"
-
 #, fuzzy
 msgid "Install channel list"
 msgstr "القناه التاليه فى التاريخ"
@@ -4644,6 +4656,9 @@ msgid "Ipkg"
 msgstr ""
 
 msgid "Iran (Islamic Republic of)"
+msgstr ""
+
+msgid "Iran, Islamic Republic"
 msgstr ""
 
 msgid "Iraq"
@@ -4751,6 +4766,11 @@ msgstr ""
 
 msgid "Keyboard"
 msgstr "لوحة مفاتيح"
+
+#
+#, fuzzy
+msgid "Keyboard data entry"
+msgstr "ضبط لوحه المفاتيح"
 
 #
 #, fuzzy
@@ -4977,8 +4997,15 @@ msgstr ""
 msgid "Local network"
 msgstr "شبكه محليه"
 
+#, fuzzy
+msgid "Locale"
+msgstr "شبكه محليه"
+
 msgid "Location"
 msgstr "مكان"
+
+msgid "Location EPG Cache file"
+msgstr ""
 
 msgid "Location for instant recordings"
 msgstr "مكان التسجيلات السريعه"
@@ -5009,6 +5036,9 @@ msgid "Longitude"
 msgstr "خط الطول"
 
 msgid "Loop through from"
+msgstr ""
+
+msgid "Lower case"
 msgstr ""
 
 msgid "Luxembourg"
@@ -5286,6 +5316,30 @@ msgstr "تحريك صوره داخل صوره"
 msgid "Move east"
 msgstr "تحرك شرقا"
 
+msgid "Move the text buffer cursor left"
+msgstr ""
+
+msgid "Move the text buffer cursor right"
+msgstr ""
+
+msgid "Move the text buffer cursor to the first character"
+msgstr ""
+
+msgid "Move the text buffer cursor to the last character"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor down"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor left"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor right"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor up"
+msgstr ""
+
 msgid "Move to position X"
 msgstr ""
 
@@ -5550,10 +5604,6 @@ msgid "No age block"
 msgstr ""
 
 #
-msgid "No backup needed"
-msgstr "لا حاجه الى نسخه إحتياطيه "
-
-#
 msgid ""
 "No data on transponder!\n"
 "(Timeout reading PAT)"
@@ -5698,13 +5748,7 @@ msgstr "لا، لكن أعد التشغيل من البدايه"
 msgid "No, do not flash image"
 msgstr "لا ، لا تفعل شيئ"
 
-msgid "No, do nothing."
-msgstr "لا ، لا تفعل شيئ"
-
 msgid "No, except Wakeup timer"
-msgstr ""
-
-msgid "No, just start my receiver"
 msgstr ""
 
 msgid "No, never"
@@ -5798,12 +5842,12 @@ msgstr ""
 msgid "Number of repeating text on display."
 msgstr ""
 
+msgid "Number or SMS style data entry"
+msgstr ""
+
 #
 msgid "OK"
 msgstr "موافق"
-
-msgid "OK, guide me through the upgrade process"
-msgstr "موافق، أرشدنى أثناء عملية الترقيه"
 
 msgid "ONID"
 msgstr ""
@@ -5820,6 +5864,9 @@ msgid "OSD settings"
 msgstr "إعدادات OSD"
 
 msgid "OSD transparency"
+msgstr ""
+
+msgid "OVR"
 msgstr ""
 
 #
@@ -6015,9 +6062,6 @@ msgstr "محرر خدمات التحكم الأبوى"
 msgid "Parental control setup"
 msgstr "اعداد التحكم الابوى"
 
-msgid "Passthrough"
-msgstr ""
-
 #, fuzzy
 msgid "Pause"
 msgstr "وقف مؤقت"
@@ -6150,6 +6194,9 @@ msgid ""
 msgstr ""
 "من فضلك فم بتكوين أو تأكد من اسم الخادم بوضع القيم المطلوبه.\n"
 "عندما تكون مستعد أضغط موافق للاستمرار."
+
+msgid "Please configure the fallback tuner setup?"
+msgstr ""
 
 msgid ""
 "Please configure your internet connection by filling out the required values.\n"
@@ -6294,6 +6341,9 @@ msgstr "من فضلك أضبط الموالف B"
 #, fuzzy
 msgid "Please set up tuner R"
 msgstr "من فضلك أضبط الموالف B"
+
+msgid "Please setup the following basic configs!"
+msgstr ""
 
 msgid ""
 "Please use direction keys to move the PiP window.\n"
@@ -6726,6 +6776,10 @@ msgstr ""
 msgid "Really reboot now?"
 msgstr "هل تريد فعلا إعادة التشغيل الان ؟"
 
+#, fuzzy
+msgid "Really restart in debug mode now?"
+msgstr "هل تريد فعلا إعـادة التشغـيل الان ؟"
+
 msgid "Really restart now?"
 msgstr "هل تريد فعلا إعـادة التشغـيل الان ؟"
 
@@ -7019,6 +7073,9 @@ msgstr "أبدأ القطع هنا"
 msgid "Restart enigma"
 msgstr ""
 
+msgid "Restart enigma in debug mode"
+msgstr ""
+
 msgid "Restart network"
 msgstr "إعادة تشغيل الشبكه"
 
@@ -7065,11 +7122,11 @@ msgstr "إستئناف العرض"
 
 #
 #, fuzzy
-msgid "Retreiving image list - Please wait..."
+msgid "Retrieving image list - Please wait..."
 msgstr "جارى الحصول على معلومات عن البلج إن. رجاء الانتظار..."
 
 #, fuzzy
-msgid "Retreiving image slots - Please wait..."
+msgid "Retrieving image slots - Please wait..."
 msgstr "بحث عن التحديثات المتاحه. رجاء الانتظار...."
 
 msgid "Return to movie list"
@@ -7272,6 +7329,9 @@ msgid "Save and restart timeshift"
 msgstr ""
 
 msgid "Save and stop timeshift"
+msgstr ""
+
+msgid "Save any text changes and exit"
 msgstr ""
 
 msgid "Save changes"
@@ -7629,6 +7689,11 @@ msgstr ""
 msgid "Select interface"
 msgstr "أختار واجهه"
 
+#
+#, fuzzy
+msgid "Select locale"
+msgstr "اختار الفيلم"
+
 msgid "Select location"
 msgstr ""
 
@@ -7666,6 +7731,9 @@ msgid "Select target folder"
 msgstr "أختار المجلد الهدف"
 
 msgid "Select the Unicable channel to be assigned to this tuner. This is a unique value. Be certain that no other device connected to this same Unicable system is allocated to the same Unicable channel."
+msgstr ""
+
+msgid "Select the character or action under the virtual keyboard cursor"
 msgstr ""
 
 msgid "Select the format of your Unicable device. Choices are 'SCR Unicable' (Unicable I format), or 'SCR JESS' (Unicable II format)."
@@ -7712,6 +7780,12 @@ msgid "Select the type of LNB/device being used (normally 'Universal'). If your 
 msgstr ""
 
 msgid "Select the type of Unicable device you are using."
+msgstr ""
+
+msgid "Select the virtual keyboard locale from a menu"
+msgstr ""
+
+msgid "Select the virtual keyboard shifted character set"
 msgstr ""
 
 #, fuzzy
@@ -7998,6 +8072,11 @@ msgstr ""
 
 msgid "Short filenames"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Show"
+msgstr "أظهر المعلومات"
 
 msgid "Show Audioselection"
 msgstr ""
@@ -8436,9 +8515,6 @@ msgstr "التحكم فى البرنامج التشغيلى"
 msgid "Software manager setup"
 msgstr ""
 
-msgid "Software restore"
-msgstr "إستعادة البرنامج التشغيلى"
-
 msgid "Software update"
 msgstr "ترقية البرنامج التشغيلى"
 
@@ -8546,6 +8622,12 @@ msgstr ""
 #
 msgid "Spanish"
 msgstr "أسبانى"
+
+msgid "Special 1"
+msgstr ""
+
+msgid "Special 2"
+msgstr ""
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
 msgstr ""
@@ -9112,9 +9194,6 @@ msgstr ""
 msgid "The PIN codes you entered are different."
 msgstr ""
 
-msgid "The backup failed. Please choose a different backup location."
-msgstr "فشل عمل نسخه إحتياطيه  ، من فضلك أختار مان آخر للنسخه الإحتياطيه  ."
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -9215,6 +9294,10 @@ msgid ""
 "due to an error in mytest.py"
 msgstr ""
 
+#, fuzzy
+msgid "The user interface of your receiver is restarting in debug mode"
+msgstr "رجاء الانتظار.... جارى إعادة تشغيل الشبكه"
+
 msgid ""
 "The wireless LAN plugin is not installed!\n"
 "Please install it and choose what you want to do next."
@@ -9228,12 +9311,6 @@ msgid ""
 msgstr ""
 "بلج إن الشبكه المحليه اللاسلكيه غير مثبت ! \n"
 "من فضلك ثبته"
-
-msgid "The wizard can backup your current settings. Do you want to do a backup now?"
-msgstr "من خلال هذه النافذه يمكنك عمل نسخه إحتياطيه  للإعدادات الحاليه . هل تريد عمل نسخه إحتياطيه  الان ؟"
-
-msgid "The wizard is finished now."
-msgstr "إنتهاء نافذة الاعدادات الان ."
 
 msgid "There are at least "
 msgstr "يوجد على الأقل"
@@ -9617,6 +9694,9 @@ msgstr ""
 msgid "Toggle infoBar"
 msgstr ""
 
+msgid "Toggle new text inserts before or overwrites existing text"
+msgstr ""
+
 msgid "Toggle show/hide"
 msgstr ""
 
@@ -9871,6 +9951,15 @@ msgstr ""
 msgid "Unhide parental control services"
 msgstr ""
 
+msgid "Unicable delay after change voltage before switch command"
+msgstr ""
+
+msgid "Unicable delay after enable voltage before switch command"
+msgstr ""
+
+msgid "Unicable delay after last diseqc command"
+msgstr ""
+
 msgid "Uninstall"
 msgstr "تراجع عن التثبيت"
 
@@ -9878,6 +9967,9 @@ msgid "United Arab Emirates"
 msgstr ""
 
 msgid "United Kingdom"
+msgstr ""
+
+msgid "United States"
 msgstr ""
 
 msgid "United States Minor Outlying Islands"
@@ -9901,6 +9993,10 @@ msgstr ""
 
 msgid "Unsupported"
 msgstr "غير مدعم"
+
+#, fuzzy
+msgid "Unzipping Image"
+msgstr "جارى التحميل"
 
 #
 msgid "Update"
@@ -9949,6 +10045,9 @@ msgstr "جارى تحديث فهرس البرنامج التشغيلى"
 #
 msgid "Upgrading"
 msgstr "جارى الترقيه"
+
+msgid "Upper case"
+msgstr ""
 
 msgid "Uruguay"
 msgstr ""
@@ -10127,6 +10226,9 @@ msgstr ""
 msgid "Vanuatu"
 msgstr "يدوى"
 
+msgid "Various"
+msgstr ""
+
 msgid "Venezuela (Bolivarian Republic of)"
 msgstr ""
 
@@ -10263,6 +10365,16 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Virtual KeyBoard Functions"
+msgstr "لوحة مفاتيح تخيليه"
+
+#
+#, fuzzy
+msgid "Virtual KeyBoard Text:"
+msgstr "لوحة مفاتيح تخيليه"
+
+#
+#, fuzzy
 msgid "Virtual keyboard"
 msgstr "لوحة مفاتيح تخيليه"
 
@@ -10290,9 +10402,6 @@ msgstr ""
 
 msgid "WLAN connection"
 msgstr "إتصال شبكه واسعه"
-
-msgid "WMA pro downmix"
-msgstr ""
 
 #
 msgid "WPA"
@@ -10389,9 +10498,6 @@ msgid ""
 "Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
 "\n"
 "Then seek to the end, press OK, select 'end cut'. That's it."
-msgstr ""
-
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
 msgstr ""
 
 msgid ""
@@ -10628,9 +10734,6 @@ msgstr ""
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr ""
 
-msgid "Where do you want to backup your settings?"
-msgstr "هل تريد فعلا عمل نسخه إحتياطيه  للاعدادات ؟"
-
 #
 msgid "Where to save temporary timeshift recordings?"
 msgstr "أين تحفظ تسجيلات التايم شفت المؤقته؟"
@@ -10663,6 +10766,11 @@ msgstr ""
 
 msgid "Without popup"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Wizard setup"
+msgstr "ضبط الفيديو"
 
 msgid "Wizard to arrange the overscan"
 msgstr ""
@@ -10733,10 +10841,6 @@ msgstr ""
 msgid "Yes, and delete this movie"
 msgstr "نعم، وامسح هذا الفيلم"
 
-#
-msgid "Yes, backup my settings!"
-msgstr "نعم ، أعمل نسخه إحتياطيه  للاعدادات"
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr ""
 
@@ -10745,12 +10849,6 @@ msgstr ""
 
 msgid "Yes, only from standby"
 msgstr ""
-
-msgid "Yes, perform a shutdown now."
-msgstr "نعم أغلق الان."
-
-msgid "Yes, restore the settings now"
-msgstr "نعم، أستعد الاعدادات الان"
 
 msgid "Yes, returning to movie list"
 msgstr "نعم، العوده الى قائمة الافلام"
@@ -10836,12 +10934,6 @@ msgstr ""
 msgid "You didn't select a channel to record from."
 msgstr ""
 
-msgid "You have chosen to backup your settings. Please press OK to start the backup now."
-msgstr "إذا أخترت عمل نسخه إحتياطيه  للاعدادات ، من فضلك أضغط موافق اتبدأ النسخه الإحتياطيه الان"
-
-msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
-msgstr "لقد أخترت أن تستعيد الاعدادات . سيتم إعادة تشغيل الاينجما2 بعد الاستعاده .أضغط موافق لتبدأ الاستعاده الان ."
-
 #, python-format
 msgid "You have to wait %s!"
 msgstr "يجب أن تنتظر %s !"
@@ -10849,14 +10941,6 @@ msgstr "يجب أن تنتظر %s !"
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
-
-msgid ""
-"You need a PC connected to your receiver. If you need further instructions, please visit the website https://openpli.org\n"
-"Your receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
-msgstr ""
-
-msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
-msgstr "نجاح عمل نسخه إحتياطيه . سوف نشرح لك طريقة الترقيه الان."
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "هذه المجموعه تزيد عن حجم وسيط ذو طبقه واحده. أنت تحتاج الى دى فى دى ثنائى الطبقه خالى!"
@@ -10917,9 +11001,6 @@ msgid "Your receiver is rebooting"
 msgstr ""
 
 msgid "Your receiver is shutting down"
-msgstr ""
-
-msgid "Your receiver is shutting down. Please stand by..."
 msgstr ""
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
@@ -10995,6 +11076,9 @@ msgid "Zapped to timer service %s!"
 msgstr "الانتقال لاعلى الى البند الاول"
 
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
+msgstr ""
+
+msgid "Zgemma H9"
 msgstr ""
 
 msgid "Zgemma Star S/2S/H1/H2"
@@ -11233,18 +11317,6 @@ msgstr "تم الاتصال"
 msgid "controlled by HDMI"
 msgstr ""
 
-msgid "convert to AC3"
-msgstr ""
-
-msgid "convert to DTS"
-msgstr ""
-
-msgid "convert to multi channel PCM"
-msgstr ""
-
-msgid "convert to multi-channel PCM"
-msgstr ""
-
 msgid "cooking"
 msgstr ""
 
@@ -11454,9 +11526,6 @@ msgstr ""
 msgid "football/soccer"
 msgstr ""
 
-msgid "force AC3 plus"
-msgstr ""
-
 #, fuzzy
 msgid "force disabled"
 msgstr "تم التعطيل"
@@ -11509,9 +11578,6 @@ msgstr ""
 
 msgid "help..."
 msgstr "مساعده..."
-
-msgid "hide"
-msgstr ""
 
 msgid "horizontal"
 msgstr "أفقى"
@@ -11954,9 +12020,6 @@ msgstr "إضافه القناه الى المفضله"
 msgid "set as startup service"
 msgstr ""
 
-msgid "show"
-msgstr ""
-
 #
 msgid "show DVD main menu"
 msgstr "أعرض قائمة دى فى دى الرئيسيه"
@@ -12166,9 +12229,6 @@ msgstr ""
 #
 msgid "until standby/restart"
 msgstr "حتى وضع الانتظار/إعادة التشغيل"
-
-msgid "use best, controlled by HDMI"
-msgstr ""
 
 #
 msgid "user defined"

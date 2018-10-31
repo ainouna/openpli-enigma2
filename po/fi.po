@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-08 11:27+0430\n"
+"POT-Creation-Date: 2018-10-27 22:08+0200\n"
 "PO-Revision-Date: 2013-10-15 19:32+0200\n"
 "Last-Translator: BoxFreak\n"
 "Language-Team: none\n"
@@ -74,6 +74,13 @@ msgstr ""
 "\n"
 "Jatka painamalla OK-näppäintä."
 
+#
+#, fuzzy
+msgid ""
+"\n"
+"Press OK or Exit to abort!"
+msgstr "Aloita haku painamalla OK"
+
 msgid ""
 "\n"
 "Recording in progress."
@@ -93,13 +100,6 @@ msgid ""
 msgstr ""
 "\n"
 "Palauta vastaanottimesi asetukset."
-
-msgid ""
-"\n"
-"Restore your receiver with a new firmware."
-msgstr ""
-"\n"
-"Palauta vastaanottimesi uudelle firmwarelle."
 
 #
 msgid ""
@@ -390,6 +390,7 @@ msgstr "%k:%M %e.%-m"
 #, python-format
 msgid ""
 "%s\n"
+"Press ok for multiboot selection\n"
 "Press exit to close"
 msgstr ""
 
@@ -761,18 +762,9 @@ msgstr "Ääni- ja kuvalähtöjen asetukset"
 msgid "AAC downmix"
 msgstr ""
 
-msgid "AAC transcoding"
-msgstr ""
-
-msgid "AC3"
-msgstr ""
-
 #
 msgid "AC3 downmix"
 msgstr "AC3 muunnos stereoksi"
-
-msgid "AC3 plus transcoding"
-msgstr ""
 
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
@@ -1281,6 +1273,11 @@ msgstr ""
 msgid "Australia"
 msgstr "Italia"
 
+#
+#, fuzzy
+msgid "Australian"
+msgstr "Italia"
+
 #, fuzzy
 msgid "Austria"
 msgstr "ratsastus"
@@ -1329,6 +1326,18 @@ msgid "Auto scart switching"
 msgstr "Autom. SCARTin kytkentä"
 
 #
+#, fuzzy, python-format
+msgid "Autoinstalling %s"
+msgstr "Asennetaan"
+
+#, fuzzy
+msgid "Autoinstalling Completed"
+msgstr "Asennus on valmis."
+
+msgid "Autoinstalling please wait for packages being updated"
+msgstr ""
+
+#
 msgid "Automatic"
 msgstr "Automaattinen"
 
@@ -1352,6 +1361,11 @@ msgstr "Käynnistä automaattisesti teksti-tv tekstitys."
 
 #
 msgid "Available format variables"
+msgstr "Formaatti-muuttujat"
+
+#
+#, fuzzy
+msgid "Available locales are:"
 msgstr "Formaatti-muuttujat"
 
 msgid "Azerbaijan"
@@ -1468,6 +1482,11 @@ msgstr "Toiminto kun tallenne loppuu"
 
 msgid "Belarus"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Belgian"
+msgstr "Norja"
 
 msgid "Belgium"
 msgstr ""
@@ -1664,6 +1683,9 @@ msgstr ""
 msgid "Cancel"
 msgstr "Peruuta"
 
+msgid "Cancel any text changes and exit"
+msgstr ""
+
 msgid "Cancelled upon user request"
 msgstr ""
 
@@ -1858,10 +1880,6 @@ msgstr "Valitse viritin"
 
 msgid "Choose bouquet"
 msgstr ""
-
-#, fuzzy
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "Määrittää jos haluat että monikanavaääni miksataan stereoääneksi."
 
 msgid "Choose which tuner to configure."
 msgstr "Valitse minkä virittimen tahdot määrittää."
@@ -2300,22 +2318,6 @@ msgstr "Määrittää missä jo päättyneet ajastukset näytetään ajastuslist
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Määrittää josko (ja kuinka kauan) toinen tietopalkki näytetään kun OK-näppäintä painetaan kahdesti. Toinen tietopalkki sisältää lisätietoja valitusta kanavasta."
 
-#, fuzzy
-msgid "Configure whether AAC sound tracks should be transcoded."
-msgstr "Määrittää jos haluat että monikanavaääni miksataan stereoääneksi."
-
-#, fuzzy
-msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
-msgstr "Määrittää jos haluat että monikanavaääni miksataan stereoääneksi."
-
-#, fuzzy
-msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
-msgstr "Määrittää jos haluat että monikanavaääni miksataan stereoääneksi."
-
-#, fuzzy
-msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
-msgstr "Määrittää jos haluat että monikanavaääni miksataan stereoääneksi."
-
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr ""
 
@@ -2419,10 +2421,6 @@ msgid "Continue"
 msgstr "Jatka"
 
 #
-msgid "Continue in background"
-msgstr "Jatka taustalla"
-
-#
 msgid "Continue playback"
 msgstr "Jatka toistoa"
 
@@ -2452,7 +2450,7 @@ msgstr ""
 msgid "Could not find installed channel list."
 msgstr "Asennettua kanavaluetteloa ei löytynyt."
 
-msgid "Could not find suitable media - Please insert a media (e.g. USB stick) and try again!"
+msgid "Could not find suitable media - Please remove some downloaded images or insert a media (e.g. USB stick) with sufficiant free space and try again!"
 msgstr ""
 
 #
@@ -2609,14 +2607,7 @@ msgstr "Laaja"
 msgid "DMM normal"
 msgstr "Normaali"
 
-msgid "DTS"
-msgstr ""
-
 msgid "DTS downmix"
-msgstr "DTS muunnos stereoksi"
-
-#, fuzzy
-msgid "DTS-HD downmix"
 msgstr "DTS muunnos stereoksi"
 
 msgid "DUAL LAYER DVD"
@@ -2718,6 +2709,10 @@ msgstr "Oletushakemisto tallennuksille"
 msgid "Default settings"
 msgstr "Oletusasetukset"
 
+#, fuzzy
+msgid "Define the location of the EPG Cache file."
+msgstr "Määrittää näytön kuvasuhteen."
+
 msgid "Delay after change voltage before switch command"
 msgstr ""
 
@@ -2809,6 +2804,12 @@ msgstr "Poista soittolistan valinta"
 #
 msgid "Delete saved playlist"
 msgstr "Poista tallennettu soittolista"
+
+msgid "Delete the character to the left of text buffer cursor"
+msgstr ""
+
+msgid "Delete the character under the text buffer cursor"
+msgstr ""
 
 msgid "Delete timer"
 msgstr ""
@@ -3200,10 +3201,6 @@ msgstr "Ladataan"
 #
 msgid "Downloading plugin information. Please wait..."
 msgstr "Ladataan tietoja lisäosista. Odota..."
-
-#, fuzzy
-msgid "Downmix"
-msgstr "DTS muunnos stereoksi"
 
 #
 #, fuzzy
@@ -3940,6 +3937,10 @@ msgstr "Päivitä"
 msgid "Flash image"
 msgstr "Päivitä"
 
+#, fuzzy
+msgid "Flashing Image"
+msgstr "Päivitä"
+
 msgid "Flashing image succesfull"
 msgstr ""
 
@@ -4040,7 +4041,7 @@ msgstr "Pidä näyttö"
 msgid "Full transparency"
 msgstr "Täysi läpinäkyvyys"
 
-msgid "Fulview resulution"
+msgid "Full view resolution"
 msgstr "Kokokuvan resoluutio"
 
 msgid "Function of OK button"
@@ -4213,6 +4214,9 @@ msgstr "Kreikka"
 msgid "Greek"
 msgstr "Kreikka"
 
+msgid "Greek (Modern)"
+msgstr ""
+
 msgid "Green"
 msgstr ""
 
@@ -4273,9 +4277,6 @@ msgstr ""
 msgid "HDMI HDR Type"
 msgstr ""
 
-msgid "HDMI audio source"
-msgstr ""
-
 msgid "HDMI-CEC Source Active"
 msgstr ""
 
@@ -4291,6 +4292,9 @@ msgstr ""
 #, fuzzy
 msgid "HDR10 support"
 msgstr "ei tuettu"
+
+msgid "HELP"
+msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -4341,6 +4345,9 @@ msgstr ""
 
 msgid "Hidden network"
 msgstr "Piilotettu verkko"
+
+msgid "Hide"
+msgstr ""
 
 msgid "Hide channel list in radio mode"
 msgstr "Piilota kanavaluettelo radio tilassa."
@@ -4446,6 +4453,12 @@ msgid "I do not want to perform any service scans"
 msgstr "Haluatko tehdä kanavahaun?"
 
 msgid "IDLE"
+msgstr ""
+
+msgid "INFO"
+msgstr ""
+
+msgid "INS"
 msgstr ""
 
 #
@@ -4691,14 +4704,6 @@ msgid "Install"
 msgstr "Asenna"
 
 #
-msgid "Install a new image with a USB stick"
-msgstr "Päivitä uusi ohjelmisto USB-tikulta"
-
-#
-msgid "Install a new image with your web browser"
-msgstr "Päivitä uusi ohjelmisto WWW-selaimella"
-
-#
 msgid "Install channel list"
 msgstr "Asenna kanavalista"
 
@@ -4784,6 +4789,9 @@ msgid "Ipkg"
 msgstr "Ipkg"
 
 msgid "Iran (Islamic Republic of)"
+msgstr ""
+
+msgid "Iran, Islamic Republic"
 msgstr ""
 
 msgid "Iraq"
@@ -4888,6 +4896,11 @@ msgstr ""
 
 msgid "Keyboard"
 msgstr "Näppäimistö"
+
+#
+#, fuzzy
+msgid "Keyboard data entry"
+msgstr "Näppäimistön asetukset"
 
 #
 msgid "Keyboard map"
@@ -5108,8 +5121,16 @@ msgid "Local network"
 msgstr "Lähiverkko"
 
 #
+#, fuzzy
+msgid "Locale"
+msgstr "Lähiverkko"
+
+#
 msgid "Location"
 msgstr "Hakemisto"
+
+msgid "Location EPG Cache file"
+msgstr ""
 
 msgid "Location for instant recordings"
 msgstr "Tallennuksien hakemisto"
@@ -5139,6 +5160,9 @@ msgid "Longitude"
 msgstr "Pituusaste"
 
 msgid "Loop through from"
+msgstr ""
+
+msgid "Lower case"
 msgstr ""
 
 #, fuzzy
@@ -5418,6 +5442,30 @@ msgstr "Siirrä PiP-kuvaa"
 msgid "Move east"
 msgstr "Liikuta itään"
 
+msgid "Move the text buffer cursor left"
+msgstr ""
+
+msgid "Move the text buffer cursor right"
+msgstr ""
+
+msgid "Move the text buffer cursor to the first character"
+msgstr ""
+
+msgid "Move the text buffer cursor to the last character"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor down"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor left"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor right"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor up"
+msgstr ""
+
 msgid "Move to position X"
 msgstr "Käännä paikkaan X"
 
@@ -5693,10 +5741,6 @@ msgid "No age block"
 msgstr ""
 
 #
-msgid "No backup needed"
-msgstr "Varmuuskopiota ei tarvita"
-
-#
 msgid ""
 "No data on transponder!\n"
 "(Timeout reading PAT)"
@@ -5856,15 +5900,8 @@ msgstr "Ei, aloita alusta"
 msgid "No, do not flash image"
 msgstr "Ei, älä tee mitään."
 
-#
-msgid "No, do nothing."
-msgstr "Ei, älä tee mitään."
-
 msgid "No, except Wakeup timer"
 msgstr ""
-
-msgid "No, just start my receiver"
-msgstr "Ei, Käynnistä vain vastaanottimeni"
 
 msgid "No, never"
 msgstr "Ei koskaan"
@@ -5965,13 +6002,12 @@ msgstr ""
 msgid "Number of repeating text on display."
 msgstr ""
 
+msgid "Number or SMS style data entry"
+msgstr ""
+
 #
 msgid "OK"
 msgstr "OK"
-
-#
-msgid "OK, guide me through the upgrade process"
-msgstr "OK, opasta minua päivityksessä"
 
 msgid "ONID"
 msgstr "ONID"
@@ -5988,6 +6024,9 @@ msgstr "Valikkojen asetukset"
 
 msgid "OSD transparency"
 msgstr "Valikon läpinäkyvyys"
+
+msgid "OVR"
+msgstr ""
 
 #
 msgid "Off"
@@ -6181,9 +6220,6 @@ msgstr "Lapsilukon kanavaeditori"
 msgid "Parental control setup"
 msgstr "Lapsilukon asetukset"
 
-msgid "Passthrough"
-msgstr ""
-
 #
 msgid "Pause"
 msgstr "Tauko"
@@ -6315,6 +6351,9 @@ msgid ""
 msgstr ""
 "Määritä ja tarkista nimipalvelimien tiedot.\n"
 "Paina OK-näppäintä kun olet valmis."
+
+msgid "Please configure the fallback tuner setup?"
+msgstr ""
 
 #
 msgid ""
@@ -6485,6 +6524,9 @@ msgstr "Määritä virittimen A asetukset:"
 #, fuzzy
 msgid "Please set up tuner R"
 msgstr "Määritä virittimen A asetukset:"
+
+msgid "Please setup the following basic configs!"
+msgstr ""
 
 #
 msgid ""
@@ -6952,6 +6994,11 @@ msgid "Really reboot now?"
 msgstr "Haluatko silti käynnistää uudelleen?"
 
 #
+#, fuzzy
+msgid "Really restart in debug mode now?"
+msgstr "Haluatko silti käynnistää uudelleen?"
+
+#
 msgid "Really restart now?"
 msgstr "Haluatko silti käynnistää uudelleen?"
 
@@ -7267,6 +7314,10 @@ msgstr "aloita leikkaus tästä"
 msgid "Restart enigma"
 msgstr "Käynnistä enigma uudelleen"
 
+#, fuzzy
+msgid "Restart enigma in debug mode"
+msgstr "Käynnistä enigma uudelleen"
+
 #
 msgid "Restart network"
 msgstr "Käynnistä verkko uudelleen"
@@ -7321,12 +7372,12 @@ msgstr "Toisto jatkuu viimeksi katsotusta kohdasta"
 
 #
 #, fuzzy
-msgid "Retreiving image list - Please wait..."
+msgid "Retrieving image list - Please wait..."
 msgstr "Haetaan tietoja lisäosista. Odota..."
 
 #
 #, fuzzy
-msgid "Retreiving image slots - Please wait..."
+msgid "Retrieving image slots - Please wait..."
 msgstr "Haetaan saatavilla olevia päivityksiä. Odota..."
 
 #
@@ -7533,6 +7584,9 @@ msgid "Save and restart timeshift"
 msgstr ""
 
 msgid "Save and stop timeshift"
+msgstr ""
+
+msgid "Save any text changes and exit"
 msgstr ""
 
 msgid "Save changes"
@@ -7889,6 +7943,11 @@ msgstr "Valitse syöttölaite."
 msgid "Select interface"
 msgstr "Valitse verkkosovitin"
 
+#
+#, fuzzy
+msgid "Select locale"
+msgstr "Tallennetut ohjelmat"
+
 msgid "Select location"
 msgstr ""
 
@@ -7927,6 +7986,9 @@ msgid "Select target folder"
 msgstr "Valitse kohdehakemisto"
 
 msgid "Select the Unicable channel to be assigned to this tuner. This is a unique value. Be certain that no other device connected to this same Unicable system is allocated to the same Unicable channel."
+msgstr ""
+
+msgid "Select the character or action under the virtual keyboard cursor"
 msgstr ""
 
 msgid "Select the format of your Unicable device. Choices are 'SCR Unicable' (Unicable I format), or 'SCR JESS' (Unicable II format)."
@@ -7973,6 +8035,12 @@ msgid "Select the type of LNB/device being used (normally 'Universal'). If your 
 msgstr ""
 
 msgid "Select the type of Unicable device you are using."
+msgstr ""
+
+msgid "Select the virtual keyboard locale from a menu"
+msgstr ""
+
+msgid "Select the virtual keyboard shifted character set"
 msgstr ""
 
 #
@@ -8269,6 +8337,11 @@ msgstr ""
 
 msgid "Short filenames"
 msgstr "Lyhyet tiedostonimet"
+
+#
+#, fuzzy
+msgid "Show"
+msgstr "Näytä tiedot"
 
 msgid "Show Audioselection"
 msgstr ""
@@ -8712,10 +8785,6 @@ msgid "Software manager setup"
 msgstr "Ohjelmiston hallinnan asetukset"
 
 #
-msgid "Software restore"
-msgstr "Ohjelmiston palautus"
-
-#
 msgid "Software update"
 msgstr "Ohjelmiston päivitys"
 
@@ -8822,6 +8891,14 @@ msgstr ""
 #
 msgid "Spanish"
 msgstr "Espanja"
+
+#, fuzzy
+msgid "Special 1"
+msgstr "erikoistapahtumat"
+
+#, fuzzy
+msgid "Special 2"
+msgstr "erikoistapahtumat"
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
 msgstr ""
@@ -9383,10 +9460,6 @@ msgstr ""
 msgid "The PIN codes you entered are different."
 msgstr "Syöttämäsi PIN-koodit olivat erilaiset."
 
-#
-msgid "The backup failed. Please choose a different backup location."
-msgstr "Varmuuskopiointi epäonnistui. Valitse toinen varmuuskopiointipaikka."
-
 #, fuzzy, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -9487,6 +9560,10 @@ msgstr ""
 "Vastaanottimesi käyttöliittymä käynnistyy uudelleen\n"
 "johtuen virheestä mytest.py tiedostossa"
 
+#, fuzzy
+msgid "The user interface of your receiver is restarting in debug mode"
+msgstr "Vastaanottimesi käyttöliittymä käynnistyy uudelleen"
+
 #
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -9502,14 +9579,6 @@ msgid ""
 msgstr ""
 "WLAN-lisäosaa ei ole asennettu!\n"
 "Asenna se."
-
-#
-msgid "The wizard can backup your current settings. Do you want to do a backup now?"
-msgstr "Avustaja voi kopioida nykyiset asetuksesi. Haluatko varmuuskopioida asetukset?"
-
-#
-msgid "The wizard is finished now."
-msgstr "Avustaja on lopettanut. Paina OK."
 
 msgid "There are at least "
 msgstr "Saatavilla ainakin "
@@ -9905,6 +9974,9 @@ msgstr ""
 msgid "Toggle infoBar"
 msgstr ""
 
+msgid "Toggle new text inserts before or overwrites existing text"
+msgstr ""
+
 msgid "Toggle show/hide"
 msgstr ""
 
@@ -10170,6 +10242,15 @@ msgstr "TuntematonNäppäin"
 msgid "Unhide parental control services"
 msgstr ""
 
+msgid "Unicable delay after change voltage before switch command"
+msgstr ""
+
+msgid "Unicable delay after enable voltage before switch command"
+msgstr ""
+
+msgid "Unicable delay after last diseqc command"
+msgstr ""
+
 #
 msgid "Uninstall"
 msgstr "Poista asennus"
@@ -10178,6 +10259,9 @@ msgid "United Arab Emirates"
 msgstr ""
 
 msgid "United Kingdom"
+msgstr ""
+
+msgid "United States"
 msgstr ""
 
 msgid "United States Minor Outlying Islands"
@@ -10202,6 +10286,11 @@ msgstr "Poista liitos"
 #
 msgid "Unsupported"
 msgstr "Ei tuettu"
+
+#
+#, fuzzy
+msgid "Unzipping Image"
+msgstr "Ladataan"
 
 #
 msgid "Update"
@@ -10245,6 +10334,9 @@ msgstr "Päivitetään ohjelmistoluetteloa"
 #
 msgid "Upgrading"
 msgstr "Päivitetään"
+
+msgid "Upper case"
+msgstr ""
 
 msgid "Uruguay"
 msgstr ""
@@ -10433,6 +10525,10 @@ msgstr ""
 msgid "Vanuatu"
 msgstr "manuaalinen"
 
+#, fuzzy
+msgid "Various"
+msgstr "Toista edellinen"
+
 msgid "Venezuela (Bolivarian Republic of)"
 msgstr ""
 
@@ -10578,6 +10674,16 @@ msgid "Virgin Islands (U.S.)"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Virtual KeyBoard Functions"
+msgstr "Virtuaalinen näppäimistö"
+
+#
+#, fuzzy
+msgid "Virtual KeyBoard Text:"
+msgstr "Virtuaalinen näppäimistö"
+
+#
 msgid "Virtual keyboard"
 msgstr "Virtuaalinen näppäimistö"
 
@@ -10605,11 +10711,6 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "WLAN-yhteys"
-
-#
-#, fuzzy
-msgid "WMA pro downmix"
-msgstr "AC3 muunnos stereoksi"
 
 #
 msgid "WPA"
@@ -10712,9 +10813,6 @@ msgstr ""
 "Hae kohta, josta haluat aloittaa poisleikkauksen. Paina OK-näppäintä ja valitse 'Aloita leikkaus'.\n"
 "\n"
 "Hae seuraavaksi kohta, johon haluat lopettaa leikkauksen. Paina OK-näppäintä ja valitse 'Lopeta leikkaus'."
-
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
-msgstr "Tervetuloa ohjelmiston päivitysavustajaan. Avustaja ohjaa sinua vastaanottimesi ohjelmiston päivityksessä tarjoten nykyisten asetusten varmuuskopiointi mahdollisuuden ja lyhyen selityksen siitä kuinka päivittää vastaanottimesi ohjelmisto."
 
 msgid ""
 "Welcome.\n"
@@ -10963,10 +11061,6 @@ msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stre
 msgstr "Kun lähteen kuvasuhde on 4:3, valitse skaalataanko vai venytetäänkö kuvaa näytölle. "
 
 #
-msgid "Where do you want to backup your settings?"
-msgstr "Minne haluat varmuuskopioida asetukset?"
-
-#
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Minne ajansiirron väliaikainen tiedosto tallennetaan?"
 
@@ -10999,6 +11093,11 @@ msgstr "Ponnahdusikkunalla"
 
 msgid "Without popup"
 msgstr "Ilman ponnahdusikkunaa"
+
+#
+#, fuzzy
+msgid "Wizard setup"
+msgstr "Video-asetukset"
 
 msgid "Wizard to arrange the overscan"
 msgstr ""
@@ -11077,10 +11176,6 @@ msgstr "Kyllä, aina"
 msgid "Yes, and delete this movie"
 msgstr "Kyllä ja poista tämä tallenne"
 
-#
-msgid "Yes, backup my settings!"
-msgstr "Kyllä, varmuuskopioi asetukset!"
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr ""
 
@@ -11089,14 +11184,6 @@ msgstr ""
 
 msgid "Yes, only from standby"
 msgstr ""
-
-#
-msgid "Yes, perform a shutdown now."
-msgstr "Kyllä, sammuta nyt."
-
-#
-msgid "Yes, restore the settings now"
-msgstr "Kyllä, palauta asetukset nyt"
 
 #
 msgid "Yes, returning to movie list"
@@ -11193,14 +11280,6 @@ msgid "You didn't select a channel to record from."
 msgstr "Et valinnut tallennuskanavaa."
 
 #
-msgid "You have chosen to backup your settings. Please press OK to start the backup now."
-msgstr "Valitsit asetusten varmuuskopioinnin. Aloita painamalla OK-näppäintä."
-
-#
-msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
-msgstr "Valitsit asetusten palautuksen. Enigma2 käynnistyy uudelleen palautuksen jälkeen. Aloita painamalla OK-näppäintä."
-
-#
 #, python-format
 msgid "You have to wait %s!"
 msgstr "Sinun täytyy odottaa %s!"
@@ -11208,18 +11287,6 @@ msgstr "Sinun täytyy odottaa %s!"
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
-
-#, fuzzy
-msgid ""
-"You need a PC connected to your receiver. If you need further instructions, please visit the website https://openpli.org\n"
-"Your receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
-msgstr ""
-"Tarvitset PC:ltä yhteyden vastaanottimeesi. Jos tarvitset lisäohjeita, vieraile verkkosivulla http://www.dm7025.de.\n"
-"Vastaanottimesi pysäytetään nyt. Kun olet suorittanut päivityksen verkkosivun päivitysohjeen mukaan, vastaanottimesi uusi ohjelmisto kysyy sinulta asetusten palauttamista."
-
-#
-msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
-msgstr "Varmuuskopiointi onnistui. Päivitys jatkuu eteenpäin."
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Tallenteet eivät mahdu yksipuoliselle DVD:lle, tarvitset tyhjän dual layer DVD-levyn."
@@ -11290,9 +11357,6 @@ msgstr "Vastaanotin käynnistyy uudelleen"
 
 msgid "Your receiver is shutting down"
 msgstr "Vastaanotin sammutetaan"
-
-msgid "Your receiver is shutting down. Please stand by..."
-msgstr "Vastaanotintasi sammutetaan. Odota..."
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 msgstr "Vastaanottimesi saattaa olla nyt poissa käytöstä. Lue käsikirjasta lisäohjeita ennenkuin uudelleenkäynnistät vastaanottimesi."
@@ -11372,6 +11436,9 @@ msgid "Zapped to timer service %s!"
 msgstr "Mene ensimmäiselle kanavalle"
 
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
+msgstr ""
+
+msgid "Zgemma H9"
 msgstr ""
 
 msgid "Zgemma Star S/2S/H1/H2"
@@ -11630,20 +11697,6 @@ msgstr "Kytketty"
 msgid "controlled by HDMI"
 msgstr ""
 
-msgid "convert to AC3"
-msgstr ""
-
-msgid "convert to DTS"
-msgstr ""
-
-#, fuzzy
-msgid "convert to multi channel PCM"
-msgstr "Näytä useamman kanavan ohjelmaopas"
-
-#, fuzzy
-msgid "convert to multi-channel PCM"
-msgstr "Näytä useamman kanavan ohjelmaopas"
-
 msgid "cooking"
 msgstr "ruuanlaitto"
 
@@ -11872,9 +11925,6 @@ msgstr "kansan/perinteinen musiikki"
 msgid "football/soccer"
 msgstr "jalkapallo"
 
-msgid "force AC3 plus"
-msgstr ""
-
 #
 #, fuzzy
 msgid "force disabled"
@@ -11933,9 +11983,6 @@ msgstr "korkeus"
 #
 msgid "help..."
 msgstr "apua..."
-
-msgid "hide"
-msgstr ""
 
 #
 msgid "horizontal"
@@ -12423,9 +12470,6 @@ msgstr "Lisää kanava suosikkeihin"
 msgid "set as startup service"
 msgstr "Aseta käynnistyskanavaksi"
 
-msgid "show"
-msgstr ""
-
 #
 msgid "show DVD main menu"
 msgstr "Näytä DVD:n päävalikko"
@@ -12656,9 +12700,6 @@ msgstr ""
 #
 msgid "until standby/restart"
 msgstr "valmiustilaan/uudelleenkäynnistykseen asti"
-
-msgid "use best, controlled by HDMI"
-msgstr ""
 
 #
 msgid "user defined"

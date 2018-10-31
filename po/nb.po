@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-08 11:27+0430\n"
+"POT-Creation-Date: 2018-10-27 22:08+0200\n"
 "PO-Revision-Date: 2018-05-27 10:28+0200\n"
 "Last-Translator: GeirJ <dummy@dummy.com>\n"
 "Language-Team: GeirJ\n"
@@ -75,6 +75,12 @@ msgstr ""
 "\n"
 "Trykk OK på din fjernkontroll for å fortsette."
 
+#, fuzzy
+msgid ""
+"\n"
+"Press OK or Exit to abort!"
+msgstr "Trykk OK for søk"
+
 msgid ""
 "\n"
 "Recording in progress."
@@ -95,13 +101,6 @@ msgid ""
 msgstr ""
 "\n"
 "Tilbakestill din mottakers innstillinger."
-
-msgid ""
-"\n"
-"Restore your receiver with a new firmware."
-msgstr ""
-"\n"
-"Tilbakestill mottakeren med en ny programvare."
 
 msgid ""
 "\n"
@@ -392,10 +391,9 @@ msgstr "%k:%M %e/%m"
 #, python-format
 msgid ""
 "%s\n"
+"Press ok for multiboot selection\n"
 "Press exit to close"
 msgstr ""
-"%s\n"
-"Trykk exit for å lukke"
 
 #, python-format
 msgid "%s %d.%d"
@@ -765,22 +763,8 @@ msgstr "Lyd og bilde innstilling"
 msgid "AAC downmix"
 msgstr "AAC nedskalering"
 
-#
-#, fuzzy
-msgid "AAC transcoding"
-msgstr "Transkoding: "
-
-#, fuzzy
-msgid "AC3"
-msgstr "DAC"
-
 msgid "AC3 downmix"
 msgstr "AC3 nedskalering"
-
-#
-#, fuzzy
-msgid "AC3 plus transcoding"
-msgstr "Transkoding: "
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "ANSKAFFER TSID/ONID"
@@ -1276,6 +1260,11 @@ msgstr "Lydstyrketrinn"
 msgid "Australia"
 msgstr "Australia"
 
+#
+#, fuzzy
+msgid "Australian"
+msgstr "Australia"
+
 msgid "Austria"
 msgstr "Østerrike"
 
@@ -1323,6 +1312,18 @@ msgid "Auto scart switching"
 msgstr "Auto scart bytte"
 
 #
+#, fuzzy, python-format
+msgid "Autoinstalling %s"
+msgstr "Installerer"
+
+#, fuzzy
+msgid "Autoinstalling Completed"
+msgstr "Installasjonen er ferdig."
+
+msgid "Autoinstalling please wait for packages being updated"
+msgstr ""
+
+#
 msgid "Automatic"
 msgstr "Automatisk"
 
@@ -1343,6 +1344,11 @@ msgstr "Ekstern undertekst automatisk på"
 
 #
 msgid "Available format variables"
+msgstr "Tilgjengelige formater"
+
+#
+#, fuzzy
+msgid "Available locales are:"
 msgstr "Tilgjengelige formater"
 
 msgid "Azerbaijan"
@@ -1456,6 +1462,10 @@ msgstr "Funksjon for ferdige avspillinger"
 
 msgid "Belarus"
 msgstr "Hviterussland"
+
+#, fuzzy
+msgid "Belgian"
+msgstr "Belgia"
 
 msgid "Belgium"
 msgstr "Belgia"
@@ -1654,6 +1664,9 @@ msgstr "Canada"
 msgid "Cancel"
 msgstr "Tilbake"
 
+msgid "Cancel any text changes and exit"
+msgstr ""
+
 msgid "Cancelled upon user request"
 msgstr "Kansellert av bruker"
 
@@ -1849,10 +1862,6 @@ msgstr "Velg tuner"
 
 msgid "Choose bouquet"
 msgstr "Velg kanalliste"
-
-#, fuzzy
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "Velg dersom digital flerkanals lyd skal nedskaleres til stereolyd."
 
 msgid "Choose which tuner to configure."
 msgstr "Velg tuner som skal stilles inn."
@@ -2277,22 +2286,6 @@ msgstr "Still inn hvor fullførte timere skal vises i timer listen."
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Still inn (hvor lenge) ekstra informasjonstekst skal vises når OK trykkes to ganger. Ekstra informasjonstekst inneholder tilleggsinformasjon for den aktuelle kanalen."
 
-#, fuzzy
-msgid "Configure whether AAC sound tracks should be transcoded."
-msgstr "Velg dersom digital flerkanals lyd skal nedskaleres til stereolyd."
-
-#, fuzzy
-msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
-msgstr "Velg dersom digital flerkanals lyd skal nedskaleres til stereolyd."
-
-#, fuzzy
-msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
-msgstr "Velg dersom digital flerkanals lyd skal nedskaleres til stereolyd."
-
-#, fuzzy
-msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
-msgstr "Velg dersom digital flerkanals lyd skal nedskaleres til stereolyd."
-
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr "Velg dersom PCM flerkanals lyd skal brukes."
 
@@ -2393,10 +2386,6 @@ msgid "Continue"
 msgstr "Fortsett"
 
 #
-msgid "Continue in background"
-msgstr "Fortsett i bakgrunnen"
-
-#
 msgid "Continue playback"
 msgstr "Fortsett avspillingen"
 
@@ -2426,7 +2415,8 @@ msgstr "Elfenbenskysten"
 msgid "Could not find installed channel list."
 msgstr "Kunne ikke finne kanallisten."
 
-msgid "Could not find suitable media - Please insert a media (e.g. USB stick) and try again!"
+#, fuzzy
+msgid "Could not find suitable media - Please remove some downloaded images or insert a media (e.g. USB stick) with sufficiant free space and try again!"
 msgstr "Kunne ikke finne passende media - Vennligst sett inn media (eks. en USB stikke) og forsøk igjen!"
 
 msgid "Could not load medium! No disc inserted?"
@@ -2579,14 +2569,7 @@ msgstr "DMM avansert"
 msgid "DMM normal"
 msgstr "DMM normal"
 
-msgid "DTS"
-msgstr ""
-
 msgid "DTS downmix"
-msgstr "DTS nedskalering"
-
-#, fuzzy
-msgid "DTS-HD downmix"
 msgstr "DTS nedskalering"
 
 #
@@ -2685,6 +2668,10 @@ msgstr "Standard opptaksliste"
 msgid "Default settings"
 msgstr "Standard innstillinger"
 
+#, fuzzy
+msgid "Define the location of the EPG Cache file."
+msgstr "Still inn bildeforholdet på skjermen."
+
 msgid "Delay after change voltage before switch command"
 msgstr "Forsinkelse etter voltendring før kommando til switch"
 
@@ -2775,6 +2762,12 @@ msgstr "Slett oppføring i opptaksliste"
 #
 msgid "Delete saved playlist"
 msgstr "Slett lagret opptaksliste"
+
+msgid "Delete the character to the left of text buffer cursor"
+msgstr ""
+
+msgid "Delete the character under the text buffer cursor"
+msgstr ""
 
 #
 msgid "Delete timer"
@@ -3155,10 +3148,6 @@ msgstr "Laster ned Image"
 #
 msgid "Downloading plugin information. Please wait..."
 msgstr "Laster ned informasjon om tillegg. Vennligst vent litt..."
-
-#, fuzzy
-msgid "Downmix"
-msgstr "DTS nedskalering"
 
 msgid "Drop unconfigured satellites"
 msgstr "Fjern satellitter som ikke brukes"
@@ -3919,6 +3908,10 @@ msgstr "Installer operativsystem"
 msgid "Flash image"
 msgstr "Installer operativsystem"
 
+#, fuzzy
+msgid "Flashing Image"
+msgstr "Installer operativsystem"
+
 msgid "Flashing image succesfull"
 msgstr "Installering av operativsystem gikk fint"
 
@@ -4019,7 +4012,7 @@ msgstr "Full skjerm"
 msgid "Full transparency"
 msgstr "Transparent"
 
-msgid "Fulview resulution"
+msgid "Full view resolution"
 msgstr "Fullskjermsoppløsning"
 
 msgid "Function of OK button"
@@ -4191,6 +4184,9 @@ msgstr "Hellas"
 msgid "Greek"
 msgstr "Gresk"
 
+msgid "Greek (Modern)"
+msgstr ""
+
 #
 msgid "Green"
 msgstr "Grønn"
@@ -4253,10 +4249,6 @@ msgstr "HDMI fargerom"
 msgid "HDMI HDR Type"
 msgstr "HDMI HDR Type"
 
-#, fuzzy
-msgid "HDMI audio source"
-msgstr "HDMI fargerom"
-
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC Kilde Aktiv"
 
@@ -4272,6 +4264,9 @@ msgstr "HDR10"
 #, fuzzy
 msgid "HDR10 support"
 msgstr "ikke støttet"
+
+msgid "HELP"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -4319,6 +4314,9 @@ msgstr "Hjelp for antenne oppsett"
 
 msgid "Hidden network"
 msgstr "Skjult nettverk"
+
+msgid "Hide"
+msgstr ""
 
 msgid "Hide channel list in radio mode"
 msgstr "Skjul kanallisten i radiomodus"
@@ -4425,6 +4423,12 @@ msgstr "Jeg vil ikke ta noen kanalsøk"
 
 msgid "IDLE"
 msgstr "PAUSE"
+
+msgid "INFO"
+msgstr ""
+
+msgid "INS"
+msgstr ""
 
 #
 msgid "IP address"
@@ -4663,12 +4667,6 @@ msgstr "Enhets innstilling"
 msgid "Install"
 msgstr "Installer"
 
-msgid "Install a new image with a USB stick"
-msgstr "Installer nytt operativsystem med en USB pinne"
-
-msgid "Install a new image with your web browser"
-msgstr "Installer et nytt operativsystem med nettleseren"
-
 #
 msgid "Install channel list"
 msgstr "Installer kanalliste"
@@ -4762,6 +4760,10 @@ msgid "Ipkg"
 msgstr "Ipkg"
 
 msgid "Iran (Islamic Republic of)"
+msgstr "Iran"
+
+#, fuzzy
+msgid "Iran, Islamic Republic"
 msgstr "Iran"
 
 msgid "Iraq"
@@ -4870,6 +4872,11 @@ msgstr "Viktige hendelser"
 #
 msgid "Keyboard"
 msgstr "Tastatur"
+
+#
+#, fuzzy
+msgid "Keyboard data entry"
+msgstr "Tastaturoppsett"
 
 #
 msgid "Keyboard map"
@@ -5086,8 +5093,16 @@ msgid "Local network"
 msgstr "Lokalt nettverk"
 
 #
+#, fuzzy
+msgid "Locale"
+msgstr "Lokalt nettverk"
+
+#
 msgid "Location"
 msgstr "Opptaksmappe"
+
+msgid "Location EPG Cache file"
+msgstr ""
 
 #
 msgid "Location for instant recordings"
@@ -5119,6 +5134,9 @@ msgstr "Lengdegrad"
 
 msgid "Loop through from"
 msgstr "Gjennomgang fra"
+
+msgid "Lower case"
+msgstr ""
 
 msgid "Luxembourg"
 msgstr "Luxemburg"
@@ -5389,6 +5407,30 @@ msgstr "Flytt bilde i bilde"
 #
 msgid "Move east"
 msgstr "Kjør østover"
+
+msgid "Move the text buffer cursor left"
+msgstr ""
+
+msgid "Move the text buffer cursor right"
+msgstr ""
+
+msgid "Move the text buffer cursor to the first character"
+msgstr ""
+
+msgid "Move the text buffer cursor to the last character"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor down"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor left"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor right"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor up"
+msgstr ""
 
 msgid "Move to position X"
 msgstr "Flytt til posisjon X"
@@ -5661,10 +5703,6 @@ msgid "No age block"
 msgstr "Ingen aldersgrense"
 
 #
-msgid "No backup needed"
-msgstr "Backup er ikke nødvendig"
-
-#
 msgid ""
 "No data on transponder!\n"
 "(Timeout reading PAT)"
@@ -5814,15 +5852,8 @@ msgstr "Nei, men start på nytt"
 msgid "No, do not flash image"
 msgstr "Nei, ikke installer systemet"
 
-#
-msgid "No, do nothing."
-msgstr "Nei, ikke gjør noe."
-
 msgid "No, except Wakeup timer"
 msgstr "Nei, unntatt vekke timer"
-
-msgid "No, just start my receiver"
-msgstr "Nei, bare start opp mottakeren"
 
 msgid "No, never"
 msgstr "Nei, aldri"
@@ -5909,12 +5940,12 @@ msgstr "Antall kanaler vist i kanallisten"
 msgid "Number of repeating text on display."
 msgstr "Repeterende ganger tekst på display."
 
+msgid "Number or SMS style data entry"
+msgstr ""
+
 #
 msgid "OK"
 msgstr "OK"
-
-msgid "OK, guide me through the upgrade process"
-msgstr "OK, start oppgraderings prosessen"
 
 msgid "ONID"
 msgstr "ONID"
@@ -5931,6 +5962,9 @@ msgstr "OSD instillinger"
 
 msgid "OSD transparency"
 msgstr "Meny lysstyrke"
+
+msgid "OVR"
+msgstr ""
 
 #
 msgid "Off"
@@ -6128,9 +6162,6 @@ msgstr "Foreldrekontroll og kanalinnstillinger"
 msgid "Parental control setup"
 msgstr "Foreldrekontroll oppsett"
 
-msgid "Passthrough"
-msgstr ""
-
 #
 msgid "Pause"
 msgstr "Pause"
@@ -6258,6 +6289,10 @@ msgid ""
 msgstr ""
 "Konfigurer eller verifiser navneserver og tast inn alle nødvendige verdier.\n"
 "Trykk OK for å fortsette."
+
+#, fuzzy
+msgid "Please configure the fallback tuner setup?"
+msgstr "Ekstern tuner innstilling"
 
 msgid ""
 "Please configure your internet connection by filling out the required values.\n"
@@ -6420,6 +6455,9 @@ msgstr "Still inn tuner Q"
 #
 msgid "Please set up tuner R"
 msgstr "Vennligst still inn tuner R"
+
+msgid "Please setup the following basic configs!"
+msgstr ""
 
 msgid ""
 "Please use direction keys to move the PiP window.\n"
@@ -6881,6 +6919,10 @@ msgstr "Skal  på underleverandører avsluttes?"
 msgid "Really reboot now?"
 msgstr "Starte på nytt nå?"
 
+#, fuzzy
+msgid "Really restart in debug mode now?"
+msgstr "Starte på nytt nå?"
+
 msgid "Really restart now?"
 msgstr "Starte på nytt nå?"
 
@@ -7183,6 +7225,10 @@ msgstr "Restart cardserver"
 msgid "Restart enigma"
 msgstr "Start enigma2 på nytt"
 
+#, fuzzy
+msgid "Restart enigma in debug mode"
+msgstr "Start enigma2 på nytt"
+
 msgid "Restart network"
 msgstr "Start nettverket på nytt"
 
@@ -7232,11 +7278,11 @@ msgid "Resuming playback"
 msgstr "Fortsetter avspilling"
 
 #
-msgid "Retreiving image list - Please wait..."
+msgid "Retrieving image list - Please wait..."
 msgstr "Henter operativsystem liste. Vennligst vent litt..."
 
 #
-msgid "Retreiving image slots - Please wait..."
+msgid "Retrieving image slots - Please wait..."
 msgstr "Henter bilde liste - Vennligst vent litt..."
 
 msgid "Return to movie list"
@@ -7442,6 +7488,10 @@ msgstr "Lagre og restart tidsskift"
 #
 msgid "Save and stop timeshift"
 msgstr "Lagre og stopp tidsskift"
+
+#, fuzzy
+msgid "Save any text changes and exit"
+msgstr "Lagre og avslutt"
 
 #
 msgid "Save changes"
@@ -7781,6 +7831,11 @@ msgid "Select interface"
 msgstr "Velg grensesnitt"
 
 #
+#, fuzzy
+msgid "Select locale"
+msgstr "Velg sted"
+
+#
 msgid "Select location"
 msgstr "Velg sted"
 
@@ -7820,6 +7875,9 @@ msgstr "Velg målmappe"
 
 msgid "Select the Unicable channel to be assigned to this tuner. This is a unique value. Be certain that no other device connected to this same Unicable system is allocated to the same Unicable channel."
 msgstr "Velg Unicable kanalen som skal tilordnes denne mottakeren. Dette er en unik verdi. Vær sikker på at ingen annen enhet som er tilkoblet dette samme Unicable systemet er tilordnet samme Unicable kanal."
+
+msgid "Select the character or action under the virtual keyboard cursor"
+msgstr ""
 
 msgid "Select the format of your Unicable device. Choices are 'SCR Unicable' (Unicable I format), or 'SCR JESS' (Unicable II format)."
 msgstr "Velg formatet for Unicable enheten. Valgene er 'SCR Unicable' (Unicable I format) eller 'SCR JESS' (Unicable II-format)."
@@ -7865,6 +7923,12 @@ msgstr "Velg LNB type/enhet som blir brukt (normalt 'Universal'). Hvis din LNB t
 
 msgid "Select the type of Unicable device you are using."
 msgstr "Velg Unicable type enhet du bruker."
+
+msgid "Select the virtual keyboard locale from a menu"
+msgstr ""
+
+msgid "Select the virtual keyboard shifted character set"
+msgstr ""
 
 msgid "Select upgrade source"
 msgstr "Velg oppdateringssted"
@@ -8140,6 +8204,11 @@ msgstr "Shellskript"
 
 msgid "Short filenames"
 msgstr "Korte filnavn"
+
+#
+#, fuzzy
+msgid "Show"
+msgstr "Vis bilde i bilde"
 
 msgid "Show Audioselection"
 msgstr "Vis lydvalg"
@@ -8583,10 +8652,6 @@ msgstr "Programvareadministrasjon"
 msgid "Software manager setup"
 msgstr "Programvare oppsett"
 
-#
-msgid "Software restore"
-msgstr "Gjenopprett programvare"
-
 msgid "Software update"
 msgstr "Programvareoppdatering"
 
@@ -8690,6 +8755,14 @@ msgstr "Spania"
 #
 msgid "Spanish"
 msgstr "Spansk"
+
+#, fuzzy
+msgid "Special 1"
+msgstr "spesial program"
+
+#, fuzzy
+msgid "Special 2"
+msgstr "spesial program"
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
 msgstr "Angi ekstra tidsrom for overstyring av inaktiv dvale timer"
@@ -9245,9 +9318,6 @@ msgstr "PIN koden har blitt lagret."
 msgid "The PIN codes you entered are different."
 msgstr "Feil PIN kode er tastet."
 
-msgid "The backup failed. Please choose a different backup location."
-msgstr "Sikkerhetskopien mislyktes. Vennligst velg en annen reserveplassering."
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -9368,6 +9438,10 @@ msgstr ""
 "Mottakerens brukergrensesnitt må startes på nytt\n"
 "på grunn av en feil i mytest.py"
 
+#, fuzzy
+msgid "The user interface of your receiver is restarting in debug mode"
+msgstr "Enigma2 starter på nytt"
+
 #
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -9383,13 +9457,6 @@ msgid ""
 msgstr ""
 "Det trådløse LAN tillegg er ikke installert!\n"
 "Vennligst installer det."
-
-#
-msgid "The wizard can backup your current settings. Do you want to do a backup now?"
-msgstr "Veiviseren kan ta sikkerhetskopi av dine nåværende innstillinger. Vil du sikkerhetskopiere nå?"
-
-msgid "The wizard is finished now."
-msgstr "Veiviseren er ferdig."
 
 #
 msgid "There are at least "
@@ -9795,6 +9862,9 @@ msgstr "Skift mellom stiplede flimmer linjer for denne kanalen"
 msgid "Toggle infoBar"
 msgstr "Skru av/på infobar"
 
+msgid "Toggle new text inserts before or overwrites existing text"
+msgstr ""
+
 msgid "Toggle show/hide"
 msgstr "Bytt mellom vis/skjul"
 
@@ -10057,6 +10127,18 @@ msgstr "Ubrukt tast"
 msgid "Unhide parental control services"
 msgstr "Opphev foreldrekontroll innstillinger"
 
+#, fuzzy
+msgid "Unicable delay after change voltage before switch command"
+msgstr "Forsinkelse etter voltendring før kommando til switch"
+
+#, fuzzy
+msgid "Unicable delay after enable voltage before switch command"
+msgstr "Forsinkelse etter strømpåslag før kommando til switch"
+
+#, fuzzy
+msgid "Unicable delay after last diseqc command"
+msgstr "Forsinkelse etter siste DiSEqC kommando"
+
 #
 msgid "Uninstall"
 msgstr "Avinstaller"
@@ -10066,6 +10148,10 @@ msgstr "Arabiske Emirater"
 
 msgid "United Kingdom"
 msgstr "England"
+
+#, fuzzy
+msgid "United States"
+msgstr "USA"
 
 msgid "United States Minor Outlying Islands"
 msgstr "United States Minor Outlying Islands"
@@ -10089,6 +10175,11 @@ msgstr "Demonter"
 #
 msgid "Unsupported"
 msgstr "Ikke støttet"
+
+#
+#, fuzzy
+msgid "Unzipping Image"
+msgstr "Laster ned Image"
 
 msgid "Update"
 msgstr "Oppdater"
@@ -10131,6 +10222,9 @@ msgstr "Oppdaterer programvarekatalog"
 #
 msgid "Upgrading"
 msgstr "Oppdaterer"
+
+msgid "Upper case"
+msgstr ""
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -10302,6 +10396,10 @@ msgstr "VU+"
 msgid "Vanuatu"
 msgstr "Vanuatu"
 
+#, fuzzy
+msgid "Various"
+msgstr "Spill av siste"
+
 msgid "Venezuela (Bolivarian Republic of)"
 msgstr "Venesuela"
 
@@ -10437,6 +10535,14 @@ msgstr "Jomfruøyene (Engelsk)"
 msgid "Virgin Islands (U.S.)"
 msgstr "Jomfruøyene (U.S.)"
 
+#, fuzzy
+msgid "Virtual KeyBoard Functions"
+msgstr "Virtuelt tastatur"
+
+#, fuzzy
+msgid "Virtual KeyBoard Text:"
+msgstr "Virtuelt tastatur"
+
 msgid "Virtual keyboard"
 msgstr "Virtuelt tastatur"
 
@@ -10466,10 +10572,6 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "WLAN tilkoblet"
-
-#, fuzzy
-msgid "WMA pro downmix"
-msgstr "AAC nedskalering"
 
 #
 msgid "WPA"
@@ -10572,9 +10674,6 @@ msgstr ""
 "Gå til starten av det som ønskes bortklipt. Trykk OK, velg 'start klipp'.\n"
 "\n"
 "Deretter gå til slutten, trykk OK, velg 'klipp slutt'. Det var det hele."
-
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
-msgstr "Velkommen til oppdatering av operativsystemet. Veiviseren vil forklare hvordan programvare oppdateres på mottakeren ved å tilby en sikkerhetskopi av gjeldende innstillinger."
 
 msgid ""
 "Welcome.\n"
@@ -10817,10 +10916,6 @@ msgstr "Når bildet har et sideforhold på 16:9. Velg om det skal skaleres/strek
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Når bildet har et sideforhold på 4:3. Velg om det skal skaleres/strekkes ut."
 
-#
-msgid "Where do you want to backup your settings?"
-msgstr "Hvor skal sikkerhetskopien av innstillingene lagres?"
-
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Hvor skal midlertidige tidsskift opptak lagres?"
 
@@ -10855,6 +10950,11 @@ msgstr "Med varsel"
 
 msgid "Without popup"
 msgstr "Uten varsel"
+
+#
+#, fuzzy
+msgid "Wizard setup"
+msgstr "Videooppsett"
 
 msgid "Wizard to arrange the overscan"
 msgstr "Veiviser for ekte bildestørrelse"
@@ -10930,10 +11030,6 @@ msgstr "Ja, alltid"
 msgid "Yes, and delete this movie"
 msgstr "Ja, slett denne filmen"
 
-#
-msgid "Yes, backup my settings!"
-msgstr "Ja, sikkerhetskopier innstillingene!"
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Ja, slett dette opptaket og gå til opptakslisten"
 
@@ -10943,13 +11039,6 @@ msgstr "Ja, bare fra dvalemodus"
 
 msgid "Yes, only from standby"
 msgstr "Ja, bare fra avslått modus"
-
-msgid "Yes, perform a shutdown now."
-msgstr "Ja, slå av nå."
-
-#
-msgid "Yes, restore the settings now"
-msgstr "Ja, gjenopprett innstillingene nå"
 
 msgid "Yes, returning to movie list"
 msgstr "Ja, returnerer til opptaksliste"
@@ -11053,12 +11142,6 @@ msgstr ""
 msgid "You didn't select a channel to record from."
 msgstr "Du valgte ingen kanal til opptak."
 
-msgid "You have chosen to backup your settings. Please press OK to start the backup now."
-msgstr "Du har valgt å sikkerhetskopiere innstillingene dine. Vennligst trykk OK for å starte sikkerhetskopien nå."
-
-msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
-msgstr "Tilbakestilling av innstillinger er valgt. Enigma2 starter på nytt etter tilbakestillingen. Trykk OK for å fortsette."
-
 #
 #, python-format
 msgid "You have to wait %s!"
@@ -11067,16 +11150,6 @@ msgstr "Vent litt %s!"
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Gå til kanalen %s (%s - '%s')!\n"
-
-msgid ""
-"You need a PC connected to your receiver. If you need further instructions, please visit the website https://openpli.org\n"
-"Your receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
-msgstr ""
-"Du trenger en PC tilkoblet din mottaker. Trenger du flere opplysninger, vær vennlig og besøk websiden https://openpli.org\n"
-"Mottakeren vil nå bli stoppet. Etter å ha fulgt oppdaterings instruksene fra websiden, vil den nye programvaren gjenopprette dine innstillinger."
-
-msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
-msgstr "Sikkerhetskopien din lyktes. Vi vil nå fortsette å forklare den videre oppdateringen."
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Samlingen overstiger ledig plass på enkeltlagsplaten, en tolags DVD må brukes!"
@@ -11147,9 +11220,6 @@ msgstr "Mottakeren starter på nytt"
 
 msgid "Your receiver is shutting down"
 msgstr "Mottakeren slås av"
-
-msgid "Your receiver is shutting down. Please stand by..."
-msgstr "Mottakeren slår seg av. Vennligst vent litt..."
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 msgstr "Mottakeren kan være ubrukelig nå. Slå opp i bruksanvisningen før mottakeren startes på nytt."
@@ -11228,6 +11298,9 @@ msgstr "Timer skiftet til valgt kanal %s!"
 
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
 msgstr "Zgemma H.S/H.2S/H.2H/H5/H7"
+
+msgid "Zgemma H9"
+msgstr ""
 
 msgid "Zgemma Star S/2S/H1/H2"
 msgstr "Zgemma Star S/2S/H1/H2"
@@ -11485,20 +11558,6 @@ msgstr "tilkoblet"
 msgid "controlled by HDMI"
 msgstr ""
 
-msgid "convert to AC3"
-msgstr ""
-
-msgid "convert to DTS"
-msgstr ""
-
-#, fuzzy
-msgid "convert to multi channel PCM"
-msgstr "Multikanal PCM lyd"
-
-#, fuzzy
-msgid "convert to multi-channel PCM"
-msgstr "Multikanal PCM lyd"
-
 msgid "cooking"
 msgstr "matlaging"
 
@@ -11726,9 +11785,6 @@ msgstr "folk/tradisjonell musikk"
 msgid "football/soccer"
 msgstr "fotball"
 
-msgid "force AC3 plus"
-msgstr ""
-
 #
 #, fuzzy
 msgid "force disabled"
@@ -11786,9 +11842,6 @@ msgstr "høyde"
 #
 msgid "help..."
 msgstr "hjelp..."
-
-msgid "hide"
-msgstr "skjul"
 
 #
 msgid "horizontal"
@@ -12259,9 +12312,6 @@ msgstr "kanalen sender ikke"
 msgid "set as startup service"
 msgstr "bruk denne som oppstartskanal"
 
-msgid "show"
-msgstr "vis"
-
 #
 msgid "show DVD main menu"
 msgstr "vis DVD hovedmeny"
@@ -12482,9 +12532,6 @@ msgstr "lar seg ikke teste"
 
 msgid "until standby/restart"
 msgstr "til slår av/starter på nytt"
-
-msgid "use best, controlled by HDMI"
-msgstr ""
 
 #
 msgid "user defined"

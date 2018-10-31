@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-08 11:27+0430\n"
+"POT-Creation-Date: 2018-10-27 22:08+0200\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -70,6 +70,13 @@ msgstr ""
 "\n"
 "Pritisni OK na tvom daljinskom da nastaviš"
 
+#
+#, fuzzy
+msgid ""
+"\n"
+"Press OK or Exit to abort!"
+msgstr "Pritisnite OK za skeniranje"
+
 msgid ""
 "\n"
 "Recording in progress."
@@ -86,11 +93,6 @@ msgstr ""
 msgid ""
 "\n"
 "Restore your receiver settings."
-msgstr ""
-
-msgid ""
-"\n"
-"Restore your receiver with a new firmware."
 msgstr ""
 
 #
@@ -398,6 +400,7 @@ msgstr ""
 #, python-format
 msgid ""
 "%s\n"
+"Press ok for multiboot selection\n"
 "Press exit to close"
 msgstr ""
 
@@ -780,16 +783,7 @@ msgstr "A/V Postavke "
 msgid "AAC downmix"
 msgstr ""
 
-msgid "AAC transcoding"
-msgstr ""
-
-msgid "AC3"
-msgstr ""
-
 msgid "AC3 downmix"
-msgstr ""
-
-msgid "AC3 plus transcoding"
 msgstr ""
 
 msgid "ACQUIRING TSID/ONID"
@@ -1325,6 +1319,11 @@ msgstr ""
 msgid "Australia"
 msgstr "Italijanski"
 
+#
+#, fuzzy
+msgid "Australian"
+msgstr "Italijanski"
+
 msgid "Austria"
 msgstr ""
 
@@ -1372,6 +1371,19 @@ msgid "Auto scart switching"
 msgstr "Automatsko uključenje skarta"
 
 #
+#, fuzzy, python-format
+msgid "Autoinstalling %s"
+msgstr "Instaliram"
+
+#
+#, fuzzy
+msgid "Autoinstalling Completed"
+msgstr "Instalacija završena."
+
+msgid "Autoinstalling please wait for packages being updated"
+msgstr ""
+
+#
 msgid "Automatic"
 msgstr "Automatski"
 
@@ -1396,6 +1408,11 @@ msgstr ""
 
 #
 msgid "Available format variables"
+msgstr "Mogući promenljivi format "
+
+#
+#, fuzzy
+msgid "Available locales are:"
 msgstr "Mogući promenljivi format "
 
 msgid "Azerbaijan"
@@ -1515,6 +1532,11 @@ msgstr "Način rada kad je film stigao do kraja"
 
 msgid "Belarus"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Belgian"
+msgstr "Norveški"
 
 msgid "Belgium"
 msgstr ""
@@ -1715,6 +1737,9 @@ msgstr ""
 msgid "Cancel"
 msgstr "Odustani"
 
+msgid "Cancel any text changes and exit"
+msgstr ""
+
 msgid "Cancelled upon user request"
 msgstr ""
 
@@ -1912,9 +1937,6 @@ msgid "Choose Tuner"
 msgstr ""
 
 msgid "Choose bouquet"
-msgstr ""
-
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
 msgstr ""
 
 msgid "Choose which tuner to configure."
@@ -2373,18 +2395,6 @@ msgstr ""
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr ""
 
-msgid "Configure whether AAC sound tracks should be transcoded."
-msgstr ""
-
-msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
-msgstr ""
-
-msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
-msgstr ""
-
-msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
-msgstr ""
-
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr ""
 
@@ -2490,10 +2500,6 @@ msgid "Continue"
 msgstr "Nastaviti"
 
 #
-msgid "Continue in background"
-msgstr "Nastaviti u pozadini "
-
-#
 #, fuzzy
 msgid "Continue playback"
 msgstr "Nastaviti reprodukciju"
@@ -2524,7 +2530,7 @@ msgstr ""
 msgid "Could not find installed channel list."
 msgstr ""
 
-msgid "Could not find suitable media - Please insert a media (e.g. USB stick) and try again!"
+msgid "Could not find suitable media - Please remove some downloaded images or insert a media (e.g. USB stick) with sufficiant free space and try again!"
 msgstr ""
 
 #
@@ -2690,13 +2696,7 @@ msgstr "napredno"
 msgid "DMM normal"
 msgstr ""
 
-msgid "DTS"
-msgstr ""
-
 msgid "DTS downmix"
-msgstr ""
-
-msgid "DTS-HD downmix"
 msgstr ""
 
 #
@@ -2806,6 +2806,9 @@ msgstr "Standardna lokacija filmova"
 msgid "Default settings"
 msgstr "Standardne postavke"
 
+msgid "Define the location of the EPG Cache file."
+msgstr ""
+
 msgid "Delay after change voltage before switch command"
 msgstr ""
 
@@ -2900,6 +2903,12 @@ msgstr "obriši unos plejliste"
 #, fuzzy
 msgid "Delete saved playlist"
 msgstr "obriši sačuvanu plejlistu"
+
+msgid "Delete the character to the left of text buffer cursor"
+msgstr ""
+
+msgid "Delete the character under the text buffer cursor"
+msgstr ""
 
 msgid "Delete timer"
 msgstr ""
@@ -3298,9 +3307,6 @@ msgstr "Skidanje"
 #
 msgid "Downloading plugin information. Please wait..."
 msgstr "Skidanje informacija o dodacima. Molim pričekajte..."
-
-msgid "Downmix"
-msgstr ""
 
 #
 #, fuzzy
@@ -4073,6 +4079,11 @@ msgstr "Fleš"
 msgid "Flash image"
 msgstr "Fleš"
 
+#
+#, fuzzy
+msgid "Flashing Image"
+msgstr "Fleš"
+
 msgid "Flashing image succesfull"
 msgstr ""
 
@@ -4173,7 +4184,7 @@ msgstr ""
 msgid "Full transparency"
 msgstr ""
 
-msgid "Fulview resulution"
+msgid "Full view resolution"
 msgstr ""
 
 msgid "Function of OK button"
@@ -4359,6 +4370,9 @@ msgstr "Grčki"
 msgid "Greek"
 msgstr "Grčki"
 
+msgid "Greek (Modern)"
+msgstr ""
+
 msgid "Green"
 msgstr ""
 
@@ -4419,9 +4433,6 @@ msgstr ""
 msgid "HDMI HDR Type"
 msgstr ""
 
-msgid "HDMI audio source"
-msgstr ""
-
 msgid "HDMI-CEC Source Active"
 msgstr ""
 
@@ -4437,6 +4448,9 @@ msgstr ""
 #, fuzzy
 msgid "HDR10 support"
 msgstr "nije podržano"
+
+msgid "HELP"
+msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -4491,6 +4505,9 @@ msgid "Helps setting up your antenna"
 msgstr ""
 
 msgid "Hidden network"
+msgstr ""
+
+msgid "Hide"
 msgstr ""
 
 msgid "Hide channel list in radio mode"
@@ -4597,6 +4614,12 @@ msgid "I do not want to perform any service scans"
 msgstr "Želite li napraviti skeniranje kanala?"
 
 msgid "IDLE"
+msgstr ""
+
+msgid "INFO"
+msgstr ""
+
+msgid "INS"
 msgstr ""
 
 #
@@ -4842,14 +4865,6 @@ msgid "Install"
 msgstr "Instalisati"
 
 #
-msgid "Install a new image with a USB stick"
-msgstr "Instalisati novi imidž sa USB stika"
-
-#
-msgid "Install a new image with your web browser"
-msgstr "Instalisati novi imidž vašim web pretraživačem"
-
-#
 #, fuzzy
 msgid "Install channel list"
 msgstr "sledeći kanal u istoriji"
@@ -4950,6 +4965,9 @@ msgid "Ipkg"
 msgstr "Ipkg"
 
 msgid "Iran (Islamic Republic of)"
+msgstr ""
+
+msgid "Iran, Islamic Republic"
 msgstr ""
 
 msgid "Iraq"
@@ -5064,6 +5082,11 @@ msgstr ""
 #
 msgid "Keyboard"
 msgstr "Tastatura"
+
+#
+#, fuzzy
+msgid "Keyboard data entry"
+msgstr "Postavke tastature"
 
 #
 #, fuzzy
@@ -5298,8 +5321,16 @@ msgid "Local network"
 msgstr "Lokalna mreža"
 
 #
+#, fuzzy
+msgid "Locale"
+msgstr "Lokalna mreža"
+
+#
 msgid "Location"
 msgstr "Lokacija"
+
+msgid "Location EPG Cache file"
+msgstr ""
 
 #
 msgid "Location for instant recordings"
@@ -5331,6 +5362,9 @@ msgid "Longitude"
 msgstr "Geografska dužina"
 
 msgid "Loop through from"
+msgstr ""
+
+msgid "Lower case"
 msgstr ""
 
 msgid "Luxembourg"
@@ -5623,6 +5657,30 @@ msgstr "Pomerite sliku u slici"
 msgid "Move east"
 msgstr "Pokreći na istok"
 
+msgid "Move the text buffer cursor left"
+msgstr ""
+
+msgid "Move the text buffer cursor right"
+msgstr ""
+
+msgid "Move the text buffer cursor to the first character"
+msgstr ""
+
+msgid "Move the text buffer cursor to the last character"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor down"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor left"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor right"
+msgstr ""
+
+msgid "Move the virtual keyboard cursor up"
+msgstr ""
+
 msgid "Move to position X"
 msgstr ""
 
@@ -5908,10 +5966,6 @@ msgid "No age block"
 msgstr ""
 
 #
-msgid "No backup needed"
-msgstr "Sigurnosna kopija nije potrebna"
-
-#
 msgid ""
 "No data on transponder!\n"
 "(Timeout reading PAT)"
@@ -6071,14 +6125,7 @@ msgstr "Ne, ali restartuj od početka"
 msgid "No, do not flash image"
 msgstr "Ne, ništa ne čini "
 
-#
-msgid "No, do nothing."
-msgstr "Ne, ništa ne čini "
-
 msgid "No, except Wakeup timer"
-msgstr ""
-
-msgid "No, just start my receiver"
 msgstr ""
 
 msgid "No, never"
@@ -6177,13 +6224,12 @@ msgstr ""
 msgid "Number of repeating text on display."
 msgstr ""
 
+msgid "Number or SMS style data entry"
+msgstr ""
+
 #
 msgid "OK"
 msgstr "OK"
-
-#
-msgid "OK, guide me through the upgrade process"
-msgstr "OK, vodi me kroz postupak nadogradnje"
 
 msgid "ONID"
 msgstr "ONID"
@@ -6200,6 +6246,9 @@ msgid "OSD settings"
 msgstr "Postavke OSD"
 
 msgid "OSD transparency"
+msgstr ""
+
+msgid "OVR"
 msgstr ""
 
 #
@@ -6406,9 +6455,6 @@ msgstr "Urednik za roditeljsku zaštitu kanala"
 msgid "Parental control setup"
 msgstr "Postavke roditeljske zaštite"
 
-msgid "Passthrough"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Pause"
@@ -6553,6 +6599,9 @@ msgid ""
 msgstr ""
 "Molim konfiguriši ili verifikuj svoje nejmservere popunjavajući tražene vrednosti.\n"
 "Kad si spreman pritisni OK da nastaviš."
+
+msgid "Please configure the fallback tuner setup?"
+msgstr ""
 
 #
 msgid ""
@@ -6722,6 +6771,9 @@ msgstr "Molim podesite tuner B"
 #, fuzzy
 msgid "Please set up tuner R"
 msgstr "Molim podesite tuner B"
+
+msgid "Please setup the following basic configs!"
+msgstr ""
 
 #
 msgid ""
@@ -7198,6 +7250,11 @@ msgid "Really reboot now?"
 msgstr "Stvarno ponovo podići sada?"
 
 #
+#, fuzzy
+msgid "Really restart in debug mode now?"
+msgstr "Stvarno restartovati sada?"
+
+#
 msgid "Really restart now?"
 msgstr "Stvarno restartovati sada?"
 
@@ -7521,6 +7578,9 @@ msgstr "počni rez ovde"
 msgid "Restart enigma"
 msgstr ""
 
+msgid "Restart enigma in debug mode"
+msgstr ""
+
 #
 msgid "Restart network"
 msgstr "Restartujte mrežu"
@@ -7577,12 +7637,12 @@ msgstr "Nastavite reprodukciju"
 
 #
 #, fuzzy
-msgid "Retreiving image list - Please wait..."
+msgid "Retrieving image list - Please wait..."
 msgstr "Skidanje informacije o dodatku. Molim pričekajte..."
 
 #
 #, fuzzy
-msgid "Retreiving image slots - Please wait..."
+msgid "Retrieving image slots - Please wait..."
 msgstr "Traženje dostupnih ažuriranja.Molim sačekajte..."
 
 #
@@ -7793,6 +7853,9 @@ msgid "Save and restart timeshift"
 msgstr ""
 
 msgid "Save and stop timeshift"
+msgstr ""
+
+msgid "Save any text changes and exit"
 msgstr ""
 
 msgid "Save changes"
@@ -8168,6 +8231,11 @@ msgstr "Izaberi ulazni uređaj."
 msgid "Select interface"
 msgstr "Izaberite interfejs "
 
+#
+#, fuzzy
+msgid "Select locale"
+msgstr "Odaberi film"
+
 msgid "Select location"
 msgstr ""
 
@@ -8208,6 +8276,9 @@ msgid "Select target folder"
 msgstr "Izaberite ciljnu fasciklu"
 
 msgid "Select the Unicable channel to be assigned to this tuner. This is a unique value. Be certain that no other device connected to this same Unicable system is allocated to the same Unicable channel."
+msgstr ""
+
+msgid "Select the character or action under the virtual keyboard cursor"
 msgstr ""
 
 msgid "Select the format of your Unicable device. Choices are 'SCR Unicable' (Unicable I format), or 'SCR JESS' (Unicable II format)."
@@ -8255,6 +8326,12 @@ msgid "Select the type of LNB/device being used (normally 'Universal'). If your 
 msgstr ""
 
 msgid "Select the type of Unicable device you are using."
+msgstr ""
+
+msgid "Select the virtual keyboard locale from a menu"
+msgstr ""
+
+msgid "Select the virtual keyboard shifted character set"
 msgstr ""
 
 #
@@ -8564,6 +8641,11 @@ msgstr ""
 
 msgid "Short filenames"
 msgstr "Kratka imena datoteka"
+
+#
+#, fuzzy
+msgid "Show"
+msgstr "Prikaži info"
 
 msgid "Show Audioselection"
 msgstr ""
@@ -9027,10 +9109,6 @@ msgid "Software manager setup"
 msgstr "Podešavanje upravljača softvera"
 
 #
-msgid "Software restore"
-msgstr "Vraćanje softvera"
-
-#
 msgid "Software update"
 msgstr "Nadogradnja softvera"
 
@@ -9142,6 +9220,12 @@ msgstr ""
 #
 msgid "Spanish"
 msgstr "Španski"
+
+msgid "Special 1"
+msgstr ""
+
+msgid "Special 2"
+msgstr ""
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
 msgstr ""
@@ -9731,10 +9815,6 @@ msgstr ""
 msgid "The PIN codes you entered are different."
 msgstr "PIN kodovi koji ste uneli su različiti. "
 
-#
-msgid "The backup failed. Please choose a different backup location."
-msgstr "Neuspešna sigurnosna kopija. Molim odaberite drugu lokaciju."
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -9841,6 +9921,11 @@ msgid ""
 msgstr ""
 
 #
+#, fuzzy
+msgid "The user interface of your receiver is restarting in debug mode"
+msgstr "Molim sačekajte dok se vaša mreža ponovo startuje"
+
+#
 msgid ""
 "The wireless LAN plugin is not installed!\n"
 "Please install it and choose what you want to do next."
@@ -9855,14 +9940,6 @@ msgid ""
 msgstr ""
 "Bežični LAN dodatak nije instaliran!\n"
 "Molimo instalirajte ga."
-
-#
-msgid "The wizard can backup your current settings. Do you want to do a backup now?"
-msgstr "Čarobnjak može napraviti sigurnosnu kopiju postavki. Želite li je napraviti sada?"
-
-#
-msgid "The wizard is finished now."
-msgstr "Čarobnjak je sada gotov."
 
 #
 msgid "There are at least "
@@ -10271,6 +10348,9 @@ msgstr ""
 msgid "Toggle infoBar"
 msgstr ""
 
+msgid "Toggle new text inserts before or overwrites existing text"
+msgstr ""
+
 msgid "Toggle show/hide"
 msgstr ""
 
@@ -10540,6 +10620,15 @@ msgstr "Neupravljan ključ"
 msgid "Unhide parental control services"
 msgstr ""
 
+msgid "Unicable delay after change voltage before switch command"
+msgstr ""
+
+msgid "Unicable delay after enable voltage before switch command"
+msgstr ""
+
+msgid "Unicable delay after last diseqc command"
+msgstr ""
+
 #
 msgid "Uninstall"
 msgstr "Deinstaliraj"
@@ -10548,6 +10637,9 @@ msgid "United Arab Emirates"
 msgstr ""
 
 msgid "United Kingdom"
+msgstr ""
+
+msgid "United States"
 msgstr ""
 
 msgid "United States Minor Outlying Islands"
@@ -10572,6 +10664,11 @@ msgstr ""
 #
 msgid "Unsupported"
 msgstr "Nepodržano"
+
+#
+#, fuzzy
+msgid "Unzipping Image"
+msgstr "Skidanje"
 
 #
 msgid "Update"
@@ -10618,6 +10715,9 @@ msgstr "Ažuriranje kataloga softvera"
 #
 msgid "Upgrading"
 msgstr "Nadograđujem"
+
+msgid "Upper case"
+msgstr ""
 
 msgid "Uruguay"
 msgstr ""
@@ -10805,6 +10905,9 @@ msgstr ""
 msgid "Vanuatu"
 msgstr "ručno"
 
+msgid "Various"
+msgstr ""
+
 msgid "Venezuela (Bolivarian Republic of)"
 msgstr ""
 
@@ -10963,6 +11066,16 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Virtual KeyBoard Functions"
+msgstr "Virtuelna tastatura"
+
+#
+#, fuzzy
+msgid "Virtual KeyBoard Text:"
+msgstr "Virtuelna tastatura"
+
+#
+#, fuzzy
 msgid "Virtual keyboard"
 msgstr "Virtuelna tastatura"
 
@@ -10990,9 +11103,6 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "WLAN veza"
-
-msgid "WMA pro downmix"
-msgstr ""
 
 #
 msgid "WPA"
@@ -11098,9 +11208,6 @@ msgstr ""
 "Tražite početak onoga što želite da odbacite.Pritisnite OK,izaberite \"počni isecanje\".\n"
 "\n"
 "Zatim tražite kraj,pritisnite OK,izaberite \"završi isecanje\".To je to."
-
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
-msgstr ""
 
 msgid ""
 "Welcome.\n"
@@ -11338,10 +11445,6 @@ msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stre
 msgstr ""
 
 #
-msgid "Where do you want to backup your settings?"
-msgstr "Gdje želite sačuvati ovu sigurnosnu kopiju liste kanala?"
-
-#
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Gde sačuvati privrem. snimanja uz pomoć vrem. pomaka?"
 
@@ -11376,6 +11479,11 @@ msgstr ""
 
 msgid "Without popup"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Wizard setup"
+msgstr "Video postavke"
 
 msgid "Wizard to arrange the overscan"
 msgstr ""
@@ -11453,10 +11561,6 @@ msgstr "Da,uvek"
 msgid "Yes, and delete this movie"
 msgstr "Da i izbrišite ovaj film"
 
-#
-msgid "Yes, backup my settings!"
-msgstr "Da, napravi sigurnosnu kopiju mojih postavki."
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr ""
 
@@ -11465,14 +11569,6 @@ msgstr ""
 
 msgid "Yes, only from standby"
 msgstr ""
-
-#
-msgid "Yes, perform a shutdown now."
-msgstr "Da, započni isključivanje sada"
-
-#
-msgid "Yes, restore the settings now"
-msgstr "Da, vrati sačuvane postavke sada"
 
 #
 msgid "Yes, returning to movie list"
@@ -11566,14 +11662,6 @@ msgid "You didn't select a channel to record from."
 msgstr "Niste odabrali kanal sa koga ćete snimati."
 
 #
-msgid "You have chosen to backup your settings. Please press OK to start the backup now."
-msgstr "Izabrali ste da snimite svoje postavke.Molimo pritisnite OK da sada počnete snimanje."
-
-#
-msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
-msgstr "Izabrali ste da povratite vaše postavke.Enigma2 će ponovo startovati posle vraćanja.Molim sada pritisnite OK da počnete vraćanje."
-
-#
 #, python-format
 msgid "You have to wait %s!"
 msgstr "Morate pričekati %s!"
@@ -11581,15 +11669,6 @@ msgstr "Morate pričekati %s!"
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
-
-msgid ""
-"You need a PC connected to your receiver. If you need further instructions, please visit the website https://openpli.org\n"
-"Your receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
-msgstr ""
-
-#
-msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
-msgstr "Sigurnosna kopija je uspešno napravljena. Sada ćemo dalje objasniti za sljedeći proces nadogradnje."
 
 #
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
@@ -11655,9 +11734,6 @@ msgid "Your receiver is rebooting"
 msgstr ""
 
 msgid "Your receiver is shutting down"
-msgstr ""
-
-msgid "Your receiver is shutting down. Please stand by..."
 msgstr ""
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
@@ -11738,6 +11814,9 @@ msgid "Zapped to timer service %s!"
 msgstr "Pomeri gore na prvi unos"
 
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
+msgstr ""
+
+msgid "Zgemma H9"
 msgstr ""
 
 msgid "Zgemma Star S/2S/H1/H2"
@@ -11999,18 +12078,6 @@ msgstr "Povezano"
 msgid "controlled by HDMI"
 msgstr ""
 
-msgid "convert to AC3"
-msgstr ""
-
-msgid "convert to DTS"
-msgstr ""
-
-msgid "convert to multi channel PCM"
-msgstr ""
-
-msgid "convert to multi-channel PCM"
-msgstr ""
-
 msgid "cooking"
 msgstr ""
 
@@ -12242,9 +12309,6 @@ msgstr ""
 msgid "football/soccer"
 msgstr ""
 
-msgid "force AC3 plus"
-msgstr ""
-
 #
 #, fuzzy
 msgid "force disabled"
@@ -12303,9 +12367,6 @@ msgstr ""
 #
 msgid "help..."
 msgstr "pomoć..."
-
-msgid "hide"
-msgstr ""
 
 #
 msgid "horizontal"
@@ -12791,9 +12852,6 @@ msgstr "dodaj kanal u favorite"
 msgid "set as startup service"
 msgstr ""
 
-msgid "show"
-msgstr ""
-
 #
 msgid "show DVD main menu"
 msgstr "Pokaži glavni DVD meni"
@@ -13023,9 +13081,6 @@ msgstr ""
 #
 msgid "until standby/restart"
 msgstr "do spreman/restart"
-
-msgid "use best, controlled by HDMI"
-msgstr ""
 
 #
 msgid "user defined"
