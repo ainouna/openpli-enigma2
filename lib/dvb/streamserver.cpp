@@ -155,7 +155,7 @@ void eStreamClient::notifier(int what)
 				set_tcp_option(streamFd, TCP_KEEPIDLE, 1);	// after 1 second of idle
 				set_tcp_option(streamFd, TCP_KEEPCNT, 2);	// drop connection after second miss
 				/* also set 10 seconds data push timeout */
-				set_tcp_option(streamFd, TCP_USER_TIMEOUT, 10 * 1000);
+				
 
 				if (serviceref.substr(0, 10) == "file?file=") /* convert openwebif stream reqeust back to serviceref */
 					serviceref = "1:0:1:0:0:0:0:0:0:0:" + serviceref.substr(10);
