@@ -19,6 +19,7 @@ SCOPE_PLAYLIST = 11
 SCOPE_CURRENT_SKIN = 12
 SCOPE_METADIR = 16
 SCOPE_CURRENT_PLUGIN = 17
+SCOPE_ACTIVE_SKIN = 18
 
 PATH_CREATE = 0
 PATH_DONTCREATE = 1
@@ -33,6 +34,7 @@ defaultPaths = {
 		SCOPE_LANGUAGE: (eEnv.resolve("${datadir}/enigma2/po/"), PATH_DONTCREATE),
 
 		SCOPE_SKIN: (eEnv.resolve("${datadir}/enigma2/"), PATH_DONTCREATE),
+	        SCOPE_ACTIVE_SKIN: (eEnv.resolve("${datadir}/enigma2/"), PATH_DONTCREATE),
 		SCOPE_SKIN_IMAGE: (eEnv.resolve("${datadir}/enigma2/"), PATH_DONTCREATE),
 		SCOPE_HDD: ("/hdd/movie/", PATH_DONTCREATE),
 		SCOPE_MEDIA: ("/media/", PATH_DONTCREATE),
